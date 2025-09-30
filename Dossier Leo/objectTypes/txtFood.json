@@ -1,0 +1,10 @@
+{
+	"name": "txtFood",
+	"plugin-id": "Text",
+	"sid": 291404276706171,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}
