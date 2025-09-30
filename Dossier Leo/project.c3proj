@@ -43,10 +43,8 @@
 			"Souris",
 			"stkFood",
 			"Bouton",
-			"Texte",
 			"Usine",
-			"txtMaterials",
-			"Sprite"
+			"txtMaterials"
 		],
 		"subfolders": []
 	},
