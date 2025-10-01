@@ -272,6 +272,15 @@
 									"parameters": {
 										"height": "4"
 									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "Ligne",
+									"sid": 978710188198927,
+									"parameters": {
+										"x": "srcX",
+										"y": "srcY"
+									}
 								}
 							],
 							"sid": 184443756343275
