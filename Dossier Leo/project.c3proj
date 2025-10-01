@@ -53,7 +53,11 @@
 			"Usine",
 			"txtMaterials",
 			"ImageSVG",
-			"backgroundLobby"
+			"backgroundLobby",
+			"spritedepart",
+			"Sprite",
+			"btnconfirme",
+			"btnback"
 		],
 		"subfolders": []
 	},
@@ -66,13 +70,17 @@
 	},
 	"layouts": {
 		"items": [
-			"Lobby"
+			"Lobby",
+			"Preparation",
+			"Map1"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"FeuilledEvenementLobby"
+			"FeuilledEvenementLobby",
+			"Feuille d'EvènementsPreparation",
+			"Feuille d'EvènementsMap1"
 		],
 		"subfolders": []
 	},
