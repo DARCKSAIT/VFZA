@@ -57,7 +57,11 @@
 			"spritedepart",
 			"Sprite",
 			"btnconfirme",
-			"btnback"
+			"btnback",
+			"herostarter",
+			"Ligne",
+			"Info",
+			"Noeud"
 		],
 		"subfolders": []
 	},
