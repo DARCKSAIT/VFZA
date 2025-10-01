@@ -180,6 +180,32 @@
 				}
 			],
 			"sid": 541975113892935
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Souris",
+					"sid": 349506473368305,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "spritedepart"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 554938262138910,
+					"parameters": {
+						"layout": "Preparation"
+					}
+				}
+			],
+			"sid": 742529328532960
 		}
 	],
 	"sid": 167074243774044

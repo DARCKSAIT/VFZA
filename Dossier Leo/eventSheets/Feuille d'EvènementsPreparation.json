@@ -1,0 +1,48 @@
+{
+	"name": "Feuille d'EvènementsPreparation",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "btnback",
+					"sid": 663942910103521
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 102702868005832,
+					"parameters": {
+						"layout": "Lobby"
+					}
+				}
+			],
+			"sid": 306602238288697
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "btnconfirme",
+					"sid": 342499875618555
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 231090267346100,
+					"parameters": {
+						"layout": "Map1"
+					}
+				}
+			],
+			"sid": 789908263526069
+		}
+	],
+	"sid": 873749357197980
+}
