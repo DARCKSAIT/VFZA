@@ -1,5 +1,319 @@
 {
 	"name": "Feuille d'EvènementsMap1",
-	"events": [],
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Colonnes",
+			"type": "number",
+			"initialValue": "5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 651418014633237
+		},
+		{
+			"eventType": "variable",
+			"name": "MinParCol",
+			"type": "number",
+			"initialValue": "2",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 513406374731803
+		},
+		{
+			"eventType": "variable",
+			"name": "MaxParCol",
+			"type": "number",
+			"initialValue": "4",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 904390565977683
+		},
+		{
+			"eventType": "variable",
+			"name": "Xpas",
+			"type": "number",
+			"initialValue": "200",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 501965904958129
+		},
+		{
+			"eventType": "variable",
+			"name": "Ypas",
+			"type": "number",
+			"initialValue": "120",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 173442552687801
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 471984053837876
+				}
+			],
+			"actions": [],
+			"sid": 689462262736978,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for",
+							"objectClass": "System",
+							"sid": 477658041093093,
+							"parameters": {
+								"name": "\"c\"",
+								"start-index": "0",
+								"end-index": "Colonnes - 1"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 926766762517706,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "repeat",
+									"objectClass": "System",
+									"sid": 991896792681815,
+									"parameters": {
+										"count": "int(random(MinParCol, MaxParCol+1))"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 355559908035721,
+									"parameters": {
+										"object-to-create": "Noeud",
+										"layer": "0",
+										"x": "150 + loopindex(\"c\") * Xpas",
+										"y": "200 + loopindex * Ypas",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Noeud",
+									"sid": 887898720124893,
+									"parameters": {
+										"instance-variable": "col",
+										"value": "loopindex(\"c\")"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Noeud",
+									"sid": 341252063355506,
+									"parameters": {
+										"instance-variable": "row",
+										"value": "loopindex"
+									}
+								}
+							],
+							"sid": 269875740380888
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "for",
+					"objectClass": "System",
+					"sid": 650107933614352,
+					"parameters": {
+						"name": "\"c\"",
+						"start-index": "0",
+						"end-index": "Colonnes - 2"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 552373402418212,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "srcX",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 603906807749758
+				},
+				{
+					"eventType": "variable",
+					"name": "srcY",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 139655352421238
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 273573466297030,
+							"parameters": {
+								"object": "Noeud"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Noeud",
+							"sid": 430483308450600,
+							"parameters": {
+								"instance-variable": "col",
+								"comparison": 0,
+								"value": "loopindex(\"c\")"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 295547088886653,
+							"parameters": {
+								"variable": "srcX",
+								"value": "Noeud.X"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 588273453121368,
+							"parameters": {
+								"variable": "srcY",
+								"value": "Noeud.Y"
+							}
+						}
+					],
+					"sid": 912275759257159,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Noeud",
+									"sid": 833864625019502,
+									"parameters": {
+										"instance-variable": "col",
+										"comparison": 0,
+										"value": "loopindex(\"c\") + 1"
+									}
+								},
+								{
+									"id": "pick-random-instance",
+									"objectClass": "System",
+									"sid": 156413513935053,
+									"parameters": {
+										"object": "Noeud"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 114569000660391,
+									"parameters": {
+										"object-to-create": "Ligne",
+										"layer": "0",
+										"x": "srcX",
+										"y": "srcY",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-angle-toward-position",
+									"objectClass": "Ligne",
+									"sid": 303402352150395,
+									"parameters": {
+										"x": "Noeud.X",
+										"y": "Noeud.Y"
+									}
+								},
+								{
+									"id": "set-width",
+									"objectClass": "Ligne",
+									"sid": 427146388524034,
+									"parameters": {
+										"width": "distance(srcX, srcY, Noeud.X, Noeud.Y)"
+									}
+								},
+								{
+									"id": "set-height",
+									"objectClass": "Ligne",
+									"sid": 571345312718964,
+									"parameters": {
+										"height": "4"
+									}
+								}
+							],
+							"sid": 184443756343275
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Souris",
+					"sid": 367776012472406,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Noeud"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-scale",
+					"objectClass": "Noeud",
+					"sid": 890398800739309,
+					"parameters": {
+						"scale": "1.2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Info",
+					"sid": 748951359786365,
+					"parameters": {
+						"text": "\"col=\" & Noeud.col & \" row=\" & Noeud.row"
+					}
+				}
+			],
+			"sid": 511929508365235
+		}
+	],
 	"sid": 582260158408257
 }
