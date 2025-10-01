@@ -7,6 +7,43 @@
 			"subLayers": [],
 			"instances": [
 				{
+					"type": "backgroundLobby",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 8,
+					"sid": 351308550309826,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 351308550309826,
+						"expanded": true
+					},
+					"showing": false,
+					"locked": false,
+					"world": {
+						"x": 978.839278094698,
+						"y": 541.0106024404593,
+						"width": 2178.343629991493,
+						"height": 1276.1773615409688,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": -5
+					}
+				},
+				{
 					"type": "Ferme",
 					"properties": {
 						"initially-visible": true,
@@ -46,7 +83,7 @@
 				{
 					"type": "txtFood",
 					"properties": {
-						"text": "",
+						"text": "Food : 0",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 32,
@@ -84,59 +121,6 @@
 						"y": 4.382040023803711,
 						"width": 231,
 						"height": 84,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "stkFood",
-					"properties": {
-						"text": "",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 32,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							0,
-							0,
-							0,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"text-direction": "ltr",
-						"icon-set": -1,
-						"initially-visible": true,
-						"origin": "top-left",
-						"read-aloud": false
-					},
-					"uid": 5,
-					"sid": 476211074883417,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 476211074883417,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 134,
-						"y": 458,
-						"width": 300,
-						"height": 67,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -189,7 +173,7 @@
 				{
 					"type": "txtMaterials",
 					"properties": {
-						"text": "",
+						"text": "Materials : 0",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 32,
