@@ -1,0 +1,9 @@
+{
+	"name": "Btnhardheal",
+	"plugin-id": "Button",
+	"sid": 221607767180640,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": []
+}

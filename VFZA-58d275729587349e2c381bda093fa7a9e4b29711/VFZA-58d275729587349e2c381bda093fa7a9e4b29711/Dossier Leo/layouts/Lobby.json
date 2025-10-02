@@ -83,7 +83,7 @@
 				{
 					"type": "txtFood",
 					"properties": {
-						"text": "Food : 0",
+						"text": "",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 32,
@@ -173,7 +173,7 @@
 				{
 					"type": "txtMaterials",
 					"properties": {
-						"text": "Materials : 0",
+						"text": "",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 32,

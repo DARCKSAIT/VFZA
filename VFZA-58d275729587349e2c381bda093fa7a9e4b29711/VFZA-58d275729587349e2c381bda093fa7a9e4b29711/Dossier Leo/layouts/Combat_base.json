@@ -1,5 +1,5 @@
 {
-	"name": "typesDeNoeud2",
+	"name": "Combat_base",
 	"layers": [
 		{
 			"name": "Layer 0",
@@ -7,7 +7,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Ferme",
+					"type": "Sprite8",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -16,21 +16,21 @@
 						"live-preview": false
 					},
 					"uid": 29,
-					"sid": 889082453438695,
+					"sid": 109820917479547,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 889082453438695,
+						"sid": 109820917479547,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 496,
-						"y": 251,
-						"width": 404,
-						"height": 407,
+						"x": 958,
+						"y": 547,
+						"width": 1967,
+						"height": 1126,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -39,8 +39,8 @@
 							1,
 							1
 						],
-						"angle": 6.282494377989624,
-						"zElevation": 0
+						"angle": 0,
+						"zElevation": -3
 					}
 				},
 				{
@@ -68,8 +68,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 861,
-						"y": 407,
+						"x": 1126,
+						"y": 76,
 						"width": 407,
 						"height": 72,
 						"originX": 0,
@@ -126,5 +126,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "typesDeNoeud2"
+	"eventSheet": "typesDeNoeud2_combat"
 }

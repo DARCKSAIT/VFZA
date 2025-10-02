@@ -1,0 +1,125 @@
+{
+	"name": "typesDeNoeud4_heal",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Btnlowheal",
+					"sid": 768829073015946
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 532984673270130,
+					"parameters": {
+						"variable": "Food",
+						"comparison": 5,
+						"value": "100"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 105070631889374,
+					"parameters": {
+						"variable": "Food",
+						"value": "100"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 621913582078975,
+					"parameters": {
+						"variable": "health_player",
+						"value": "15"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 275848201660705,
+					"parameters": {
+						"layout": "Map1"
+					}
+				}
+			],
+			"sid": 844860182625021
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Btnhardheal",
+					"sid": 773178079665115
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 615821202186898,
+					"parameters": {
+						"variable": "Food",
+						"comparison": 5,
+						"value": "200"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 802615149438765,
+					"parameters": {
+						"variable": "Food",
+						"value": "200"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 374948893569988,
+					"parameters": {
+						"variable": "health_player",
+						"value": "30"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 760786067279310,
+					"parameters": {
+						"layout": "Map1"
+					}
+				}
+			],
+			"sid": 241031896511907
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "btnback",
+					"sid": 349322934094602
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 923348989031792,
+					"parameters": {
+						"layout": "Map1"
+					}
+				}
+			],
+			"sid": 491306035629421
+		}
+	],
+	"sid": 291581941913416
+}

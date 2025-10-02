@@ -5,22 +5,68 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-clicked",
-					"objectClass": "btnback",
-					"sid": 797651093096817
+					"id": "on-object-clicked",
+					"objectClass": "Souris",
+					"sid": 143726580420320,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Sprite7"
+					}
 				}
 			],
 			"actions": [
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 854066501896375,
+					"sid": 238926210600819,
 					"parameters": {
 						"layout": "Map1"
 					}
 				}
 			],
-			"sid": 343966736031905
+			"sid": 515358744474544
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 975786972491144
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 520635189206114,
+					"parameters": {
+						"variable": "Food",
+						"comparison": 5,
+						"value": "50"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 203242941451325,
+					"parameters": {
+						"variable": "Food",
+						"value": "50"
+					}
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 334660612676367,
+					"parameters": {
+						"variable": "health_player",
+						"value": "25"
+					}
+				}
+			],
+			"sid": 471678197159673
 		}
 	],
 	"sid": 182444962502396

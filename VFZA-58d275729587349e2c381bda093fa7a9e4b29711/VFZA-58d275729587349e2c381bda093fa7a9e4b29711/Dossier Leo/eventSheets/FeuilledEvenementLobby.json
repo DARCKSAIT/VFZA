@@ -66,14 +66,6 @@
 					}
 				},
 				{
-					"id": "set-text",
-					"objectClass": "txtFood",
-					"sid": 555678217951478,
-					"parameters": {
-						"text": "\"Food : \" & floor(Food)"
-					}
-				},
-				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
 					"sid": 570131607172769,
@@ -106,10 +98,18 @@
 				{
 					"id": "add-to-eventvar",
 					"objectClass": "System",
-					"sid": 805116164322098,
+					"sid": 774002266021638,
 					"parameters": {
 						"variable": "stkFood",
-						"value": "0.0025"
+						"value": "0.2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "txtFood",
+					"sid": 561297549047059,
+					"parameters": {
+						"text": "\"Food : \" & floor(Food)"
 					}
 				}
 			],
@@ -140,14 +140,6 @@
 					}
 				},
 				{
-					"id": "set-text",
-					"objectClass": "txtMaterials",
-					"sid": 590364329969123,
-					"parameters": {
-						"text": "\"Materials : \" & floor(Materials)"
-					}
-				},
-				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
 					"sid": 886405516170487,
@@ -172,10 +164,18 @@
 				{
 					"id": "add-to-eventvar",
 					"objectClass": "System",
-					"sid": 316903396452506,
+					"sid": 189784757680370,
 					"parameters": {
 						"variable": "stkMaterials",
-						"value": "0.001"
+						"value": "0.01"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "txtMaterials",
+					"sid": 970187871369894,
+					"parameters": {
+						"text": "\"Materials : \" & floor(Materials)"
 					}
 				}
 			],

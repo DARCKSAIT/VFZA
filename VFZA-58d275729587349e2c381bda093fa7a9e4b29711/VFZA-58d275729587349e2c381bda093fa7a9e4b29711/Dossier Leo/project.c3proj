@@ -80,7 +80,7 @@
 			"btnback",
 			"herostarter",
 			"Ligne",
-			"Info",
+			"Info_health_player",
 			"Noeud",
 			"SpriteFont",
 			"Sprite2",
@@ -89,7 +89,13 @@
 			"Sprite5",
 			"stockmaps",
 			"LocalStorage",
-			"dbg"
+			"dbg",
+			"Btnlowheal",
+			"Btnhardheal",
+			"Text",
+			"Sprite6",
+			"Sprite7",
+			"Sprite8"
 		],
 		"subfolders": []
 	},
@@ -105,11 +111,11 @@
 			"Lobby",
 			"Preparation",
 			"Map1",
-			"typesDeNoeud0",
+			"piége",
 			"typesDeNoeud1",
-			"typesDeNoeud2",
+			"Combat_base",
 			"typesDeNoeud3",
-			"typesDeNoeud4"
+			"heal"
 		],
 		"subfolders": []
 	},
@@ -120,9 +126,9 @@
 			"Feuille d'EvènementsMap1",
 			"typesDeNoeud0",
 			"typesDeNoeud1",
-			"typesDeNoeud2",
+			"typesDeNoeud2_combat",
 			"typesDeNoeud3",
-			"typesDeNoeud4"
+			"typesDeNoeud4_heal"
 		],
 		"subfolders": []
 	},

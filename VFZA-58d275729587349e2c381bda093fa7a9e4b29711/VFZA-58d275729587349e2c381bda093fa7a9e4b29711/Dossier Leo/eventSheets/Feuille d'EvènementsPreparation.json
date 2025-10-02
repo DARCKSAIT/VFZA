@@ -60,6 +60,15 @@
 					"parameters": {
 						"key": "\"mapPattern\""
 					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 546110928242319,
+					"parameters": {
+						"variable": "health_player",
+						"value": "max_health_player"
+					}
 				}
 			],
 			"sid": 365932781640737

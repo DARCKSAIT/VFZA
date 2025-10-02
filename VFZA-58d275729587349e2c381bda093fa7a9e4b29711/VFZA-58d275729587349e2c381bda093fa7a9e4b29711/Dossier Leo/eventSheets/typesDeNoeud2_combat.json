@@ -1,5 +1,5 @@
 {
-	"name": "typesDeNoeud4",
+	"name": "typesDeNoeud2_combat",
 	"events": [
 		{
 			"eventType": "block",
@@ -7,21 +7,21 @@
 				{
 					"id": "on-clicked",
 					"objectClass": "btnback",
-					"sid": 616032438985054
+					"sid": 529395987823162
 				}
 			],
 			"actions": [
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 845721247211984,
+					"sid": 366958670911594,
 					"parameters": {
 						"layout": "Map1"
 					}
 				}
 			],
-			"sid": 579554075599907
+			"sid": 227534022766858
 		}
 	],
-	"sid": 291581941913416
+	"sid": 822543069397088
 }
