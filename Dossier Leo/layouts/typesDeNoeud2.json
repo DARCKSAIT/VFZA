@@ -7,7 +7,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Ferme",
+					"type": "Sprite7",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -15,22 +15,22 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 29,
-					"sid": 889082453438695,
+					"uid": 31,
+					"sid": 640149646227248,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 889082453438695,
+						"sid": 640149646227248,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 496,
-						"y": 251,
-						"width": 404,
-						"height": 407,
+						"x": 957.8787878787879,
+						"y": 441.24242424242425,
+						"width": 1920,
+						"height": 1280,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -39,7 +39,7 @@
 							1,
 							1
 						],
-						"angle": 6.282494377989624,
+						"angle": 0,
 						"zElevation": 0
 					}
 				}
