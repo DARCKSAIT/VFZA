@@ -46,7 +46,7 @@
 				{
 					"type": "Text",
 					"properties": {
-						"text": "Vous avez été piegé par des humain . Ils vous laisse blessé au sol.",
+						"text": "Vous avez été piegé par des humain . Ils vous laisse blessé au sol.\n\n-50 food \n-25 vie",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 40.70000000000001,
@@ -140,5 +140,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "typesDeNoeud0"
+	"eventSheet": "typesDeNoeud0piege"
 }
