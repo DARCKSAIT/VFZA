@@ -1,0 +1,98 @@
+{
+	"name": "typesDeNoeud1",
+	"layers": [
+		{
+			"name": "Layer 0",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "herostarter",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 28,
+					"sid": 529451115002604,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 529451115002604,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 608,
+						"y": 187,
+						"width": 126.732421875,
+						"height": 256.484375,
+						"originX": 0.5646123260437376,
+						"originY": 0.4816326530612245,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 238310863801370,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		}
+	],
+	"scene-graphs-folder-root": {
+		"items": [],
+		"subfolders": []
+	},
+	"sid": 450805772636466,
+	"nonworld-instances": [],
+	"effectTypes": [],
+	"width": 3840,
+	"height": 2160,
+	"unboundedScrolling": false,
+	"vpX": 0.5,
+	"vpY": 0.5,
+	"projection": "perspective",
+	"eventSheet": "typesDeNoeud1"
+}

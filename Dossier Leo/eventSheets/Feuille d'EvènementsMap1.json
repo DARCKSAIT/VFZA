@@ -71,18 +71,18 @@
 							"objectClass": "System",
 							"sid": 731303350631054,
 							"parameters": {
-								"object": "Noeudboss"
+								"object": "Noeud"
 							}
 						}
 					],
 					"actions": [
 						{
 							"id": "set-instvar-value",
-							"objectClass": "Noeudboss",
-							"sid": 730111984231102,
+							"objectClass": "Noeud",
+							"sid": 392879516103735,
 							"parameters": {
 								"instance-variable": "typeDeNoeud",
-								"value": "floor(random(4))"
+								"value": "floor(random(5))"
 							}
 						}
 					],
@@ -100,14 +100,14 @@
 					"parameters": {
 						"mouse-button": "left",
 						"click-type": "clicked",
-						"object-clicked": "Noeudboss"
+						"object-clicked": "Noeud"
 					}
 				}
 			],
 			"actions": [
 				{
 					"id": "set-scale",
-					"objectClass": "Noeudboss",
+					"objectClass": "Noeud",
 					"sid": 890398800739309,
 					"parameters": {
 						"scale": "1.2"
@@ -118,11 +118,181 @@
 					"objectClass": "Info",
 					"sid": 465289667703162,
 					"parameters": {
-						"text": "\"col=\" & Noeudboss.col & \" row=\" & Noeudboss.row & \"typesDeNoeud=\" & Noeudboss.typeDeNoeud"
+						"text": "\"col=\" & Noeud.col & \" row=\" & Noeud.row & \"typesDeNoeud=\" & Noeud.typeDeNoeud"
 					}
 				}
 			],
 			"sid": 511929508365235
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "herostarter",
+					"sid": 246621803774784,
+					"parameters": {
+						"object": "Noeud"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Noeud",
+					"sid": 636410199037851,
+					"parameters": {
+						"instance-variable": "typeDeNoeud",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 933077693682359,
+					"parameters": {
+						"layout": "typesDeNoeud0"
+					}
+				}
+			],
+			"sid": 413546477047961
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "herostarter",
+					"sid": 883545879687603,
+					"parameters": {
+						"object": "Noeud"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Noeud",
+					"sid": 388803154509863,
+					"parameters": {
+						"instance-variable": "typeDeNoeud",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 749700093956078,
+					"parameters": {
+						"layout": "typesDeNoeud1"
+					}
+				}
+			],
+			"sid": 413208706911471
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "herostarter",
+					"sid": 969270602595342,
+					"parameters": {
+						"object": "Noeud"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Noeud",
+					"sid": 165840816206397,
+					"parameters": {
+						"instance-variable": "typeDeNoeud",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 172753032076386,
+					"parameters": {
+						"layout": "typesDeNoeud2"
+					}
+				}
+			],
+			"sid": 490158171781441
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "herostarter",
+					"sid": 111712260502417,
+					"parameters": {
+						"object": "Noeud"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Noeud",
+					"sid": 344437696496454,
+					"parameters": {
+						"instance-variable": "typeDeNoeud",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 307067402345643,
+					"parameters": {
+						"layout": "typesDeNoeud3"
+					}
+				}
+			],
+			"sid": 406489219376530
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "herostarter",
+					"sid": 532383811110716,
+					"parameters": {
+						"object": "Noeud"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Noeud",
+					"sid": 474425959720880,
+					"parameters": {
+						"instance-variable": "typeDeNoeud",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 574750185456461,
+					"parameters": {
+						"layout": "typesDeNoeud4"
+					}
+				}
+			],
+			"sid": 478104597408779
 		}
 	],
 	"sid": 582260158408257

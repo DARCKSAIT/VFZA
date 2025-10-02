@@ -1,5 +1,5 @@
 {
-	"name": "Noeudboss",
+	"name": "Noeud",
 	"plugin-id": "Sprite",
 	"sid": 600810973420338,
 	"isGlobal": false,
@@ -34,15 +34,15 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
-						"originX": 0.252,
-						"originY": 0.528,
+						"width": 131,
+						"height": 101,
+						"originX": -0.07633587786259542,
+						"originY": 0.4554455445544556,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 3248038,
+						"imageSpriteId": 6907540,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""

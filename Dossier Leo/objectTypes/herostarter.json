@@ -5,22 +5,28 @@
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "DragnDrop",
+			"name": "DragDrop",
+			"sid": 292065922196799
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 1024,
-						"height": 1024,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 503,
+						"height": 980,
+						"originX": 0.5646123260437376,
+						"originY": 0.4816326530612245,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 9264211,
+						"imageSpriteId": 4878233,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""

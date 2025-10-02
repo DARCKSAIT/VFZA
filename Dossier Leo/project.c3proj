@@ -47,6 +47,13 @@
 			"name": "Text",
 			"author": "Scirra",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "DragnDrop",
+			"name": "Drag & Drop",
+			"author": "Scirra",
+			"bundled": false
 		}
 	],
 	"uniqueId": "vw7i2vsqb1o",
@@ -61,16 +68,16 @@
 			"txtMaterials",
 			"backgroundLobby",
 			"spritedepart",
-			"backpreparation",
+			"Sprite",
 			"btnconfirme",
 			"btnback",
 			"herostarter",
 			"Ligne",
 			"Info",
-			"Noeudboss",
+			"Noeud",
 			"SpriteFont",
 			"SVGPicture",
-			"backmaps"
+			"Sprite2"
 		],
 		"subfolders": []
 	},
@@ -85,7 +92,12 @@
 		"items": [
 			"Lobby",
 			"Preparation",
-			"Map1"
+			"Map1",
+			"typesDeNoeud0",
+			"typesDeNoeud1",
+			"typesDeNoeud2",
+			"typesDeNoeud3",
+			"typesDeNoeud4"
 		],
 		"subfolders": []
 	},
@@ -93,7 +105,12 @@
 		"items": [
 			"FeuilledEvenementLobby",
 			"Feuille d'EvènementsPreparation",
-			"Feuille d'EvènementsMap1"
+			"Feuille d'EvènementsMap1",
+			"typesDeNoeud0",
+			"typesDeNoeud1",
+			"typesDeNoeud2",
+			"typesDeNoeud3",
+			"typesDeNoeud4"
 		],
 		"subfolders": []
 	},

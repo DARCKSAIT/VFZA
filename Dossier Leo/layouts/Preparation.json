@@ -7,7 +7,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "backpreparation",
+					"type": "Sprite",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -134,7 +134,14 @@
 					"sid": 726631711544074,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 726631711544074,
 						"expanded": true
@@ -144,10 +151,10 @@
 					"world": {
 						"x": 702,
 						"y": 396,
-						"width": 258,
-						"height": 268,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 126.732421875,
+						"height": 256.484375,
+						"originX": 0.5646123260437376,
+						"originY": 0.4816326530612245,
 						"color": [
 							1,
 							1,

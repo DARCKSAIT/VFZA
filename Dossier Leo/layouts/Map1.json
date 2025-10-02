@@ -7,7 +7,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "backmaps",
+					"type": "Sprite2",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -97,7 +97,7 @@
 					}
 				},
 				{
-					"type": "Noeudboss",
+					"type": "Noeud",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -123,10 +123,10 @@
 					"world": {
 						"x": 1559,
 						"y": 764,
-						"width": 250,
-						"height": 250,
-						"originX": 0.252,
-						"originY": 0.528,
+						"width": 131,
+						"height": 101,
+						"originX": -0.07633587786259542,
+						"originY": 0.4554455445544556,
 						"color": [
 							1,
 							1,
@@ -138,7 +138,7 @@
 					}
 				},
 				{
-					"type": "Noeudboss",
+					"type": "Noeud",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -164,10 +164,10 @@
 					"world": {
 						"x": 1243,
 						"y": 813,
-						"width": 250,
-						"height": 250,
-						"originX": 0.252,
-						"originY": 0.528,
+						"width": 131,
+						"height": 101,
+						"originX": -0.07633587786259542,
+						"originY": 0.4554455445544556,
 						"color": [
 							1,
 							1,
@@ -179,7 +179,7 @@
 					}
 				},
 				{
-					"type": "Noeudboss",
+					"type": "Noeud",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -205,10 +205,10 @@
 					"world": {
 						"x": 393,
 						"y": 757,
-						"width": 250,
-						"height": 250,
-						"originX": 0.252,
-						"originY": 0.528,
+						"width": 131,
+						"height": 101,
+						"originX": -0.07633587786259542,
+						"originY": 0.4554455445544556,
 						"color": [
 							1,
 							1,
@@ -220,7 +220,7 @@
 					}
 				},
 				{
-					"type": "Noeudboss",
+					"type": "Noeud",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -246,10 +246,10 @@
 					"world": {
 						"x": 688,
 						"y": 676,
-						"width": 250,
-						"height": 250,
-						"originX": 0.252,
-						"originY": 0.528,
+						"width": 131,
+						"height": 101,
+						"originX": -0.07633587786259542,
+						"originY": 0.4554455445544556,
 						"color": [
 							1,
 							1,
@@ -261,7 +261,7 @@
 					}
 				},
 				{
-					"type": "Noeudboss",
+					"type": "Noeud",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -287,10 +287,10 @@
 					"world": {
 						"x": 1478,
 						"y": 539,
-						"width": 250,
-						"height": 250,
-						"originX": 0.252,
-						"originY": 0.528,
+						"width": 131,
+						"height": 101,
+						"originX": -0.07633587786259542,
+						"originY": 0.4554455445544556,
 						"color": [
 							1,
 							1,
@@ -302,7 +302,7 @@
 					}
 				},
 				{
-					"type": "Noeudboss",
+					"type": "Noeud",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -328,10 +328,10 @@
 					"world": {
 						"x": 1113,
 						"y": 498,
-						"width": 250,
-						"height": 250,
-						"originX": 0.252,
-						"originY": 0.528,
+						"width": 131,
+						"height": 101,
+						"originX": -0.07633587786259542,
+						"originY": 0.4554455445544556,
 						"color": [
 							1,
 							1,
@@ -343,7 +343,7 @@
 					}
 				},
 				{
-					"type": "Noeudboss",
+					"type": "Noeud",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -369,10 +369,10 @@
 					"world": {
 						"x": 891,
 						"y": 593,
-						"width": 250,
-						"height": 250,
-						"originX": 0.252,
-						"originY": 0.528,
+						"width": 131,
+						"height": 101,
+						"originX": -0.07633587786259542,
+						"originY": 0.4554455445544556,
 						"color": [
 							1,
 							1,
@@ -384,7 +384,7 @@
 					}
 				},
 				{
-					"type": "Noeudboss",
+					"type": "Noeud",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -410,10 +410,10 @@
 					"world": {
 						"x": 501,
 						"y": 473,
-						"width": 250,
-						"height": 250,
-						"originX": 0.252,
-						"originY": 0.528,
+						"width": 131,
+						"height": 101,
+						"originX": -0.07633587786259542,
+						"originY": 0.4554455445544556,
 						"color": [
 							1,
 							1,
@@ -425,7 +425,7 @@
 					}
 				},
 				{
-					"type": "Noeudboss",
+					"type": "Noeud",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -451,10 +451,10 @@
 					"world": {
 						"x": 855,
 						"y": 424,
-						"width": 250,
-						"height": 250,
-						"originX": 0.252,
-						"originY": 0.528,
+						"width": 131,
+						"height": 101,
+						"originX": -0.07633587786259542,
+						"originY": 0.4554455445544556,
 						"color": [
 							1,
 							1,
@@ -466,7 +466,7 @@
 					}
 				},
 				{
-					"type": "Noeudboss",
+					"type": "Noeud",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -492,10 +492,10 @@
 					"world": {
 						"x": 1322,
 						"y": 314,
-						"width": 250,
-						"height": 250,
-						"originX": 0.252,
-						"originY": 0.528,
+						"width": 131,
+						"height": 101,
+						"originX": -0.07633587786259542,
+						"originY": 0.4554455445544556,
 						"color": [
 							1,
 							1,
@@ -507,7 +507,7 @@
 					}
 				},
 				{
-					"type": "Noeudboss",
+					"type": "Noeud",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -521,7 +521,7 @@
 					"instanceVariables": {
 						"col": 0,
 						"row": 0,
-						"typeDeNoeud": 5
+						"typeDeNoeud": 0
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -533,10 +533,54 @@
 					"world": {
 						"x": 574,
 						"y": 255,
-						"width": 250,
-						"height": 250,
-						"originX": 0.252,
-						"originY": 0.528,
+						"width": 131,
+						"height": 101,
+						"originX": -0.07633587786259542,
+						"originY": 0.4554455445544556,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "herostarter",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 26,
+					"sid": 540857059875330,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 540857059875330,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1019,
+						"y": 943,
+						"width": 98.2421875,
+						"height": 217.24609375,
+						"originX": 0.5646123260437376,
+						"originY": 0.4816326530612245,
 						"color": [
 							1,
 							1,
