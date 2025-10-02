@@ -27,10 +27,17 @@
 					"showing": true,
 					"locked": false,
 					"world": {
+<<<<<<< HEAD
 						"x": 961.9392460450006,
 						"y": 122.97493200439669,
 						"width": 1920,
 						"height": 1920,
+=======
+						"x": 949,
+						"y": 540,
+						"width": 1914,
+						"height": 1080,
+>>>>>>> 58d275729587349e2c381bda093fa7a9e4b29711
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

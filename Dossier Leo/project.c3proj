@@ -8,22 +8,29 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Arr",
+			"name": "Array",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Button",
-			"name": "Bouton",
+			"name": "Button",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "Mouse",
-			"name": "Souris",
+			"name": "Mouse",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "SVGPicture",
-			"name": "Image SVG",
+			"name": "SVG Picture",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -37,21 +44,21 @@
 		{
 			"type": "plugin",
 			"id": "Spritefont2",
-			"name": "Police Sprite",
+			"name": "Sprite font",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "Text",
-			"name": "Texte",
+			"name": "Text",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "DragnDrop",
-			"name": "Glisser déposer",
+			"name": "Drag & Drop",
 			"author": "Scirra",
 			"bundled": false
 		}
@@ -81,9 +88,13 @@
 			"Sprite3",
 			"Sprite4",
 			"Sprite5",
+<<<<<<< HEAD
 			"Sprite6",
 			"Sprite7",
 			"Sprite8"
+=======
+			"Array"
+>>>>>>> 58d275729587349e2c381bda093fa7a9e4b29711
 		],
 		"subfolders": []
 	},

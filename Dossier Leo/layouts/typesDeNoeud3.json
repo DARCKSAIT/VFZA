@@ -5,6 +5,7 @@
 			"name": "Layer 0",
 			"overriden": 0,
 			"subLayers": [],
+<<<<<<< HEAD
 			"instances": [
 				{
 					"type": "Usine",
@@ -81,6 +82,9 @@
 					}
 				}
 			],
+=======
+			"instances": [],
+>>>>>>> 58d275729587349e2c381bda093fa7a9e4b29711
 			"sid": 626204061416041,
 			"effectTypes": [],
 			"isInitiallyVisible": true,

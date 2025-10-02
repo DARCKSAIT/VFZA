@@ -60,7 +60,139 @@
 					"sid": 471984053837876
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "Array",
+					"sid": 485380164998805,
+					"parameters": {
+						"width": "11",
+						"height": "1",
+						"depth": "1"
+					}
+				},
+				{
+					"id": "set-at-xyz",
+					"objectClass": "Array",
+					"sid": 443125246890097,
+					"parameters": {
+						"x": "0",
+						"y": "0",
+						"z": "0",
+						"value": "4"
+					}
+				},
+				{
+					"id": "set-at-xyz",
+					"objectClass": "Array",
+					"sid": 756221035154621,
+					"parameters": {
+						"x": "1",
+						"y": "0",
+						"z": "0",
+						"value": "3"
+					}
+				},
+				{
+					"id": "set-at-xyz",
+					"objectClass": "Array",
+					"sid": 487947012878734,
+					"parameters": {
+						"x": "2",
+						"y": "0",
+						"z": "0",
+						"value": "3"
+					}
+				},
+				{
+					"id": "set-at-xyz",
+					"objectClass": "Array",
+					"sid": 482846639667326,
+					"parameters": {
+						"x": "3",
+						"y": "0",
+						"z": "0",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-at-xyz",
+					"objectClass": "Array",
+					"sid": 331735513566585,
+					"parameters": {
+						"x": "4",
+						"y": "0",
+						"z": "0",
+						"value": "2"
+					}
+				},
+				{
+					"id": "set-at-xyz",
+					"objectClass": "Array",
+					"sid": 983493674374465,
+					"parameters": {
+						"x": "5",
+						"y": "0",
+						"z": "0",
+						"value": "2"
+					}
+				},
+				{
+					"id": "set-at-xyz",
+					"objectClass": "Array",
+					"sid": 514563443062894,
+					"parameters": {
+						"x": "6",
+						"y": "0",
+						"z": "0",
+						"value": "2"
+					}
+				},
+				{
+					"id": "set-at-xyz",
+					"objectClass": "Array",
+					"sid": 779229038865067,
+					"parameters": {
+						"x": "7",
+						"y": "0",
+						"z": "0",
+						"value": "2"
+					}
+				},
+				{
+					"id": "set-at-xyz",
+					"objectClass": "Array",
+					"sid": 920407750522390,
+					"parameters": {
+						"x": "8",
+						"y": "0",
+						"z": "0",
+						"value": "2"
+					}
+				},
+				{
+					"id": "set-at-xyz",
+					"objectClass": "Array",
+					"sid": 539696736033165,
+					"parameters": {
+						"x": "9",
+						"y": "0",
+						"z": "0",
+						"value": "2"
+					}
+				},
+				{
+					"id": "set-at-xyz",
+					"objectClass": "Array",
+					"sid": 982026416325226,
+					"parameters": {
+						"x": "10",
+						"y": "0",
+						"z": "0",
+						"value": "2"
+					}
+				}
+			],
 			"sid": 689462262736978,
 			"children": [
 				{
@@ -79,10 +211,10 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "Noeud",
-							"sid": 392879516103735,
+							"sid": 782365696346940,
 							"parameters": {
 								"instance-variable": "typeDeNoeud",
-								"value": "floor(random(5))"
+								"value": "Array.At(loopindex)"
 							}
 						}
 					],
