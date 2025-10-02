@@ -1,0 +1,212 @@
+{
+	"name": "FeuilledEvenementLobby",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Food",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 647613332051955
+		},
+		{
+			"eventType": "variable",
+			"name": "Materials",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 322086340408764
+		},
+		{
+			"eventType": "variable",
+			"name": "stkFood",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 602151861658911
+		},
+		{
+			"eventType": "variable",
+			"name": "stkMaterials",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 244814961622291
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Souris",
+					"sid": 420547272002848,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Ferme"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 361352651133284,
+					"parameters": {
+						"variable": "Food",
+						"value": "stkFood"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "txtFood",
+					"sid": 555678217951478,
+					"parameters": {
+						"text": "\"Food : \" & floor(Food)"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 570131607172769,
+					"parameters": {
+						"variable": "stkFood",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 829334659672094
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 876602914971866
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "stkFood",
+					"sid": 387714174383116,
+					"parameters": {
+						"text": "\"debugFood\" & floor(stkFood)"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 805116164322098,
+					"parameters": {
+						"variable": "stkFood",
+						"value": "0.0025"
+					}
+				}
+			],
+			"sid": 726262451939710
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Souris",
+					"sid": 181543669935379,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Usine"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 622563106400019,
+					"parameters": {
+						"variable": "Materials",
+						"value": "stkMaterials"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "txtMaterials",
+					"sid": 590364329969123,
+					"parameters": {
+						"text": "\"Materials : \" & floor(Materials)"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 886405516170487,
+					"parameters": {
+						"variable": "stkMaterials",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 198988773111024
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 593399313655088
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 316903396452506,
+					"parameters": {
+						"variable": "stkMaterials",
+						"value": "0.001"
+					}
+				}
+			],
+			"sid": 541975113892935
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Souris",
+					"sid": 349506473368305,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "spritedepart"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 554938262138910,
+					"parameters": {
+						"layout": "Preparation"
+					}
+				}
+			],
+			"sid": 742529328532960
+		}
+	],
+	"sid": 167074243774044
+}

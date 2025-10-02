@@ -1,0 +1,10 @@
+{
+	"name": "txtMaterials",
+	"plugin-id": "Text",
+	"sid": 290081185848747,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

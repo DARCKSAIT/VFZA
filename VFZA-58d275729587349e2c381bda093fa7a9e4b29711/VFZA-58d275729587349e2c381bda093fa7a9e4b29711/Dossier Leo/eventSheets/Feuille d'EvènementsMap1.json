@@ -1,0 +1,431 @@
+{
+	"name": "Feuille d'EvènementsMap1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Colonnes",
+			"type": "number",
+			"initialValue": "5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 651418014633237
+		},
+		{
+			"eventType": "variable",
+			"name": "MinParCol",
+			"type": "number",
+			"initialValue": "2",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 513406374731803
+		},
+		{
+			"eventType": "variable",
+			"name": "MaxParCol",
+			"type": "number",
+			"initialValue": "4",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 904390565977683
+		},
+		{
+			"eventType": "variable",
+			"name": "Xpas",
+			"type": "number",
+			"initialValue": "200",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 501965904958129
+		},
+		{
+			"eventType": "variable",
+			"name": "Ypas",
+			"type": "number",
+			"initialValue": "120",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 173442552687801
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 471984053837876
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "Array",
+					"sid": 485380164998805,
+					"parameters": {
+						"width": "11",
+						"height": "1",
+						"depth": "1"
+					}
+				},
+				{
+					"id": "set-at-xyz",
+					"objectClass": "Array",
+					"sid": 443125246890097,
+					"parameters": {
+						"x": "0",
+						"y": "0",
+						"z": "0",
+						"value": "4"
+					}
+				},
+				{
+					"id": "set-at-xyz",
+					"objectClass": "Array",
+					"sid": 756221035154621,
+					"parameters": {
+						"x": "1",
+						"y": "0",
+						"z": "0",
+						"value": "3"
+					}
+				},
+				{
+					"id": "set-at-xyz",
+					"objectClass": "Array",
+					"sid": 487947012878734,
+					"parameters": {
+						"x": "2",
+						"y": "0",
+						"z": "0",
+						"value": "3"
+					}
+				},
+				{
+					"id": "set-at-xyz",
+					"objectClass": "Array",
+					"sid": 482846639667326,
+					"parameters": {
+						"x": "3",
+						"y": "0",
+						"z": "0",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-at-xyz",
+					"objectClass": "Array",
+					"sid": 331735513566585,
+					"parameters": {
+						"x": "4",
+						"y": "0",
+						"z": "0",
+						"value": "2"
+					}
+				},
+				{
+					"id": "set-at-xyz",
+					"objectClass": "Array",
+					"sid": 983493674374465,
+					"parameters": {
+						"x": "5",
+						"y": "0",
+						"z": "0",
+						"value": "2"
+					}
+				},
+				{
+					"id": "set-at-xyz",
+					"objectClass": "Array",
+					"sid": 514563443062894,
+					"parameters": {
+						"x": "6",
+						"y": "0",
+						"z": "0",
+						"value": "2"
+					}
+				},
+				{
+					"id": "set-at-xyz",
+					"objectClass": "Array",
+					"sid": 779229038865067,
+					"parameters": {
+						"x": "7",
+						"y": "0",
+						"z": "0",
+						"value": "2"
+					}
+				},
+				{
+					"id": "set-at-xyz",
+					"objectClass": "Array",
+					"sid": 920407750522390,
+					"parameters": {
+						"x": "8",
+						"y": "0",
+						"z": "0",
+						"value": "2"
+					}
+				},
+				{
+					"id": "set-at-xyz",
+					"objectClass": "Array",
+					"sid": 539696736033165,
+					"parameters": {
+						"x": "9",
+						"y": "0",
+						"z": "0",
+						"value": "2"
+					}
+				},
+				{
+					"id": "set-at-xyz",
+					"objectClass": "Array",
+					"sid": 982026416325226,
+					"parameters": {
+						"x": "10",
+						"y": "0",
+						"z": "0",
+						"value": "2"
+					}
+				}
+			],
+			"sid": 689462262736978,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-all",
+							"objectClass": "System",
+							"sid": 731303350631054,
+							"parameters": {
+								"object": "Noeud"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Noeud",
+							"sid": 782365696346940,
+							"parameters": {
+								"instance-variable": "typeDeNoeud",
+								"value": "Array.At(loopindex)"
+							}
+						}
+					],
+					"sid": 992821427095641
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Souris",
+					"sid": 367776012472406,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Noeud"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-scale",
+					"objectClass": "Noeud",
+					"sid": 890398800739309,
+					"parameters": {
+						"scale": "1.2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Info",
+					"sid": 465289667703162,
+					"parameters": {
+						"text": "\"col=\" & Noeud.col & \" row=\" & Noeud.row & \"typesDeNoeud=\" & Noeud.typeDeNoeud"
+					}
+				}
+			],
+			"sid": 511929508365235
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "herostarter",
+					"sid": 246621803774784,
+					"parameters": {
+						"object": "Noeud"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Noeud",
+					"sid": 636410199037851,
+					"parameters": {
+						"instance-variable": "typeDeNoeud",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 933077693682359,
+					"parameters": {
+						"layout": "typesDeNoeud0"
+					}
+				}
+			],
+			"sid": 413546477047961
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "herostarter",
+					"sid": 883545879687603,
+					"parameters": {
+						"object": "Noeud"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Noeud",
+					"sid": 388803154509863,
+					"parameters": {
+						"instance-variable": "typeDeNoeud",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 749700093956078,
+					"parameters": {
+						"layout": "typesDeNoeud1"
+					}
+				}
+			],
+			"sid": 413208706911471
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "herostarter",
+					"sid": 969270602595342,
+					"parameters": {
+						"object": "Noeud"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Noeud",
+					"sid": 165840816206397,
+					"parameters": {
+						"instance-variable": "typeDeNoeud",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 172753032076386,
+					"parameters": {
+						"layout": "typesDeNoeud2"
+					}
+				}
+			],
+			"sid": 490158171781441
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "herostarter",
+					"sid": 111712260502417,
+					"parameters": {
+						"object": "Noeud"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Noeud",
+					"sid": 344437696496454,
+					"parameters": {
+						"instance-variable": "typeDeNoeud",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 307067402345643,
+					"parameters": {
+						"layout": "typesDeNoeud3"
+					}
+				}
+			],
+			"sid": 406489219376530
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "herostarter",
+					"sid": 532383811110716,
+					"parameters": {
+						"object": "Noeud"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Noeud",
+					"sid": 474425959720880,
+					"parameters": {
+						"instance-variable": "typeDeNoeud",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 574750185456461,
+					"parameters": {
+						"layout": "typesDeNoeud4"
+					}
+				}
+			],
+			"sid": 478104597408779
+		}
+	],
+	"sid": 582260158408257
+}
