@@ -1,7 +1,7 @@
 {
-	"name": "SVGPicture",
-	"plugin-id": "SVGPicture",
-	"sid": 737630570859002,
+	"name": "dbg",
+	"plugin-id": "Text",
+	"sid": 797104335692410,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],

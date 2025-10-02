@@ -7,20 +7,20 @@
 				{
 					"id": "on-clicked",
 					"objectClass": "btnback",
-					"sid": 663942910103521
+					"sid": 533968940833553
 				}
 			],
 			"actions": [
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 102702868005832,
+					"sid": 413289068375559,
 					"parameters": {
 						"layout": "Lobby"
 					}
 				}
 			],
-			"sid": 306602238288697
+			"sid": 992898406987162
 		},
 		{
 			"eventType": "block",
@@ -28,20 +28,41 @@
 				{
 					"id": "on-clicked",
 					"objectClass": "btnconfirme",
-					"sid": 342499875618555
+					"sid": 268181471836211
 				}
 			],
 			"actions": [
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 231090267346100,
+					"sid": 804715578163432,
 					"parameters": {
 						"layout": "Map1"
 					}
 				}
 			],
-			"sid": 789908263526069
+			"sid": 309041915018870
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 595405300425239
+				}
+			],
+			"actions": [
+				{
+					"id": "remove-item",
+					"objectClass": "LocalStorage",
+					"sid": 331372685336187,
+					"parameters": {
+						"key": "\"mapPattern\""
+					}
+				}
+			],
+			"sid": 365932781640737
 		}
 	],
 	"sid": 873749357197980

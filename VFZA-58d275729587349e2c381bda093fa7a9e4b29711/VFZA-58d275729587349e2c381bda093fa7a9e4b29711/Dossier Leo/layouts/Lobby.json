@@ -372,7 +372,7 @@
 	"sid": 839671373902284,
 	"nonworld-instances": [
 		{
-			"type": "Array",
+			"type": "stockmaps",
 			"properties": {
 				"width": 10,
 				"height": 1,

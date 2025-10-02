@@ -25,6 +25,13 @@
 			"desc": "",
 			"show": true,
 			"sid": 823950581441449
+		},
+		{
+			"name": "idx",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 988623401928153
 		}
 	],
 	"behaviorTypes": [],
