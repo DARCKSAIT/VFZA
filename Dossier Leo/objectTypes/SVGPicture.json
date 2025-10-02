@@ -1,7 +1,7 @@
 {
-	"name": "ImageSVG",
+	"name": "SVGPicture",
 	"plugin-id": "SVGPicture",
-	"sid": 106820510431384,
+	"sid": 737630570859002,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],

@@ -1,10 +1,32 @@
 {
-	"name": "Sprite",
+	"name": "Noeudboss",
 	"plugin-id": "Sprite",
-	"sid": 225834923158048,
+	"sid": 600810973420338,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "col",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 392929575181276
+		},
+		{
+			"name": "row",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 608129821270785
+		},
+		{
+			"name": "typeDeNoeud",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 823950581441449
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
@@ -12,21 +34,21 @@
 			{
 				"frames": [
 					{
-						"width": 1024,
-						"height": 1024,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 250,
+						"height": 250,
+						"originX": 0.252,
+						"originY": 0.528,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 5539129,
+						"imageSpriteId": 3248038,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 478887561509119,
+				"sid": 626325495498490,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

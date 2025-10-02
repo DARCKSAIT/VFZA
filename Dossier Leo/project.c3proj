@@ -36,6 +36,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Spritefont2",
+			"name": "Sprite font",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Text",
 			"name": "Text",
 			"author": "Scirra",
@@ -52,16 +59,18 @@
 			"Bouton",
 			"Usine",
 			"txtMaterials",
-			"ImageSVG",
 			"backgroundLobby",
 			"spritedepart",
-			"Sprite",
+			"backpreparation",
 			"btnconfirme",
 			"btnback",
 			"herostarter",
 			"Ligne",
 			"Info",
-			"Noeud"
+			"Noeudboss",
+			"SpriteFont",
+			"SVGPicture",
+			"backmaps"
 		],
 		"subfolders": []
 	},

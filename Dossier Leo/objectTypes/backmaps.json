@@ -1,25 +1,10 @@
 {
-	"name": "Noeud",
+	"name": "backmaps",
 	"plugin-id": "Sprite",
-	"sid": 600810973420338,
+	"sid": 165397938640749,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [
-		{
-			"name": "col",
-			"type": "number",
-			"desc": "",
-			"show": true,
-			"sid": 392929575181276
-		},
-		{
-			"name": "row",
-			"type": "number",
-			"desc": "",
-			"show": true,
-			"sid": 608129821270785
-		}
-	],
+	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
@@ -27,21 +12,21 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
-						"originX": 0.252,
-						"originY": 0.528,
+						"width": 1024,
+						"height": 1024,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 7550976,
+						"imageSpriteId": 5719200,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 626325495498490,
+				"sid": 770034008322653,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
