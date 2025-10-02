@@ -66,7 +66,7 @@
 						"icon-set": -1,
 						"initially-visible": true,
 						"origin": "top-left",
-						"read-aloud": false
+						"read-aloud": true
 					},
 					"uid": 27,
 					"sid": 458766018015795,
@@ -83,7 +83,7 @@
 						"x": 562,
 						"y": 535,
 						"width": 706.6411323121247,
-						"height": 446.45485591520696,
+						"height": 353.2244816859255,
 						"originX": 0,
 						"originY": 0,
 						"color": [

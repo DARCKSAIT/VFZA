@@ -27,10 +27,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 949,
-						"y": 540,
-						"width": 1914,
-						"height": 1080,
+						"x": 956.5,
+						"y": 533,
+						"width": 1997,
+						"height": 1166,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -86,8 +86,8 @@
 					"type": "Btnlowheal",
 					"properties": {
 						"type": "button",
-						"text": "OK",
-						"tooltip": "",
+						"text": "Low heal ",
+						"tooltip": "-100 food  +15 health",
 						"initially-visible": true,
 						"enabled": true,
 						"auto-font-size": true,
@@ -109,8 +109,8 @@
 					"world": {
 						"x": 175,
 						"y": 379,
-						"width": 430,
-						"height": 94,
+						"width": 274,
+						"height": 78,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -125,8 +125,8 @@
 					"type": "Btnhardheal",
 					"properties": {
 						"type": "button",
-						"text": "OK",
-						"tooltip": "",
+						"text": "hard heal",
+						"tooltip": "-200 food  +30 health",
 						"initially-visible": true,
 						"enabled": true,
 						"auto-font-size": true,
@@ -148,8 +148,8 @@
 					"world": {
 						"x": 175,
 						"y": 632,
-						"width": 456,
-						"height": 81,
+						"width": 290,
+						"height": 83,
 						"originX": 0,
 						"originY": 0,
 						"color": [
