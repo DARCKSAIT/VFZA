@@ -1,5 +1,27 @@
 {
 	"name": "typesDeNoeud4",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "btnback",
+					"sid": 616032438985054
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 845721247211984,
+					"parameters": {
+						"layout": "Map1"
+					}
+				}
+			],
+			"sid": 579554075599907
+		}
+	],
 	"sid": 291581941913416
 }

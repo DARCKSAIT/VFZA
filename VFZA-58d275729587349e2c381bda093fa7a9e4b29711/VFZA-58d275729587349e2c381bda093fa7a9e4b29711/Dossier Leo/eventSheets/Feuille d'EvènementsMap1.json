@@ -57,7 +57,7 @@
 				{
 					"id": "on-start-of-layout",
 					"objectClass": "System",
-					"sid": 471984053837876
+					"sid": 731311673878855
 				}
 			],
 			"actions": [
@@ -191,6 +191,14 @@
 						"z": "0",
 						"value": "2"
 					}
+				},
+				{
+					"id": "shuffle",
+					"objectClass": "Array",
+					"sid": 976054457886462,
+					"parameters": {
+						"axis": "x"
+					}
 				}
 			],
 			"sid": 689462262736978,
@@ -199,9 +207,9 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "pick-all",
+							"id": "for-each",
 							"objectClass": "System",
-							"sid": 731303350631054,
+							"sid": 198917564975641,
 							"parameters": {
 								"object": "Noeud"
 							}
@@ -218,7 +226,117 @@
 							}
 						}
 					],
-					"sid": 992821427095641
+					"sid": 992821427095641,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-comparison",
+									"objectClass": "System",
+									"sid": 912949979757494,
+									"parameters": {
+										"object": "Noeud",
+										"expression": "Noeud.typeDeNoeud",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-default-color",
+									"objectClass": "Noeud",
+									"sid": 747349862514226,
+									"parameters": {
+										"color": "rgbEx(220, 220, 220)"
+									}
+								}
+							],
+							"sid": 128596751153350
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-comparison",
+									"objectClass": "System",
+									"sid": 212245321361198,
+									"parameters": {
+										"object": "Noeud",
+										"expression": "Noeud.typeDeNoeud",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-default-color",
+									"objectClass": "Noeud",
+									"sid": 403972425479977,
+									"parameters": {
+										"color": "rgbEx(80, 170, 255)"
+									}
+								}
+							],
+							"sid": 198130664851208
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-comparison",
+									"objectClass": "System",
+									"sid": 638171343785950,
+									"parameters": {
+										"object": "Noeud",
+										"expression": "Noeud.typeDeNoeud",
+										"comparison": 0,
+										"value": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-default-color",
+									"objectClass": "Noeud",
+									"sid": 476165304359652,
+									"parameters": {
+										"color": "rgbEx(255, 170, 60)"
+									}
+								}
+							],
+							"sid": 116389201995429
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-comparison",
+									"objectClass": "System",
+									"sid": 455075253659064,
+									"parameters": {
+										"object": "Noeud",
+										"expression": "Noeud.typeDeNoeud",
+										"comparison": 0,
+										"value": "4"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-default-color",
+									"objectClass": "Noeud",
+									"sid": 720979804219514,
+									"parameters": {
+										"color": "rgbEx(255, 70, 70)"
+									}
+								}
+							],
+							"sid": 729425334898348
+						}
+					]
 				}
 			]
 		},
