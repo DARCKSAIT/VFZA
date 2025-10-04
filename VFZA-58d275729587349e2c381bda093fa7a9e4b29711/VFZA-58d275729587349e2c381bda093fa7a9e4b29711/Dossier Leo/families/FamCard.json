@@ -1,0 +1,19 @@
+{
+	"name": "FamCard",
+	"plugin-id": "Sprite",
+	"sid": 579557791402500,
+	"instanceVariables": [
+		{
+			"name": "IndexMain",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 995009134472874
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"CardDef"
+	]
+}

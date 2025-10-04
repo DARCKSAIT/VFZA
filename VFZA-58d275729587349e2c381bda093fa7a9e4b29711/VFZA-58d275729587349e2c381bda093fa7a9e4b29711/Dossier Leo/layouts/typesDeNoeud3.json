@@ -46,7 +46,7 @@
 					}
 				},
 				{
-					"type": "carteatt_tuto",
+					"type": "CardAtk",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",

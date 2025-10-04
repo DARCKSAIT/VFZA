@@ -9,28 +9,28 @@
 		{
 			"type": "plugin",
 			"id": "Arr",
-			"name": "Array",
+			"name": "Tableau",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "Button",
-			"name": "Button",
+			"name": "Bouton",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "LocalStorage",
-			"name": "Local storage",
+			"name": "Stockage local",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "Mouse",
-			"name": "Mouse",
+			"name": "Souris",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -44,21 +44,21 @@
 		{
 			"type": "plugin",
 			"id": "Spritefont2",
-			"name": "Sprite font",
+			"name": "Police Sprite",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "Text",
-			"name": "Text",
+			"name": "Texte",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "DragnDrop",
-			"name": "Drag & Drop",
+			"name": "Glisser déposer",
 			"author": "Scirra",
 			"bundled": false
 		}
@@ -83,8 +83,8 @@
 			"Noeud",
 			"SpriteFont",
 			"Background_mapsferme",
-			"carteatt_tuto",
-			"cartedef_tuto",
+			"CardAtk",
+			"CardDef",
 			"Background_campfire",
 			"stockmaps",
 			"LocalStorage",
@@ -97,7 +97,8 @@
 			"selection_tutoperso",
 			"tutoperso_Deck",
 			"tutoperso_Main",
-			"tutoperso_Defausse"
+			"tutoperso_Defausse",
+			"Btn_FinTour"
 		],
 		"subfolders": []
 	},
@@ -105,7 +106,9 @@
 	"autosaveData": null,
 	"containers": [],
 	"families": {
-		"items": [],
+		"items": [
+			"FamCard"
+		],
 		"subfolders": []
 	},
 	"layouts": {
