@@ -1,7 +1,7 @@
 {
-	"name": "Sprite7",
+	"name": "cartedef_tuto",
 	"plugin-id": "Sprite",
-	"sid": 201894404689628,
+	"sid": 918266717325311,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -12,21 +12,33 @@
 			{
 				"frames": [
 					{
-						"width": 1536,
-						"height": 1024,
+						"width": 201,
+						"height": 250,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 9876045,
+						"imageSpriteId": 1199537,
+						"collisionPoly": {
+							"points": [
+								0.0625,
+								0.0026041666666666665,
+								0.9926470588235294,
+								0.03125,
+								0.9375,
+								0.9947916666666666,
+								0.007352941176470588,
+								0.9635416666666666
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 928804685480134,
+				"sid": 679522811327929,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

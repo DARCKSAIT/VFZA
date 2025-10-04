@@ -2,25 +2,114 @@
 	"name": "typesDeNoeud2_combat",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "LoadReady",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 575781053920814
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 648515929919233
+				}
+			],
+			"actions": [],
+			"sid": 693465103466017
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
 					"id": "on-clicked",
 					"objectClass": "btnback",
-					"sid": 529395987823162
+					"sid": 843270636737336
 				}
 			],
 			"actions": [
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 366958670911594,
+					"sid": 666824590798120,
 					"parameters": {
 						"layout": "Map1"
 					}
+				},
+				{
+					"id": "get-item",
+					"objectClass": "LocalStorage",
+					"sid": 214516965627474,
+					"parameters": {
+						"key": "\"deck_tutoperso\""
+					}
+				},
+				{
+					"id": "get-item",
+					"objectClass": "LocalStorage",
+					"sid": 512508708086198,
+					"parameters": {
+						"key": "\"main_tutoperso\""
+					}
+				},
+				{
+					"id": "get-item",
+					"objectClass": "LocalStorage",
+					"sid": 946175180057401,
+					"parameters": {
+						"key": "\"def_tutoperso\""
+					}
 				}
 			],
-			"sid": 227534022766858
+			"sid": 323437945796043
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-get",
+					"objectClass": "LocalStorage",
+					"sid": 217237288033455,
+					"parameters": {
+						"key": "\"\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 560838731453492,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 492865378159437,
+							"parameters": {
+								"first-value": "LocalStorage.Key",
+								"comparison": 0,
+								"second-value": "\"deck_tutoperso\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "load",
+							"objectClass": "tutoperso_Deck",
+							"sid": 170263924355512,
+							"parameters": {
+								"json": "LocalStorage.ItemValue"
+							}
+						}
+					],
+					"sid": 280023412647328
+				}
+			]
 		}
 	],
 	"sid": 822543069397088

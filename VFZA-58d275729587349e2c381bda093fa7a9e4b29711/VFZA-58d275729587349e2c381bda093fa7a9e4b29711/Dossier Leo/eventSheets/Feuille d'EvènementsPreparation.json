@@ -2,6 +2,26 @@
 	"name": "Feuille d'EvènementsPreparation",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "SelectedCharacter",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 676076350993772
+		},
+		{
+			"eventType": "variable",
+			"name": "TAILLE_MAIN",
+			"type": "number",
+			"initialValue": "5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 137816626695928
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -72,6 +92,172 @@
 				}
 			],
 			"sid": 365932781640737
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Souris",
+					"sid": 292215412821363,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "selection_tutoperso"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 995947849315556,
+					"parameters": {
+						"variable": "SelectedCharacter",
+						"value": "\"tutoperso\""
+					}
+				},
+				{
+					"id": "clear",
+					"objectClass": "tutoperso_Deck",
+					"sid": 186254090719679,
+					"parameters": {
+						"value": "0"
+					}
+				},
+				{
+					"id": "clear",
+					"objectClass": "tutoperso_Defausse",
+					"sid": 408752987242793,
+					"parameters": {
+						"value": "0"
+					}
+				},
+				{
+					"id": "clear",
+					"objectClass": "tutoperso_Main",
+					"sid": 928301143453859,
+					"parameters": {
+						"value": "0"
+					}
+				},
+				{
+					"id": "push",
+					"objectClass": "tutoperso_Deck",
+					"sid": 708015824201673,
+					"parameters": {
+						"where": "back",
+						"value": "\"ATK_A\"",
+						"axis": "x"
+					}
+				},
+				{
+					"id": "push",
+					"objectClass": "tutoperso_Deck",
+					"sid": 235911922249453,
+					"parameters": {
+						"where": "back",
+						"value": "\"ATK_B\"",
+						"axis": "x"
+					}
+				},
+				{
+					"id": "push",
+					"objectClass": "tutoperso_Deck",
+					"sid": 960293830766152,
+					"parameters": {
+						"where": "back",
+						"value": "\"ATK_D\"",
+						"axis": "x"
+					}
+				},
+				{
+					"id": "push",
+					"objectClass": "tutoperso_Deck",
+					"sid": 721741120635214,
+					"parameters": {
+						"where": "back",
+						"value": "\"ATK_C\"",
+						"axis": "x"
+					}
+				},
+				{
+					"id": "push",
+					"objectClass": "tutoperso_Deck",
+					"sid": 832728218309147,
+					"parameters": {
+						"where": "back",
+						"value": "\"DEF_A\"",
+						"axis": "x"
+					}
+				},
+				{
+					"id": "push",
+					"objectClass": "tutoperso_Deck",
+					"sid": 121487743531834,
+					"parameters": {
+						"where": "back",
+						"value": "\"DEF_B\"",
+						"axis": "x"
+					}
+				},
+				{
+					"id": "push",
+					"objectClass": "tutoperso_Deck",
+					"sid": 737017638132493,
+					"parameters": {
+						"where": "back",
+						"value": "\"DEF_C\"",
+						"axis": "x"
+					}
+				},
+				{
+					"id": "push",
+					"objectClass": "tutoperso_Deck",
+					"sid": 254034574428245,
+					"parameters": {
+						"where": "back",
+						"value": "\"DEF_D\"",
+						"axis": "x"
+					}
+				},
+				{
+					"id": "shuffle",
+					"objectClass": "tutoperso_Deck",
+					"sid": 624111962479902,
+					"parameters": {
+						"axis": "x"
+					}
+				},
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 487671814785473,
+					"parameters": {
+						"key": "\"deck_tutoperso\"",
+						"value": "tutoperso_Deck.AsJSON"
+					}
+				},
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 588751801264631,
+					"parameters": {
+						"key": "\"main_tutoperso\"",
+						"value": "tutoperso_Main.AsJSON"
+					}
+				},
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 298453803884228,
+					"parameters": {
+						"key": "\"def_tutoperso\"",
+						"value": "tutoperso_Defausse.AsJSON"
+					}
+				}
+			],
+			"sid": 720165151650879
 		}
 	],
 	"sid": 873749357197980

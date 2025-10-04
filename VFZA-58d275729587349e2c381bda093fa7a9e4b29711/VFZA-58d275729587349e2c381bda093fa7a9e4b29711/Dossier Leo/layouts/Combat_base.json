@@ -7,7 +7,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Sprite8",
+					"type": "background_combat",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",

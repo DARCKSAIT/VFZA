@@ -1,7 +1,7 @@
 {
-	"name": "Sprite8",
+	"name": "selection_tutoperso",
 	"plugin-id": "Sprite",
-	"sid": 110848148882400,
+	"sid": 408764172541634,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -12,7 +12,7 @@
 			{
 				"frames": [
 					{
-						"width": 1536,
+						"width": 1024,
 						"height": 1024,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 6179536,
+						"imageSpriteId": 8704624,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 308603568522027,
+				"sid": 621420773150819,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

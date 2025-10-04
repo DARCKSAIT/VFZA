@@ -1,7 +1,7 @@
 {
-	"name": "Sprite",
+	"name": "Background_campfire",
 	"plugin-id": "Sprite",
-	"sid": 225834923158048,
+	"sid": 291471176392292,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -12,21 +12,33 @@
 			{
 				"frames": [
 					{
-						"width": 1024,
-						"height": 1024,
+						"width": 1080,
+						"height": 1080,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 5539129,
+						"imageSpriteId": 6108612,
+						"collisionPoly": {
+							"points": [
+								0.0009746588693957114,
+								0.0009746588693957114,
+								0.9990253411306043,
+								0.0009746588693957114,
+								0.9990253411306043,
+								0.9990253411306043,
+								0.0009746588693957114,
+								0.9990253411306043
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 478887561509119,
+				"sid": 715100914164204,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

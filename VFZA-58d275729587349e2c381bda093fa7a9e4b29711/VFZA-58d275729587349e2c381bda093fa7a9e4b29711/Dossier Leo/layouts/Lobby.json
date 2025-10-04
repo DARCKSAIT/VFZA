@@ -259,80 +259,6 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "Sprite3",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 32,
-					"sid": 776005135119792,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 776005135119792,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 703,
-						"y": 325,
-						"width": 201,
-						"height": 250,
-						"originX": 0.5072886297376094,
-						"originY": 0.5011764705882353,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Sprite4",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 33,
-					"sid": 808441366432967,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 808441366432967,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 928,
-						"y": 326,
-						"width": 201,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
 				}
 			],
 			"sid": 417119788732263,
@@ -380,6 +306,42 @@
 			},
 			"uid": 30,
 			"sid": 144309432374811,
+			"tags": "",
+			"instanceVariables": {}
+		},
+		{
+			"type": "tutoperso_Deck",
+			"properties": {
+				"width": 10,
+				"height": 1,
+				"depth": 1
+			},
+			"uid": 12,
+			"sid": 767368405713747,
+			"tags": "",
+			"instanceVariables": {}
+		},
+		{
+			"type": "tutoperso_Main",
+			"properties": {
+				"width": 10,
+				"height": 1,
+				"depth": 1
+			},
+			"uid": 47,
+			"sid": 509879956281688,
+			"tags": "",
+			"instanceVariables": {}
+		},
+		{
+			"type": "tutoperso_Defausse",
+			"properties": {
+				"width": 10,
+				"height": 1,
+				"depth": 1
+			},
+			"uid": 48,
+			"sid": 900678501289181,
 			"tags": "",
 			"instanceVariables": {}
 		}
