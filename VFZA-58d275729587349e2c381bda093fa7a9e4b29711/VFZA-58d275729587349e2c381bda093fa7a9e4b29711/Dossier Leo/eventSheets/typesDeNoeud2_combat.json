@@ -440,6 +440,18 @@
 				}
 			],
 			"sid": 667183020536965
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Btn_FinTour",
+					"sid": 307723495055028
+				}
+			],
+			"actions": [],
+			"sid": 676248145967599
 		}
 	],
 	"sid": 822543069397088
