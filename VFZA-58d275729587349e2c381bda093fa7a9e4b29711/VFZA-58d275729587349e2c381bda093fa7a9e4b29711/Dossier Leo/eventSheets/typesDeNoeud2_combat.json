@@ -24,6 +24,130 @@
 			"sid": 693465103466017
 		},
 		{
+			"functionName": "RefreshMain",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "FamCard",
+					"sid": 705938399319567
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "FamCard",
+					"sid": 996071933818561,
+					"parameters": {
+						"instance-variable": "IndexMain",
+						"value": "\"i\""
+					}
+				}
+			],
+			"sid": 644274093898958,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for",
+							"objectClass": "System",
+							"sid": 919810233573607,
+							"parameters": {
+								"name": "\"i\"",
+								"start-index": "0",
+								"end-index": "tutoperso_Main.Width - 1"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 324828387350165,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 338325878092769,
+									"parameters": {
+										"first-value": "left(tutoperso_Main.At(loopindex(\"i\")), 3)\r\n",
+										"comparison": 0,
+										"second-value": "\"ATK\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 660175489056604,
+									"parameters": {
+										"object-to-create": "CardAtk",
+										"layer": "\"calque_combat\"",
+										"x": "480",
+										"y": "660",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								}
+							],
+							"sid": 491476580704372,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 129799801474061
+										}
+									],
+									"actions": [
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 798795325721459,
+											"parameters": {
+												"object-to-create": "CardDef",
+												"layer": "\"calque_combat\"",
+												"x": "780",
+												"y": "660",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										}
+									],
+									"sid": 235490940947835
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "FamCard",
+							"sid": 443165511795228,
+							"parameters": {
+								"instance-variable": "IndexMain",
+								"value": "\"i\""
+							}
+						}
+					],
+					"sid": 289386912958487
+				}
+			]
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -445,13 +569,77 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-clicked",
-					"objectClass": "Btn_FinTour",
-					"sid": 307723495055028
+					"id": "on-object-clicked",
+					"objectClass": "Souris",
+					"sid": 529501536559090,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "FamCard"
+					}
 				}
 			],
-			"actions": [],
-			"sid": 676248145967599
+			"actions": [
+				{
+					"id": "push",
+					"objectClass": "tutoperso_Defausse",
+					"sid": 417983261116990,
+					"parameters": {
+						"where": "back",
+						"value": "tutoperso_Main.At(FamCard.IndexMain)",
+						"axis": "x"
+					}
+				},
+				{
+					"id": "delete",
+					"objectClass": "tutoperso_Main",
+					"sid": 845128355932259,
+					"parameters": {
+						"index": "FamCard.IndexMain",
+						"axis": "x"
+					}
+				},
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 210111447761192,
+					"parameters": {
+						"key": "\"main_tutoperso\"",
+						"value": "\"tutoperso_Main.AsJSON\""
+					}
+				},
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 925254826498557,
+					"parameters": {
+						"key": "\"def_tutoperso\"",
+						"value": "\"tutoperso_Defausse.AsJSON\""
+					}
+				},
+				{
+					"callFunction": "RefreshMain",
+					"sid": 697900673503924
+				}
+			],
+			"sid": 781399965001565
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Btn_FinTour",
+					"sid": 211514986606402
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "RefreshMain",
+					"sid": 482355258330523
+				}
+			],
+			"sid": 353656600095942
 		}
 	],
 	"sid": 822543069397088

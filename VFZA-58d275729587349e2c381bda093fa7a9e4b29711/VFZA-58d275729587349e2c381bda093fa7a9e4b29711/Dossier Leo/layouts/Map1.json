@@ -27,10 +27,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 970,
-						"y": 546,
-						"width": 2008,
-						"height": 1186,
+						"x": 941.4840684591145,
+						"y": 532.4325867606701,
+						"width": 2079.1985526422013,
+						"height": 1176.7132322640605,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -41,59 +41,6 @@
 						],
 						"angle": 0,
 						"zElevation": -10
-					}
-				},
-				{
-					"type": "Info_health_player",
-					"properties": {
-						"text": "",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 34.6,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							0,
-							0,
-							0,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"text-direction": "ltr",
-						"icon-set": -1,
-						"initially-visible": true,
-						"origin": "top-left",
-						"read-aloud": false
-					},
-					"uid": 15,
-					"sid": 733215437712063,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 733215437712063,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 8,
-						"y": 9,
-						"width": 659,
-						"height": 95,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
 					}
 				},
 				{
@@ -639,59 +586,6 @@
 							1,
 							1
 						]
-					}
-				},
-				{
-					"type": "dbg",
-					"properties": {
-						"text": "",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 49.50000000000003,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							0,
-							0,
-							0,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"text-direction": "ltr",
-						"icon-set": -1,
-						"initially-visible": true,
-						"origin": "top-left",
-						"read-aloud": false
-					},
-					"uid": 42,
-					"sid": 120930585207283,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 120930585207283,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 356,
-						"y": 868,
-						"width": 1536,
-						"height": 189,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
 					}
 				},
 				{

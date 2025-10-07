@@ -7,43 +7,6 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "background_combat",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 29,
-					"sid": 109820917479547,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 109820917479547,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 958,
-						"y": 547,
-						"width": 1967,
-						"height": 1126,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": -3
-					}
-				},
-				{
 					"type": "btnback",
 					"properties": {
 						"type": "button",
@@ -113,6 +76,78 @@
 			"global": false
 		},
 		{
+			"name": "background",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "background_combat",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 29,
+					"sid": 109820917479547,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 109820917479547,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 958,
+						"y": 547,
+						"width": 1967,
+						"height": 1126,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": -3
+					}
+				}
+			],
+			"sid": 476135325243738,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
 			"name": "calque_combat",
 			"overriden": 0,
 			"subLayers": [],
@@ -125,7 +160,7 @@
 						"tooltip": "",
 						"initially-visible": true,
 						"enabled": true,
-						"auto-font-size": true,
+						"auto-font-size": false,
 						"checked": false,
 						"id": "",
 						"class": ""
@@ -142,10 +177,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1624,
-						"y": 965,
-						"width": 192,
-						"height": 61,
+						"x": 1619,
+						"y": 945,
+						"width": 197,
+						"height": 81,
 						"originX": 0,
 						"originY": 0,
 						"color": [
