@@ -118,27 +118,30 @@
 					}
 				},
 				{
-					"id": "clear",
+					"id": "delete",
 					"objectClass": "tutoperso_Deck",
-					"sid": 186254090719679,
+					"sid": 374257851418604,
 					"parameters": {
-						"value": "0"
+						"index": "0",
+						"axis": "x"
 					}
 				},
 				{
-					"id": "clear",
+					"id": "delete",
 					"objectClass": "tutoperso_Defausse",
-					"sid": 408752987242793,
+					"sid": 796780204213061,
 					"parameters": {
-						"value": "0"
+						"index": "0",
+						"axis": "x"
 					}
 				},
 				{
-					"id": "clear",
+					"id": "delete",
 					"objectClass": "tutoperso_Main",
-					"sid": 928301143453859,
+					"sid": 847445078138589,
 					"parameters": {
-						"value": "0"
+						"index": "0",
+						"axis": "x"
 					}
 				},
 				{
@@ -230,34 +233,51 @@
 					}
 				},
 				{
-					"id": "set-item",
-					"objectClass": "LocalStorage",
-					"sid": 487671814785473,
+					"id": "set-text",
+					"objectClass": "dbg",
+					"sid": 728328766167169,
 					"parameters": {
-						"key": "\"deck_tutoperso\"",
-						"value": "tutoperso_Deck.AsJSON"
-					}
-				},
-				{
-					"id": "set-item",
-					"objectClass": "LocalStorage",
-					"sid": 588751801264631,
-					"parameters": {
-						"key": "\"main_tutoperso\"",
-						"value": "tutoperso_Main.AsJSON"
-					}
-				},
-				{
-					"id": "set-item",
-					"objectClass": "LocalStorage",
-					"sid": 298453803884228,
-					"parameters": {
-						"key": "\"def_tutoperso\"",
-						"value": "tutoperso_Defausse.AsJSON"
+						"text": "\"dbg : \" & SelectedCharacter"
 					}
 				}
 			],
-			"sid": 720165151650879
+			"sid": 720165151650879,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 466062876779656,
+							"parameters": {
+								"key": "\"deck_tutoperso\"",
+								"value": "tutoperso_Deck.AsJSON"
+							}
+						},
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 435456128454229,
+							"parameters": {
+								"key": "\"main_tutoperso\"",
+								"value": "tutoperso_Main.AsJSON"
+							}
+						},
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 632521137722385,
+							"parameters": {
+								"key": "\"def_tutoperso\"",
+								"value": "tutoperso_Defausse.AsJSON"
+							}
+						}
+					],
+					"sid": 683396680523403
+				}
+			]
 		}
 	],
 	"sid": 873749357197980

@@ -98,7 +98,10 @@
 			"tutoperso_Deck",
 			"tutoperso_Main",
 			"tutoperso_Defausse",
-			"Btn_FinTour"
+			"Btn_FinTour",
+			"main",
+			"deck",
+			"defausse"
 		],
 		"subfolders": []
 	},

@@ -312,7 +312,7 @@
 		{
 			"type": "tutoperso_Deck",
 			"properties": {
-				"width": 10,
+				"width": 0,
 				"height": 1,
 				"depth": 1
 			},
@@ -324,7 +324,7 @@
 		{
 			"type": "tutoperso_Main",
 			"properties": {
-				"width": 10,
+				"width": 0,
 				"height": 1,
 				"depth": 1
 			},
@@ -336,7 +336,7 @@
 		{
 			"type": "tutoperso_Defausse",
 			"properties": {
-				"width": 10,
+				"width": 0,
 				"height": 1,
 				"depth": 1
 			},
