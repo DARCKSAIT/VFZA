@@ -382,12 +382,11 @@
 									}
 								},
 								{
-									"id": "delete",
+									"id": "clear",
 									"objectClass": "tutoperso_Deck",
-									"sid": 743301777199502,
+									"sid": 385717272765748,
 									"parameters": {
-										"index": "tutoperso_Deck.Width - 1",
-										"axis": "x"
+										"value": "tutoperso_Deck.Width - 1"
 									}
 								}
 							],
@@ -581,10 +580,10 @@
 								},
 								{
 									"id": "clear",
-									"objectClass": "tutoperso_Defausse",
-									"sid": 238315672306505,
+									"objectClass": "tutoperso_Deck",
+									"sid": 974758961908663,
 									"parameters": {
-										"value": "tutoperso_Defausse.Width = 0"
+										"value": "tutoperso_Deck.Width - 1"
 									}
 								}
 							],
