@@ -324,6 +324,31 @@
 								},
 								{
 									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "set-size",
+											"objectClass": "tutoperso_Defausse",
+											"sid": 785399713761858,
+											"parameters": {
+												"width": "0",
+												"height": "1",
+												"depth": "1"
+											}
+										},
+										{
+											"id": "shuffle",
+											"objectClass": "tutoperso_Deck",
+											"sid": 945403606742186,
+											"parameters": {
+												"axis": "x"
+											}
+										}
+									],
+									"sid": 257109075240796
+								},
+								{
+									"eventType": "block",
 									"conditions": [
 										{
 											"id": "compare-two-values",
@@ -653,14 +678,6 @@
 														"index": "tutoperso_Defausse.Width - 1",
 														"axis": "x"
 													}
-												},
-												{
-													"id": "shuffle",
-													"objectClass": "tutoperso_Deck",
-													"sid": 463200948785526,
-													"parameters": {
-														"axis": "x"
-													}
 												}
 											],
 											"sid": 350460119183947
@@ -697,6 +714,23 @@
 												}
 											],
 											"sid": 341828081926020
+										},
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "set-size",
+													"objectClass": "tutoperso_Defausse",
+													"sid": 518667005960123,
+													"parameters": {
+														"width": "0",
+														"height": "1",
+														"depth": "1"
+													}
+												}
+											],
+											"sid": 972044700376366
 										}
 									]
 								}
