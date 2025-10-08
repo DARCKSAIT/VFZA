@@ -805,10 +805,10 @@
 								{
 									"id": "create-object",
 									"objectClass": "System",
-									"sid": 995563768259905,
+									"sid": 206705765872446,
 									"parameters": {
 										"object-to-create": "CardDef",
-										"layer": "\"background\"",
+										"layer": "\"UI\"",
 										"x": "480 + loopindex(\"i\") * 160",
 										"y": "360",
 										"create-hierarchy": false,
@@ -858,10 +858,10 @@
 								{
 									"id": "create-object",
 									"objectClass": "System",
-									"sid": 181279026900943,
+									"sid": 821965363983416,
 									"parameters": {
 										"object-to-create": "CardAtk",
-										"layer": "\"background\"",
+										"layer": "\"UI\"",
 										"x": "480 + loopindex(\"i\") * 160 ",
 										"y": "660",
 										"create-hierarchy": false,
