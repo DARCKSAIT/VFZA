@@ -395,6 +395,17 @@
 							"sid": 841819455463379
 						}
 					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"callFunction": "RefreshMain",
+							"sid": 858208534123989
+						}
+					],
+					"sid": 367648422515654
 				}
 			]
 		},
@@ -794,11 +805,11 @@
 								{
 									"id": "create-object",
 									"objectClass": "System",
-									"sid": 471276065383419,
+									"sid": 995563768259905,
 									"parameters": {
 										"object-to-create": "CardDef",
 										"layer": "\"background\"",
-										"x": "480 + loopIndex(\"i\") * 160",
+										"x": "480 + loopindex(\"i\") * 160",
 										"y": "360",
 										"create-hierarchy": false,
 										"template-name": "\"\""
@@ -812,6 +823,19 @@
 										"instance-variable": "IndexMain",
 										"value": "loopindex (\"i\")"
 									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "CardDef",
+									"sid": 723708398480361,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "move-to-top",
+									"objectClass": "CardDef",
+									"sid": 427314607830770
 								}
 							],
 							"sid": 596838579672444
@@ -834,11 +858,11 @@
 								{
 									"id": "create-object",
 									"objectClass": "System",
-									"sid": 474779449766332,
+									"sid": 181279026900943,
 									"parameters": {
 										"object-to-create": "CardAtk",
 										"layer": "\"background\"",
-										"x": "480 + loopIndex(\"i\") * 160",
+										"x": "480 + loopindex(\"i\") * 160 ",
 										"y": "660",
 										"create-hierarchy": false,
 										"template-name": "\"\""
@@ -852,6 +876,19 @@
 										"instance-variable": "IndexMain",
 										"value": "loopindex (\"i\")"
 									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "CardAtk",
+									"sid": 998151370897352,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "move-to-top",
+									"objectClass": "CardAtk",
+									"sid": 881786921370226
 								}
 							],
 							"sid": 336037496995177
