@@ -638,10 +638,10 @@
 												{
 													"id": "push",
 													"objectClass": "tutoperso_Deck",
-													"sid": 113449114788921,
+													"sid": 850816423672326,
 													"parameters": {
 														"where": "back",
-														"value": "tutoperso_Defausse.At(loopindex(\"i\"))",
+														"value": "tutoperso_Defausse.At( loopindex(\"i\") )",
 														"axis": "x"
 													}
 												},
@@ -818,10 +818,10 @@
 								{
 									"id": "set-instvar-value",
 									"objectClass": "CardDef",
-									"sid": 894934048006603,
+									"sid": 695297160927970,
 									"parameters": {
 										"instance-variable": "IndexMain",
-										"value": "loopindex (\"i\")"
+										"value": "loopindex(\"i\")"
 									}
 								},
 								{
@@ -858,12 +858,12 @@
 								{
 									"id": "create-object",
 									"objectClass": "System",
-									"sid": 821965363983416,
+									"sid": 872926688962395,
 									"parameters": {
 										"object-to-create": "CardAtk",
 										"layer": "\"UI\"",
 										"x": "480 + loopindex(\"i\") * 160 ",
-										"y": "660",
+										"y": "360",
 										"create-hierarchy": false,
 										"template-name": "\"\""
 									}
@@ -871,10 +871,10 @@
 								{
 									"id": "set-instvar-value",
 									"objectClass": "CardAtk",
-									"sid": 640938907027652,
+									"sid": 219281573086232,
 									"parameters": {
 										"instance-variable": "IndexMain",
-										"value": "loopindex (\"i\")"
+										"value": "loopindex(\"i\")"
 									}
 								},
 								{
