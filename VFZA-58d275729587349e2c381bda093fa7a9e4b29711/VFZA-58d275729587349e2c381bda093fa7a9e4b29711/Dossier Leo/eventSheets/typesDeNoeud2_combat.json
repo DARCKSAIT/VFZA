@@ -750,7 +750,13 @@
 			"functionParameters": [],
 			"eventType": "function-block",
 			"conditions": [],
-			"actions": [],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "FamCard",
+					"sid": 820021451649882
+				}
+			],
 			"sid": 503561412641945,
 			"children": [
 				{
@@ -767,13 +773,7 @@
 							}
 						}
 					],
-					"actions": [
-						{
-							"id": "destroy",
-							"objectClass": "FamCard",
-							"sid": 786452370196247
-						}
-					],
+					"actions": [],
 					"sid": 490931022374250,
 					"children": [
 						{
@@ -794,20 +794,20 @@
 								{
 									"id": "create-object",
 									"objectClass": "System",
-									"sid": 958161607193121,
+									"sid": 471276065383419,
 									"parameters": {
 										"object-to-create": "CardDef",
 										"layer": "\"background\"",
 										"x": "480 + loopIndex(\"i\") * 160",
-										"y": "660",
+										"y": "360",
 										"create-hierarchy": false,
 										"template-name": "\"\""
 									}
 								},
 								{
 									"id": "set-instvar-value",
-									"objectClass": "FamCard",
-									"sid": 166015845718176,
+									"objectClass": "CardDef",
+									"sid": 894934048006603,
 									"parameters": {
 										"instance-variable": "IndexMain",
 										"value": "loopindex (\"i\")"
@@ -846,8 +846,8 @@
 								},
 								{
 									"id": "set-instvar-value",
-									"objectClass": "FamCard",
-									"sid": 424017380625987,
+									"objectClass": "CardAtk",
+									"sid": 640938907027652,
 									"parameters": {
 										"instance-variable": "IndexMain",
 										"value": "loopindex (\"i\")"
