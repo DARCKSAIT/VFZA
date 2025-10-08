@@ -311,9 +311,9 @@
 												{
 													"id": "clear",
 													"objectClass": "tutoperso_Defausse",
-													"sid": 417408247083373,
+													"sid": 970077509899000,
 													"parameters": {
-														"value": "0"
+														"value": "tutoperso_Defausse.Width"
 													}
 												}
 											],
@@ -570,12 +570,11 @@
 									}
 								},
 								{
-									"id": "delete",
-									"objectClass": "tutoperso_Deck",
-									"sid": 701929415983257,
+									"id": "clear",
+									"objectClass": "tutoperso_Defausse",
+									"sid": 547189909663876,
 									"parameters": {
-										"index": "tutoperso_Deck.Width - 1",
-										"axis": "x"
+										"value": "tutoperso_Defausse.Width"
 									}
 								}
 							],
@@ -624,13 +623,9 @@
 													}
 												},
 												{
-													"id": "delete",
+													"id": "destroy",
 													"objectClass": "tutoperso_Defausse",
-													"sid": 475308472522968,
-													"parameters": {
-														"index": "0",
-														"axis": "x"
-													}
+													"sid": 559761359078594
 												},
 												{
 													"id": "shuffle",
@@ -739,17 +734,7 @@
 			"functionParameters": [],
 			"eventType": "function-block",
 			"conditions": [],
-			"actions": [
-				{
-					"id": "set-instvar-value",
-					"objectClass": "FamCard",
-					"sid": 559099281926565,
-					"parameters": {
-						"instance-variable": "IndexMain",
-						"value": "\"i\""
-					}
-				}
-			],
+			"actions": [],
 			"sid": 503561412641945,
 			"children": [
 				{
@@ -775,11 +760,11 @@
 								{
 									"id": "compare-two-values",
 									"objectClass": "System",
-									"sid": 776791559903898,
+									"sid": 345421328305360,
 									"parameters": {
 										"first-value": "left(tutoperso_Main.At(loopindex(\"i\")), 3)\r\n",
-										"comparison": 1,
-										"second-value": "\"ATK\""
+										"comparison": 0,
+										"second-value": "\"DEF\""
 									}
 								}
 							],
@@ -787,11 +772,11 @@
 								{
 									"id": "create-object",
 									"objectClass": "System",
-									"sid": 798304780998784,
+									"sid": 958161607193121,
 									"parameters": {
 										"object-to-create": "CardDef",
 										"layer": "\"background\"",
-										"x": "480+ loopIndex(\"i\")*160",
+										"x": "480 + loopIndex(\"i\") * 160",
 										"y": "660",
 										"create-hierarchy": false,
 										"template-name": "\"\""
@@ -800,10 +785,10 @@
 								{
 									"id": "set-instvar-value",
 									"objectClass": "FamCard",
-									"sid": 786553896942160,
+									"sid": 166015845718176,
 									"parameters": {
 										"instance-variable": "IndexMain",
-										"value": "\"i\""
+										"value": "loopindex (\"i\")"
 									}
 								}
 							],
@@ -827,11 +812,11 @@
 								{
 									"id": "create-object",
 									"objectClass": "System",
-									"sid": 896288478309968,
+									"sid": 474779449766332,
 									"parameters": {
 										"object-to-create": "CardAtk",
 										"layer": "\"background\"",
-										"x": "480+ loopIndex(\"i\")*160",
+										"x": "480 + loopIndex(\"i\") * 160",
 										"y": "660",
 										"create-hierarchy": false,
 										"template-name": "\"\""
@@ -840,10 +825,10 @@
 								{
 									"id": "set-instvar-value",
 									"objectClass": "FamCard",
-									"sid": 514542532117056,
+									"sid": 424017380625987,
 									"parameters": {
 										"instance-variable": "IndexMain",
-										"value": "\"i\""
+										"value": "loopindex (\"i\")"
 									}
 								}
 							],
@@ -869,7 +854,15 @@
 							"sid": 389208722185062
 						}
 					],
-					"sid": 361809520280821
+					"sid": 361809520280821,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [],
+							"sid": 482715387050536
+						}
+					]
 				}
 			]
 		},
@@ -909,34 +902,6 @@
 				}
 			],
 			"sid": 211457593285388
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 868148358241350
-				},
-				{
-					"id": "compare-two-values",
-					"objectClass": "System",
-					"sid": 131454130024299,
-					"parameters": {
-						"first-value": " tutoperso_Main.Width",
-						"comparison": 0,
-						"second-value": "0"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "FamCard",
-					"sid": 770746045375118
-				}
-			],
-			"sid": 912104284742847
 		}
 	],
 	"sid": 822543069397088
