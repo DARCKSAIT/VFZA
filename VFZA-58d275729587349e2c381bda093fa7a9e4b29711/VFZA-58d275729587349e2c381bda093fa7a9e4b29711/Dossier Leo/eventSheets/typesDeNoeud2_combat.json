@@ -319,21 +319,21 @@
 									],
 									"actions": [
 										{
-											"id": "delete",
-											"objectClass": "tutoperso_Defausse",
-											"sid": 730360903555255,
-											"parameters": {
-												"index": "tutoperso_Defausse.Width - 1",
-												"axis": "x"
-											}
-										},
-										{
 											"id": "push",
 											"objectClass": "tutoperso_Deck",
 											"sid": 759967498788639,
 											"parameters": {
 												"where": "back",
 												"value": "tutoperso_Defausse.At( tutoperso_Defausse.Width - 1 )",
+												"axis": "x"
+											}
+										},
+										{
+											"id": "delete",
+											"objectClass": "tutoperso_Defausse",
+											"sid": 970360171689038,
+											"parameters": {
+												"index": "tutoperso_Defausse.Width - 1",
 												"axis": "x"
 											}
 										}
