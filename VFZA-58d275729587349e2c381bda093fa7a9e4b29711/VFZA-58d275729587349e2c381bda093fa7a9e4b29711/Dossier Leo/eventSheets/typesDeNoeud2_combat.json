@@ -793,11 +793,11 @@
 								{
 									"id": "compare-two-values",
 									"objectClass": "System",
-									"sid": 345421328305360,
+									"sid": 807170389871961,
 									"parameters": {
-										"first-value": "left(tutoperso_Main.At(loopindex(\"i\")), 3)\r\n",
+										"first-value": "lowercase(left(str(tutoperso_Main.At(loopindex(\"i\"))), 3))\r\n",
 										"comparison": 0,
-										"second-value": "\"DEF\""
+										"second-value": "\"def\""
 									}
 								}
 							],
@@ -846,11 +846,11 @@
 								{
 									"id": "compare-two-values",
 									"objectClass": "System",
-									"sid": 789001456976528,
+									"sid": 397452731243991,
 									"parameters": {
-										"first-value": "left(tutoperso_Main.At(loopindex(\"i\")), 3)\r\n",
+										"first-value": "lowercase(left(str(tutoperso_Main.At(loopindex(\"i\"))), 3))\r\n",
 										"comparison": 0,
-										"second-value": "\"ATK\""
+										"second-value": "\"atk\""
 									}
 								}
 							],
