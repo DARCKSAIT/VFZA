@@ -311,9 +311,9 @@
 												{
 													"id": "clear",
 													"objectClass": "tutoperso_Defausse",
-													"sid": 970077509899000,
+													"sid": 947640871039915,
 													"parameters": {
-														"value": "tutoperso_Defausse.Width"
+														"value": "tutoperso_Defausse.Width = 0"
 													}
 												}
 											],
@@ -330,6 +330,16 @@
 											"sid": 869201192474153,
 											"parameters": {
 												"first-value": "tutoperso_Defausse.Width",
+												"comparison": 0,
+												"second-value": "0"
+											}
+										},
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 702308398910010,
+											"parameters": {
+												"first-value": "tutoperso_Deck.Width",
 												"comparison": 0,
 												"second-value": "0"
 											}
@@ -488,19 +498,19 @@
 				{
 					"id": "set-item",
 					"objectClass": "LocalStorage",
-					"sid": 210111447761192,
+					"sid": 870628616775256,
 					"parameters": {
 						"key": "\"main_tutoperso\"",
-						"value": "\"tutoperso_Main.AsJSON\""
+						"value": "tutoperso_Main.AsJSON"
 					}
 				},
 				{
 					"id": "set-item",
 					"objectClass": "LocalStorage",
-					"sid": 925254826498557,
+					"sid": 378459017316731,
 					"parameters": {
 						"key": "\"def_tutoperso\"",
-						"value": "\"tutoperso_Defausse.AsJSON\""
+						"value": "tutoperso_Defausse.AsJSON"
 					}
 				},
 				{
@@ -572,9 +582,9 @@
 								{
 									"id": "clear",
 									"objectClass": "tutoperso_Defausse",
-									"sid": 547189909663876,
+									"sid": 238315672306505,
 									"parameters": {
-										"value": "tutoperso_Defausse.Width"
+										"value": "tutoperso_Defausse.Width = 0"
 									}
 								}
 							],
@@ -623,9 +633,12 @@
 													}
 												},
 												{
-													"id": "destroy",
+													"id": "clear",
 													"objectClass": "tutoperso_Defausse",
-													"sid": 559761359078594
+													"sid": 970926303015155,
+													"parameters": {
+														"value": "tutoperso_Defausse.Width = 0"
+													}
 												},
 												{
 													"id": "shuffle",
@@ -751,7 +764,13 @@
 							}
 						}
 					],
-					"actions": [],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "FamCard",
+							"sid": 786452370196247
+						}
+					],
 					"sid": 490931022374250,
 					"children": [
 						{
@@ -847,11 +866,6 @@
 							"parameters": {
 								"text": "\"Refresh OK\""
 							}
-						},
-						{
-							"id": "destroy",
-							"objectClass": "FamCard",
-							"sid": 389208722185062
 						}
 					],
 					"sid": 361809520280821,
