@@ -309,11 +309,12 @@
 													}
 												},
 												{
-													"id": "clear",
+													"id": "delete",
 													"objectClass": "tutoperso_Defausse",
-													"sid": 947640871039915,
+													"sid": 513335997867299,
 													"parameters": {
-														"value": "tutoperso_Defausse.Width = 0"
+														"index": "tutoperso_Defausse.Width - 1",
+														"axis": "x"
 													}
 												}
 											],
@@ -382,11 +383,12 @@
 									}
 								},
 								{
-									"id": "clear",
+									"id": "delete",
 									"objectClass": "tutoperso_Deck",
-									"sid": 385717272765748,
+									"sid": 952371687512175,
 									"parameters": {
-										"value": "tutoperso_Deck.Width - 1"
+										"index": "tutoperso_Deck.Width - 1",
+										"axis": "x"
 									}
 								}
 							],
@@ -579,11 +581,12 @@
 									}
 								},
 								{
-									"id": "clear",
+									"id": "delete",
 									"objectClass": "tutoperso_Deck",
-									"sid": 974758961908663,
+									"sid": 640008182070220,
 									"parameters": {
-										"value": "tutoperso_Deck.Width - 1"
+										"index": "tutoperso_Deck.Width - 1",
+										"axis": "x"
 									}
 								}
 							],
@@ -632,11 +635,12 @@
 													}
 												},
 												{
-													"id": "clear",
+													"id": "delete",
 													"objectClass": "tutoperso_Defausse",
-													"sid": 970926303015155,
+													"sid": 895384292345514,
 													"parameters": {
-														"value": "tutoperso_Defausse.Width = 0"
+														"index": "tutoperso_Defausse.Width - 1",
+														"axis": "x"
 													}
 												},
 												{
@@ -867,15 +871,7 @@
 							}
 						}
 					],
-					"sid": 361809520280821,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [],
-							"actions": [],
-							"sid": 482715387050536
-						}
-					]
+					"sid": 361809520280821
 				}
 			]
 		},
