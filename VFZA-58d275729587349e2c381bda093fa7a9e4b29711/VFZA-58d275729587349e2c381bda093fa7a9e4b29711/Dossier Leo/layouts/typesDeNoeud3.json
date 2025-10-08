@@ -60,7 +60,14 @@
 					"instanceVariables": {
 						"IndexMain": 0
 					},
-					"behaviors": {},
+					"behaviors": {
+						"GlisserDéposer": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 608684080207371,
 						"expanded": true

@@ -272,6 +272,43 @@
 										{
 											"id": "compare-two-values",
 											"objectClass": "System",
+											"sid": 311264713531696,
+											"parameters": {
+												"first-value": "tutoperso_Deck.Width",
+												"comparison": 4,
+												"second-value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "push",
+											"objectClass": "tutoperso_Main",
+											"sid": 659871467130587,
+											"parameters": {
+												"where": "back",
+												"value": "tutoperso_Deck.At( tutoperso_Deck.Width - 1 )",
+												"axis": "x"
+											}
+										},
+										{
+											"id": "delete",
+											"objectClass": "tutoperso_Deck",
+											"sid": 357001428363549,
+											"parameters": {
+												"index": "tutoperso_Deck.Width - 1",
+												"axis": "x"
+											}
+										}
+									],
+									"sid": 951457272386111
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
 											"sid": 696206327407372,
 											"parameters": {
 												"first-value": "tutoperso_Defausse.Width",
@@ -280,72 +317,28 @@
 											}
 										}
 									],
-									"actions": [],
-									"sid": 889131902088709,
-									"children": [
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "for",
-													"objectClass": "System",
-													"sid": 861983851287391,
-													"parameters": {
-														"name": "\"i\"",
-														"start-index": "0",
-														"end-index": "tutoperso_Defausse.Width - 1"
-													}
-												}
-											],
-											"actions": [
-												{
-													"id": "push",
-													"objectClass": "tutoperso_Deck",
-													"sid": 844686468010904,
-													"parameters": {
-														"where": "back",
-														"value": "tutoperso_Defausse.At( loopindex(\"i\") )",
-														"axis": "x"
-													}
-												},
-												{
-													"id": "delete",
-													"objectClass": "tutoperso_Defausse",
-													"sid": 513335997867299,
-													"parameters": {
-														"index": "tutoperso_Defausse.Width - 1",
-														"axis": "x"
-													}
-												}
-											],
-											"sid": 473615907178258
-										}
-									]
-								},
-								{
-									"eventType": "block",
-									"conditions": [],
 									"actions": [
 										{
-											"id": "set-size",
+											"id": "delete",
 											"objectClass": "tutoperso_Defausse",
-											"sid": 785399713761858,
+											"sid": 730360903555255,
 											"parameters": {
-												"width": "0",
-												"height": "1",
-												"depth": "1"
+												"index": "tutoperso_Defausse.Width - 1",
+												"axis": "x"
 											}
 										},
 										{
-											"id": "shuffle",
+											"id": "push",
 											"objectClass": "tutoperso_Deck",
-											"sid": 945403606742186,
+											"sid": 759967498788639,
 											"parameters": {
+												"where": "back",
+												"value": "tutoperso_Defausse.At( tutoperso_Defausse.Width - 1 )",
 												"axis": "x"
 											}
 										}
 									],
-									"sid": 257109075240796
+									"sid": 889131902088709
 								},
 								{
 									"eventType": "block",
@@ -379,45 +372,33 @@
 										}
 									],
 									"sid": 901732576801593
-								}
-							]
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-two-values",
-									"objectClass": "System",
-									"sid": 811134781251021,
-									"parameters": {
-										"first-value": "tutoperso_Deck.Width",
-										"comparison": 4,
-										"second-value": "0"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "push",
-									"objectClass": "tutoperso_Main",
-									"sid": 989838324337473,
-									"parameters": {
-										"where": "back",
-										"value": "tutoperso_Deck.At( tutoperso_Deck.Width - 1 )",
-										"axis": "x"
-									}
 								},
 								{
-									"id": "delete",
-									"objectClass": "tutoperso_Deck",
-									"sid": 952371687512175,
-									"parameters": {
-										"index": "tutoperso_Deck.Width - 1",
-										"axis": "x"
-									}
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "set-size",
+											"objectClass": "tutoperso_Defausse",
+											"sid": 483952670845588,
+											"parameters": {
+												"width": "0",
+												"height": "1",
+												"depth": "1"
+											}
+										},
+										{
+											"id": "shuffle",
+											"objectClass": "tutoperso_Deck",
+											"sid": 371151354266305,
+											"parameters": {
+												"axis": "x"
+											}
+										}
+									],
+									"sid": 490212272471332
 								}
-							],
-							"sid": 841819455463379
+							]
 						}
 					]
 				},
@@ -504,9 +485,9 @@
 				{
 					"id": "on-object-clicked",
 					"objectClass": "Souris",
-					"sid": 529501536559090,
+					"sid": 812370067547110,
 					"parameters": {
-						"mouse-button": "left",
+						"mouse-button": "right",
 						"click-type": "clicked",
 						"object-clicked": "FamCard"
 					}
@@ -806,6 +787,21 @@
 			"children": [
 				{
 					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "dbg",
+							"sid": 373640865877487,
+							"parameters": {
+								"text": "\"Refresh OK\""
+							}
+						}
+					],
+					"sid": 278134447132376
+				},
+				{
+					"eventType": "block",
 					"conditions": [
 						{
 							"id": "for",
@@ -928,21 +924,6 @@
 							"sid": 336037496995177
 						}
 					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [],
-					"actions": [
-						{
-							"id": "set-text",
-							"objectClass": "dbg",
-							"sid": 519326163406795,
-							"parameters": {
-								"text": "\"Refresh OK\""
-							}
-						}
-					],
-					"sid": 361809520280821
 				}
 			]
 		},
@@ -956,6 +937,14 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Info_health_player",
+					"sid": 506454625704837,
+					"parameters": {
+						"text": "\"Vie : \" & health_player"
+					}
+				},
 				{
 					"id": "set-text",
 					"objectClass": "deck",

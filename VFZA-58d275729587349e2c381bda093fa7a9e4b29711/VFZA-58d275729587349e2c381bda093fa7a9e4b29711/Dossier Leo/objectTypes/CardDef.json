@@ -5,7 +5,13 @@
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "DragnDrop",
+			"name": "GlisserDéposer",
+			"sid": 336657099958909
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
