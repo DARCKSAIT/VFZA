@@ -111,7 +111,7 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 995947849315556,
+					"sid": 921677008911164,
 					"parameters": {
 						"variable": "SelectedCharacter",
 						"value": "\"tutoperso\""
@@ -120,7 +120,7 @@
 				{
 					"id": "delete",
 					"objectClass": "tutoperso_Deck",
-					"sid": 374257851418604,
+					"sid": 237029348678415,
 					"parameters": {
 						"index": "0",
 						"axis": "x"
@@ -129,7 +129,7 @@
 				{
 					"id": "delete",
 					"objectClass": "tutoperso_Defausse",
-					"sid": 796780204213061,
+					"sid": 760013834143916,
 					"parameters": {
 						"index": "0",
 						"axis": "x"
@@ -138,104 +138,16 @@
 				{
 					"id": "delete",
 					"objectClass": "tutoperso_Main",
-					"sid": 847445078138589,
+					"sid": 152419290974620,
 					"parameters": {
 						"index": "0",
 						"axis": "x"
 					}
 				},
 				{
-					"id": "push",
-					"objectClass": "tutoperso_Deck",
-					"sid": 708015824201673,
-					"parameters": {
-						"where": "back",
-						"value": "\"ATK_A\"",
-						"axis": "x"
-					}
-				},
-				{
-					"id": "push",
-					"objectClass": "tutoperso_Deck",
-					"sid": 235911922249453,
-					"parameters": {
-						"where": "back",
-						"value": "\"ATK_B\"",
-						"axis": "x"
-					}
-				},
-				{
-					"id": "push",
-					"objectClass": "tutoperso_Deck",
-					"sid": 721741120635214,
-					"parameters": {
-						"where": "back",
-						"value": "\"ATK_C\"",
-						"axis": "x"
-					}
-				},
-				{
-					"id": "push",
-					"objectClass": "tutoperso_Deck",
-					"sid": 794862907976772,
-					"parameters": {
-						"where": "back",
-						"value": "\"ATK_D\"",
-						"axis": "x"
-					}
-				},
-				{
-					"id": "push",
-					"objectClass": "tutoperso_Deck",
-					"sid": 832728218309147,
-					"parameters": {
-						"where": "back",
-						"value": "\"DEF_A\"",
-						"axis": "x"
-					}
-				},
-				{
-					"id": "push",
-					"objectClass": "tutoperso_Deck",
-					"sid": 121487743531834,
-					"parameters": {
-						"where": "back",
-						"value": "\"DEF_B\"",
-						"axis": "x"
-					}
-				},
-				{
-					"id": "push",
-					"objectClass": "tutoperso_Deck",
-					"sid": 737017638132493,
-					"parameters": {
-						"where": "back",
-						"value": "\"DEF_C\"",
-						"axis": "x"
-					}
-				},
-				{
-					"id": "push",
-					"objectClass": "tutoperso_Deck",
-					"sid": 254034574428245,
-					"parameters": {
-						"where": "back",
-						"value": "\"DEF_D\"",
-						"axis": "x"
-					}
-				},
-				{
-					"id": "shuffle",
-					"objectClass": "tutoperso_Deck",
-					"sid": 624111962479902,
-					"parameters": {
-						"axis": "x"
-					}
-				},
-				{
 					"id": "set-text",
 					"objectClass": "dbg",
-					"sid": 728328766167169,
+					"sid": 342845125267676,
 					"parameters": {
 						"text": "\"dbg : \" & SelectedCharacter"
 					}
@@ -243,6 +155,156 @@
 			],
 			"sid": 720165151650879,
 			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "repeat",
+							"objectClass": "System",
+							"sid": 363471116637749,
+							"parameters": {
+								"count": "1"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 754186179682010,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 997088006303197,
+									"parameters": {
+										"first-value": "tutoperso_Deck.Width",
+										"comparison": 1,
+										"second-value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "delete",
+									"objectClass": "tutoperso_Deck",
+									"sid": 607303573413588,
+									"parameters": {
+										"index": "0",
+										"axis": "x"
+									}
+								}
+							],
+							"sid": 499110471192461
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 821059778941612,
+									"parameters": {
+										"first-value": "tutoperso_Deck.Width",
+										"comparison": 0,
+										"second-value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "push",
+									"objectClass": "tutoperso_Deck",
+									"sid": 643940092231053,
+									"parameters": {
+										"where": "back",
+										"value": "\"ATK_A\"",
+										"axis": "x"
+									}
+								},
+								{
+									"id": "push",
+									"objectClass": "tutoperso_Deck",
+									"sid": 784651074393447,
+									"parameters": {
+										"where": "back",
+										"value": "\"ATK_B\"",
+										"axis": "x"
+									}
+								},
+								{
+									"id": "push",
+									"objectClass": "tutoperso_Deck",
+									"sid": 878251386254510,
+									"parameters": {
+										"where": "back",
+										"value": "\"ATK_C\"",
+										"axis": "x"
+									}
+								},
+								{
+									"id": "push",
+									"objectClass": "tutoperso_Deck",
+									"sid": 927170333329945,
+									"parameters": {
+										"where": "back",
+										"value": "\"ATK_D\"",
+										"axis": "x"
+									}
+								},
+								{
+									"id": "push",
+									"objectClass": "tutoperso_Deck",
+									"sid": 301233945140557,
+									"parameters": {
+										"where": "back",
+										"value": "\"DEF_A\"",
+										"axis": "x"
+									}
+								},
+								{
+									"id": "push",
+									"objectClass": "tutoperso_Deck",
+									"sid": 157539021129584,
+									"parameters": {
+										"where": "back",
+										"value": "\"DEF_B\"",
+										"axis": "x"
+									}
+								},
+								{
+									"id": "push",
+									"objectClass": "tutoperso_Deck",
+									"sid": 152133909926700,
+									"parameters": {
+										"where": "back",
+										"value": "\"DEF_C\"",
+										"axis": "x"
+									}
+								},
+								{
+									"id": "push",
+									"objectClass": "tutoperso_Deck",
+									"sid": 622157735377489,
+									"parameters": {
+										"where": "back",
+										"value": "\"DEF_D\"",
+										"axis": "x"
+									}
+								},
+								{
+									"id": "shuffle",
+									"objectClass": "tutoperso_Deck",
+									"sid": 379859791223294,
+									"parameters": {
+										"axis": "x"
+									}
+								}
+							],
+							"sid": 537792995378556
+						}
+					]
+				},
 				{
 					"eventType": "block",
 					"conditions": [],

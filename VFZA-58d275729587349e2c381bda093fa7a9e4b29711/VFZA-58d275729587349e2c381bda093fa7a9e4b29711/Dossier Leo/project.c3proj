@@ -101,7 +101,8 @@
 			"Btn_FinTour",
 			"main",
 			"deck",
-			"defausse"
+			"defausse",
+			"mapState"
 		],
 		"subfolders": []
 	},

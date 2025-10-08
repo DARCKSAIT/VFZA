@@ -32,6 +32,27 @@
 			"desc": "",
 			"show": true,
 			"sid": 988623401928153
+		},
+		{
+			"name": "parentIdx",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 208373115815609
+		},
+		{
+			"name": "siblingIdx",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 647168473596932
+		},
+		{
+			"name": "isStart",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 529288614302927
 		}
 	],
 	"behaviorTypes": [],

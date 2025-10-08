@@ -59,7 +59,10 @@
 						"col": 0,
 						"row": 0,
 						"typeDeNoeud": 0,
-						"idx": 9
+						"idx": 9,
+						"parentIdx": 0,
+						"siblingIdx": 0,
+						"isStart": false
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -101,7 +104,10 @@
 						"col": 0,
 						"row": 0,
 						"typeDeNoeud": 0,
-						"idx": 8
+						"idx": 8,
+						"parentIdx": 0,
+						"siblingIdx": 0,
+						"isStart": true
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -143,7 +149,10 @@
 						"col": 0,
 						"row": 0,
 						"typeDeNoeud": 0,
-						"idx": 1
+						"idx": 1,
+						"parentIdx": 0,
+						"siblingIdx": 0,
+						"isStart": true
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -185,7 +194,10 @@
 						"col": 0,
 						"row": 0,
 						"typeDeNoeud": 0,
-						"idx": 2
+						"idx": 2,
+						"parentIdx": 0,
+						"siblingIdx": 0,
+						"isStart": false
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -227,7 +239,10 @@
 						"col": 0,
 						"row": 0,
 						"typeDeNoeud": 0,
-						"idx": 0
+						"idx": 0,
+						"parentIdx": 0,
+						"siblingIdx": 0,
+						"isStart": false
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -269,7 +284,10 @@
 						"col": 0,
 						"row": 0,
 						"typeDeNoeud": 0,
-						"idx": 7
+						"idx": 7,
+						"parentIdx": 0,
+						"siblingIdx": 0,
+						"isStart": false
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -311,7 +329,10 @@
 						"col": 0,
 						"row": 0,
 						"typeDeNoeud": 0,
-						"idx": 5
+						"idx": 5,
+						"parentIdx": 0,
+						"siblingIdx": 0,
+						"isStart": false
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -353,7 +374,10 @@
 						"col": 0,
 						"row": 0,
 						"typeDeNoeud": 0,
-						"idx": 3
+						"idx": 3,
+						"parentIdx": 0,
+						"siblingIdx": 0,
+						"isStart": false
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -395,7 +419,10 @@
 						"col": 0,
 						"row": 0,
 						"typeDeNoeud": 0,
-						"idx": 6
+						"idx": 6,
+						"parentIdx": 0,
+						"siblingIdx": 0,
+						"isStart": false
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -437,7 +464,10 @@
 						"col": 0,
 						"row": 0,
 						"typeDeNoeud": 0,
-						"idx": 10
+						"idx": 10,
+						"parentIdx": 0,
+						"siblingIdx": 0,
+						"isStart": false
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -479,7 +509,10 @@
 						"col": 0,
 						"row": 0,
 						"typeDeNoeud": 0,
-						"idx": 4
+						"idx": 4,
+						"parentIdx": 0,
+						"siblingIdx": 0,
+						"isStart": false
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -604,7 +637,10 @@
 						"col": 0,
 						"row": 0,
 						"typeDeNoeud": 0,
-						"idx": 11
+						"idx": 11,
+						"parentIdx": 0,
+						"siblingIdx": 0,
+						"isStart": false
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
