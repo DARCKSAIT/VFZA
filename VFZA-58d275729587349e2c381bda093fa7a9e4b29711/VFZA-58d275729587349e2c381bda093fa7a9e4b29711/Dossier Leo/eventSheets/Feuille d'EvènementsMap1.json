@@ -136,39 +136,60 @@
 		},
 		{
 			"eventType": "block",
-			"conditions": [],
-			"actions": [],
-			"sid": 815113993398606,
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "herostarter",
+					"sid": 691876248830412,
+					"parameters": {
+						"object": "Noeud"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Noeud",
+					"sid": 167549722787802,
+					"parameters": {
+						"instance-variable": "typeDeNoeud",
+						"comparison": 0,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 205213702576433,
+					"parameters": {
+						"first-value": "mapState.At(Noeud.idx)",
+						"comparison": 0,
+						"second-value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-at-x",
+					"objectClass": "mapState",
+					"sid": 933382233225797,
+					"parameters": {
+						"x": "Noeud.idx",
+						"value": "2"
+					}
+				}
+			],
+			"sid": 425368930681460,
 			"children": [
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "herostarter",
-							"sid": 537420984044185,
-							"parameters": {
-								"object": "Noeud"
-							}
-						},
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "Noeud",
-							"sid": 181642731521337,
-							"parameters": {
-								"instance-variable": "typeDeNoeud",
-								"comparison": 0,
-								"value": "0"
-							}
-						},
-						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 633524280513599,
+							"sid": 474422756726569,
 							"parameters": {
-								"first-value": "mapState.At(Noeud.idx)",
-								"comparison": 0,
-								"second-value": "1"
+								"first-value": "Noeud.siblingIdx",
+								"comparison": 5,
+								"second-value": "0"
 							}
 						}
 					],
@@ -176,414 +197,14 @@
 						{
 							"id": "set-at-x",
 							"objectClass": "mapState",
-							"sid": 903939616345771,
+							"sid": 237274123895788,
 							"parameters": {
-								"x": "Noeud.idx",
-								"value": "2"
-							}
-						}
-					],
-					"sid": 872929125411052,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-two-values",
-									"objectClass": "System",
-									"sid": 771304273301470,
-									"parameters": {
-										"first-value": "Noeud.siblingIdx",
-										"comparison": 5,
-										"second-value": "0"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-at-x",
-									"objectClass": "mapState",
-									"sid": 620740440449014,
-									"parameters": {
-										"x": "Noeud.siblingIdx",
-										"value": "3"
-									}
-								}
-							],
-							"sid": 808812458407627
-						},
-						{
-							"eventType": "block",
-							"conditions": [],
-							"actions": [
-								{
-									"id": "go-to-layout",
-									"objectClass": "System",
-									"sid": 220220810593614,
-									"parameters": {
-										"layout": "piége"
-									}
-								}
-							],
-							"sid": 298098939286271
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "herostarter",
-							"sid": 673842301064219,
-							"parameters": {
-								"object": "Noeud"
-							}
-						},
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "Noeud",
-							"sid": 263251333434073,
-							"parameters": {
-								"instance-variable": "typeDeNoeud",
-								"comparison": 0,
-								"value": "1"
-							}
-						},
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 694821897716604,
-							"parameters": {
-								"first-value": "mapState.At(Noeud.idx)",
-								"comparison": 0,
-								"second-value": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-at-x",
-							"objectClass": "mapState",
-							"sid": 477283100409765,
-							"parameters": {
-								"x": "Noeud.idx",
-								"value": "2"
-							}
-						}
-					],
-					"sid": 399378200700915,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-two-values",
-									"objectClass": "System",
-									"sid": 559381886476263,
-									"parameters": {
-										"first-value": "Noeud.siblingIdx",
-										"comparison": 5,
-										"second-value": "0"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-at-x",
-									"objectClass": "mapState",
-									"sid": 616156554670961,
-									"parameters": {
-										"x": "Noeud.siblingIdx",
-										"value": "3"
-									}
-								}
-							],
-							"sid": 869705809211009
-						},
-						{
-							"eventType": "block",
-							"conditions": [],
-							"actions": [
-								{
-									"id": "go-to-layout",
-									"objectClass": "System",
-									"sid": 384734641189516,
-									"parameters": {
-										"layout": "typesDeNoeud1"
-									}
-								}
-							],
-							"sid": 760323904632616
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "herostarter",
-							"sid": 643990432316031,
-							"parameters": {
-								"object": "Noeud"
-							}
-						},
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "Noeud",
-							"sid": 903788233518281,
-							"parameters": {
-								"instance-variable": "typeDeNoeud",
-								"comparison": 0,
-								"value": "2"
-							}
-						},
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 969786458673658,
-							"parameters": {
-								"first-value": "mapState.At(Noeud.idx)",
-								"comparison": 0,
-								"second-value": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-at-x",
-							"objectClass": "mapState",
-							"sid": 681208162695561,
-							"parameters": {
-								"x": "Noeud.idx",
-								"value": "2"
-							}
-						}
-					],
-					"sid": 206413699474797,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-two-values",
-									"objectClass": "System",
-									"sid": 215555834506556,
-									"parameters": {
-										"first-value": "Noeud.siblingIdx",
-										"comparison": 5,
-										"second-value": "0"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-at-x",
-									"objectClass": "mapState",
-									"sid": 600552817068209,
-									"parameters": {
-										"x": "Noeud.siblingIdx",
-										"value": "3"
-									}
-								}
-							],
-							"sid": 751919086599459
-						},
-						{
-							"eventType": "block",
-							"conditions": [],
-							"actions": [
-								{
-									"id": "go-to-layout",
-									"objectClass": "System",
-									"sid": 565190259879584,
-									"parameters": {
-										"layout": "Combat_base"
-									}
-								}
-							],
-							"sid": 298069890402479
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "herostarter",
-							"sid": 450932255899240,
-							"parameters": {
-								"object": "Noeud"
-							}
-						},
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "Noeud",
-							"sid": 489184849979450,
-							"parameters": {
-								"instance-variable": "typeDeNoeud",
-								"comparison": 0,
+								"x": "Noeud.siblingIdx",
 								"value": "3"
 							}
-						},
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 174192766146489,
-							"parameters": {
-								"first-value": "mapState.At(Noeud.idx)",
-								"comparison": 0,
-								"second-value": "1"
-							}
 						}
 					],
-					"actions": [
-						{
-							"id": "set-at-x",
-							"objectClass": "mapState",
-							"sid": 152313214236789,
-							"parameters": {
-								"x": "Noeud.idx",
-								"value": "2"
-							}
-						}
-					],
-					"sid": 789449216283943,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-two-values",
-									"objectClass": "System",
-									"sid": 702068559289809,
-									"parameters": {
-										"first-value": "Noeud.siblingIdx",
-										"comparison": 5,
-										"second-value": "0"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-at-x",
-									"objectClass": "mapState",
-									"sid": 155910250136514,
-									"parameters": {
-										"x": "Noeud.siblingIdx",
-										"value": "3"
-									}
-								}
-							],
-							"sid": 482727332293288
-						},
-						{
-							"eventType": "block",
-							"conditions": [],
-							"actions": [
-								{
-									"id": "go-to-layout",
-									"objectClass": "System",
-									"sid": 768892540234514,
-									"parameters": {
-										"layout": "typesDeNoeud3"
-									}
-								}
-							],
-							"sid": 192779923534626
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "herostarter",
-							"sid": 870607476235845,
-							"parameters": {
-								"object": "Noeud"
-							}
-						},
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "Noeud",
-							"sid": 915346562155653,
-							"parameters": {
-								"instance-variable": "typeDeNoeud",
-								"comparison": 0,
-								"value": "4"
-							}
-						},
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 392894780056814,
-							"parameters": {
-								"first-value": "mapState.At(Noeud.idx)",
-								"comparison": 0,
-								"second-value": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-at-x",
-							"objectClass": "mapState",
-							"sid": 602623482528297,
-							"parameters": {
-								"x": "Noeud.idx",
-								"value": "2"
-							}
-						}
-					],
-					"sid": 269584993836801,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-two-values",
-									"objectClass": "System",
-									"sid": 863075063034782,
-									"parameters": {
-										"first-value": "Noeud.siblingIdx",
-										"comparison": 5,
-										"second-value": "0"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-at-x",
-									"objectClass": "mapState",
-									"sid": 560291544788308,
-									"parameters": {
-										"x": "Noeud.siblingIdx",
-										"value": "3"
-									}
-								}
-							],
-							"sid": 218362762599715
-						},
-						{
-							"eventType": "block",
-							"conditions": [],
-							"actions": [
-								{
-									"id": "go-to-layout",
-									"objectClass": "System",
-									"sid": 350044687396363,
-									"parameters": {
-										"layout": "heal"
-									}
-								}
-							],
-							"sid": 170242048087792
-						}
-					]
+					"sid": 420443037483445
 				},
 				{
 					"eventType": "block",
@@ -592,14 +213,414 @@
 						{
 							"id": "set-item",
 							"objectClass": "LocalStorage",
-							"sid": 253799744529953,
+							"sid": 518605464794510,
 							"parameters": {
 								"key": "\"mapState\"",
 								"value": "mapState.AsJSON"
 							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 868507493122468,
+							"parameters": {
+								"layout": "piége"
+							}
 						}
 					],
-					"sid": 281122664484620
+					"sid": 388699383419938
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "herostarter",
+					"sid": 220469953150802,
+					"parameters": {
+						"object": "Noeud"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Noeud",
+					"sid": 975392881851856,
+					"parameters": {
+						"instance-variable": "typeDeNoeud",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 197597040573988,
+					"parameters": {
+						"first-value": "mapState.At(Noeud.idx)",
+						"comparison": 0,
+						"second-value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-at-x",
+					"objectClass": "mapState",
+					"sid": 467340774637470,
+					"parameters": {
+						"x": "Noeud.idx",
+						"value": "2"
+					}
+				}
+			],
+			"sid": 624889214517331,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 896112213633082,
+							"parameters": {
+								"first-value": "Noeud.siblingIdx",
+								"comparison": 5,
+								"second-value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-at-x",
+							"objectClass": "mapState",
+							"sid": 244257176869853,
+							"parameters": {
+								"x": "Noeud.siblingIdx",
+								"value": "3"
+							}
+						}
+					],
+					"sid": 926994933268673
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 155280785607673,
+							"parameters": {
+								"key": "\"mapState\"",
+								"value": "mapState.AsJSON"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 271993704295040,
+							"parameters": {
+								"layout": "typesDeNoeud1"
+							}
+						}
+					],
+					"sid": 374696808471279
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "herostarter",
+					"sid": 854410187770943,
+					"parameters": {
+						"object": "Noeud"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Noeud",
+					"sid": 816412260623757,
+					"parameters": {
+						"instance-variable": "typeDeNoeud",
+						"comparison": 0,
+						"value": "2"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 915834496083305,
+					"parameters": {
+						"first-value": "mapState.At(Noeud.idx)",
+						"comparison": 0,
+						"second-value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-at-x",
+					"objectClass": "mapState",
+					"sid": 828974352010178,
+					"parameters": {
+						"x": "Noeud.idx",
+						"value": "2"
+					}
+				}
+			],
+			"sid": 791125884216692,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 593925417605140,
+							"parameters": {
+								"first-value": "Noeud.siblingIdx",
+								"comparison": 5,
+								"second-value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-at-x",
+							"objectClass": "mapState",
+							"sid": 409905681623930,
+							"parameters": {
+								"x": "Noeud.siblingIdx",
+								"value": "3"
+							}
+						}
+					],
+					"sid": 134973112742677
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 384077425190653,
+							"parameters": {
+								"key": "\"mapState\"",
+								"value": "mapState.AsJSON"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 340009975982443,
+							"parameters": {
+								"layout": "Combat_base"
+							}
+						}
+					],
+					"sid": 186984372356473
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "herostarter",
+					"sid": 841493349220094,
+					"parameters": {
+						"object": "Noeud"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Noeud",
+					"sid": 312765449249721,
+					"parameters": {
+						"instance-variable": "typeDeNoeud",
+						"comparison": 0,
+						"value": "3"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 739861005751310,
+					"parameters": {
+						"first-value": "mapState.At(Noeud.idx)",
+						"comparison": 0,
+						"second-value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-at-x",
+					"objectClass": "mapState",
+					"sid": 548610929094203,
+					"parameters": {
+						"x": "Noeud.idx",
+						"value": "2"
+					}
+				}
+			],
+			"sid": 855415663547086,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 483220128863329,
+							"parameters": {
+								"first-value": "Noeud.siblingIdx",
+								"comparison": 5,
+								"second-value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-at-x",
+							"objectClass": "mapState",
+							"sid": 706042482571584,
+							"parameters": {
+								"x": "Noeud.siblingIdx",
+								"value": "3"
+							}
+						}
+					],
+					"sid": 441130679630816
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 726768741693342,
+							"parameters": {
+								"key": "\"mapState\"",
+								"value": "mapState.AsJSON"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 667764677457637,
+							"parameters": {
+								"layout": "typesDeNoeud3"
+							}
+						}
+					],
+					"sid": 956605628331220
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "herostarter",
+					"sid": 163601462862232,
+					"parameters": {
+						"object": "Noeud"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Noeud",
+					"sid": 336197039109961,
+					"parameters": {
+						"instance-variable": "typeDeNoeud",
+						"comparison": 0,
+						"value": "4"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 373521504646783,
+					"parameters": {
+						"first-value": "mapState.At(Noeud.idx)",
+						"comparison": 0,
+						"second-value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-at-x",
+					"objectClass": "mapState",
+					"sid": 116290121319459,
+					"parameters": {
+						"x": "Noeud.idx",
+						"value": "2"
+					}
+				}
+			],
+			"sid": 576343686204556,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 696782231867043,
+							"parameters": {
+								"first-value": "Noeud.siblingIdx",
+								"comparison": 5,
+								"second-value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-at-x",
+							"objectClass": "mapState",
+							"sid": 134628216862229,
+							"parameters": {
+								"x": "Noeud.siblingIdx",
+								"value": "3"
+							}
+						}
+					],
+					"sid": 312175941819294
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 424581432808502,
+							"parameters": {
+								"key": "\"mapState\"",
+								"value": "mapState.AsJSON"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 174405616656179,
+							"parameters": {
+								"layout": "heal"
+							}
+						}
+					],
+					"sid": 943615995971608
 				}
 			]
 		},
@@ -1073,28 +1094,39 @@
 							"parameters": {
 								"object": "Noeud"
 							}
-						},
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "Noeud",
-							"sid": 867912226083053,
-							"parameters": {
-								"instance-variable": "isStart"
-							}
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 246114857757328,
+					"children": [
 						{
-							"id": "set-at-x",
-							"objectClass": "mapState",
-							"sid": 651970162968138,
-							"parameters": {
-								"x": "Noeud.idx",
-								"value": "1"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Noeud",
+									"sid": 343779230375474,
+									"parameters": {
+										"instance-variable": "isStart",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-at-x",
+									"objectClass": "mapState",
+									"sid": 516214653673825,
+									"parameters": {
+										"x": "Noeud.idx",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 557892881110209
 						}
-					],
-					"sid": 246114857757328
+					]
 				},
 				{
 					"eventType": "block",

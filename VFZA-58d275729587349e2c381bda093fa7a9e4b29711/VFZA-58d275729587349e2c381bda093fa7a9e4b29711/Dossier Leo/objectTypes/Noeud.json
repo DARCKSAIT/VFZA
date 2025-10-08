@@ -49,10 +49,10 @@
 		},
 		{
 			"name": "isStart",
-			"type": "boolean",
+			"type": "number",
 			"desc": "",
 			"show": true,
-			"sid": 529288614302927
+			"sid": 422100264493287
 		}
 	],
 	"behaviorTypes": [],
