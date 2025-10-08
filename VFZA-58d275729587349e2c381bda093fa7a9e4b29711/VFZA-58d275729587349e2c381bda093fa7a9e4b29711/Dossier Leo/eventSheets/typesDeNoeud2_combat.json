@@ -372,35 +372,35 @@
 										}
 									],
 									"sid": 901732576801593
-								},
-								{
-									"eventType": "block",
-									"conditions": [],
-									"actions": [
-										{
-											"id": "set-size",
-											"objectClass": "tutoperso_Defausse",
-											"sid": 483952670845588,
-											"parameters": {
-												"width": "0",
-												"height": "1",
-												"depth": "1"
-											}
-										},
-										{
-											"id": "shuffle",
-											"objectClass": "tutoperso_Deck",
-											"sid": 371151354266305,
-											"parameters": {
-												"axis": "x"
-											}
-										}
-									],
-									"sid": 490212272471332
 								}
 							]
 						}
 					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-size",
+							"objectClass": "tutoperso_Defausse",
+							"sid": 331164859498188,
+							"parameters": {
+								"width": "0",
+								"height": "1",
+								"depth": "1"
+							}
+						},
+						{
+							"id": "shuffle",
+							"objectClass": "tutoperso_Deck",
+							"sid": 997710494016447,
+							"parameters": {
+								"axis": "x"
+							}
+						}
+					],
+					"sid": 911415526001287
 				},
 				{
 					"eventType": "block",
@@ -650,18 +650,36 @@
 														"value": "tutoperso_Defausse.At( loopindex(\"i\") )",
 														"axis": "x"
 													}
-												},
+												}
+											],
+											"sid": 350460119183947
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "for",
+													"objectClass": "System",
+													"sid": 642382974982623,
+													"parameters": {
+														"name": "\"i\"",
+														"start-index": "0",
+														"end-index": "tutoperso_Defausse.Width - 1"
+													}
+												}
+											],
+											"actions": [
 												{
 													"id": "delete",
 													"objectClass": "tutoperso_Defausse",
-													"sid": 895384292345514,
+													"sid": 565543918754712,
 													"parameters": {
 														"index": "tutoperso_Defausse.Width - 1",
 														"axis": "x"
 													}
 												}
 											],
-											"sid": 350460119183947
+											"sid": 757185341053679
 										},
 										{
 											"eventType": "block",
