@@ -671,9 +671,9 @@
 												{
 													"id": "compare-two-values",
 													"objectClass": "System",
-													"sid": 608930948233712,
+													"sid": 837344935344497,
 													"parameters": {
-														"first-value": "tutoperso_Defausse.Width",
+														"first-value": "tutoperso_Deck.Width",
 														"comparison": 0,
 														"second-value": "0"
 													}
@@ -681,11 +681,11 @@
 												{
 													"id": "compare-two-values",
 													"objectClass": "System",
-													"sid": 140817501258412,
+													"sid": 149794585126163,
 													"parameters": {
-														"first-value": "tutoperso_Main.Width ",
-														"comparison": 2,
-														"second-value": "5"
+														"first-value": "tutoperso_Defausse.Width ",
+														"comparison": 0,
+														"second-value": "0"
 													}
 												}
 											],
