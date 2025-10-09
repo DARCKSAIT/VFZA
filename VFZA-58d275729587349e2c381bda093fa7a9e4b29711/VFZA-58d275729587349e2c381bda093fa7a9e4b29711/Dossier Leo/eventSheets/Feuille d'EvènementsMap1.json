@@ -848,9 +848,9 @@
 						{
 							"id": "set-at-xyz",
 							"objectClass": "mapState",
-							"sid": 204018950812842,
+							"sid": 291482805071061,
 							"parameters": {
-								"x": "mapState.At(Noeud.idx)",
+								"x": "Noeud.idx",
 								"y": "0",
 								"z": "0",
 								"value": "3"
@@ -1078,6 +1078,15 @@
 			],
 			"actions": [
 				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 296617896636199,
+					"parameters": {
+						"variable": "G_CurrentNodeIdx",
+						"value": "Noeud.idx"
+					}
+				},
+				{
 					"id": "set-at-xyz",
 					"objectClass": "mapState",
 					"sid": 822503160040574,
@@ -1097,7 +1106,7 @@
 						{
 							"id": "for-each",
 							"objectClass": "System",
-							"sid": 305811137756210,
+							"sid": 329176033595866,
 							"parameters": {
 								"object": "Noeud"
 							}
@@ -1105,7 +1114,7 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 878670998388158,
+							"sid": 915863523412879,
 							"parameters": {
 								"first-value": "Noeud.isStart",
 								"comparison": 0,
@@ -1115,7 +1124,7 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 500084195042231,
+							"sid": 218592297600845,
 							"parameters": {
 								"first-value": "Noeud.idx",
 								"comparison": 1,
@@ -1125,7 +1134,7 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 913918589967737,
+							"sid": 615533469957654,
 							"parameters": {
 								"first-value": "mapState.At(Noeud.idx)",
 								"comparison": 0,
@@ -1137,7 +1146,7 @@
 						{
 							"id": "set-at-xyz",
 							"objectClass": "mapState",
-							"sid": 522541108130594,
+							"sid": 299625940248700,
 							"parameters": {
 								"x": "mapState.At(Noeud.idx)",
 								"y": "0",
@@ -1146,7 +1155,7 @@
 							}
 						}
 					],
-					"sid": 848381088133964
+					"sid": 741706700813667
 				},
 				{
 					"eventType": "block",
@@ -1367,6 +1376,15 @@
 			],
 			"actions": [
 				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 365953535648295,
+					"parameters": {
+						"variable": "G_CurrentNodeIdx",
+						"value": "Noeud.idx"
+					}
+				},
+				{
 					"id": "set-at-xyz",
 					"objectClass": "mapState",
 					"sid": 878720693592369,
@@ -1386,7 +1404,7 @@
 						{
 							"id": "for-each",
 							"objectClass": "System",
-							"sid": 492134810400678,
+							"sid": 131592138810897,
 							"parameters": {
 								"object": "Noeud"
 							}
@@ -1394,7 +1412,7 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 111940286843052,
+							"sid": 615930184325718,
 							"parameters": {
 								"first-value": "Noeud.isStart",
 								"comparison": 0,
@@ -1404,7 +1422,7 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 184156226225026,
+							"sid": 598646819397837,
 							"parameters": {
 								"first-value": "Noeud.idx",
 								"comparison": 1,
@@ -1414,7 +1432,7 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 909325360598402,
+							"sid": 618734071901554,
 							"parameters": {
 								"first-value": "mapState.At(Noeud.idx)",
 								"comparison": 0,
@@ -1426,7 +1444,7 @@
 						{
 							"id": "set-at-xyz",
 							"objectClass": "mapState",
-							"sid": 313084959952863,
+							"sid": 975315313452189,
 							"parameters": {
 								"x": "mapState.At(Noeud.idx)",
 								"y": "0",
@@ -1435,7 +1453,7 @@
 							}
 						}
 					],
-					"sid": 942534743211818
+					"sid": 651266819819322
 				},
 				{
 					"eventType": "block",
@@ -1656,6 +1674,15 @@
 			],
 			"actions": [
 				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 793672338950669,
+					"parameters": {
+						"variable": "G_CurrentNodeIdx",
+						"value": "Noeud.idx"
+					}
+				},
+				{
 					"id": "set-at-xyz",
 					"objectClass": "mapState",
 					"sid": 582516105115680,
@@ -1675,7 +1702,7 @@
 						{
 							"id": "for-each",
 							"objectClass": "System",
-							"sid": 194092013615637,
+							"sid": 877508933122830,
 							"parameters": {
 								"object": "Noeud"
 							}
@@ -1683,7 +1710,7 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 874307912328633,
+							"sid": 125856931786446,
 							"parameters": {
 								"first-value": "Noeud.isStart",
 								"comparison": 0,
@@ -1693,7 +1720,7 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 109215281966566,
+							"sid": 331119789433114,
 							"parameters": {
 								"first-value": "Noeud.idx",
 								"comparison": 1,
@@ -1703,7 +1730,7 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 438362234366372,
+							"sid": 183847397862263,
 							"parameters": {
 								"first-value": "mapState.At(Noeud.idx)",
 								"comparison": 0,
@@ -1715,7 +1742,7 @@
 						{
 							"id": "set-at-xyz",
 							"objectClass": "mapState",
-							"sid": 548431397477203,
+							"sid": 883492049189538,
 							"parameters": {
 								"x": "mapState.At(Noeud.idx)",
 								"y": "0",
@@ -1724,7 +1751,7 @@
 							}
 						}
 					],
-					"sid": 513383421108775
+					"sid": 640107333196830
 				},
 				{
 					"eventType": "block",
@@ -1944,6 +1971,15 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 616389799117534,
+					"parameters": {
+						"variable": "G_CurrentNodeIdx",
+						"value": "Noeud.idx"
+					}
+				},
 				{
 					"id": "set-at-xyz",
 					"objectClass": "mapState",
