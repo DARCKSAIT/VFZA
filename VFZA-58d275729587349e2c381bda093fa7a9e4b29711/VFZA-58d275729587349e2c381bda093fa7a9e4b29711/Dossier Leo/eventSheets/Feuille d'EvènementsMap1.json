@@ -2758,6 +2758,50 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 899466546266091,
+							"parameters": {
+								"object": "Noeud"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 529330047400123,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 873113005179274,
+									"parameters": {
+										"first-value": "Noeud.isStart",
+										"comparison": 0,
+										"second-value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-at-x",
+									"objectClass": "mapState",
+									"sid": 390306331816653,
+									"parameters": {
+										"x": "Noeud.idx",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 455495569486797
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "compare-two-values",
 							"objectClass": "System",
 							"sid": 951960119600684,
