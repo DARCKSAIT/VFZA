@@ -92,6 +92,16 @@
 			"sid": 978423939509463
 		},
 		{
+			"eventType": "variable",
+			"name": "G_CurrentNodeIdx",
+			"type": "number",
+			"initialValue": "-1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 259942629100596
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -737,16 +747,6 @@
 			]
 		},
 		{
-			"eventType": "variable",
-			"name": "currIdx",
-			"type": "number",
-			"initialValue": "-1",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 398947896099454
-		},
-		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -784,7 +784,7 @@
 					"objectClass": "System",
 					"sid": 980882023735910,
 					"parameters": {
-						"variable": "currIdx",
+						"variable": "G_CurrentNodeIdx",
 						"value": "Noeud.idx"
 					}
 				},
@@ -830,7 +830,7 @@
 							"parameters": {
 								"first-value": "Noeud.idx",
 								"comparison": 1,
-								"second-value": "currIdx"
+								"second-value": "G_CurrentNodeIdx"
 							}
 						},
 						{
@@ -1119,7 +1119,7 @@
 							"parameters": {
 								"first-value": "Noeud.idx",
 								"comparison": 1,
-								"second-value": "currIdx"
+								"second-value": "G_CurrentNodeIdx"
 							}
 						},
 						{
@@ -1408,7 +1408,7 @@
 							"parameters": {
 								"first-value": "Noeud.idx",
 								"comparison": 1,
-								"second-value": "currIdx"
+								"second-value": "G_CurrentNodeIdx"
 							}
 						},
 						{
@@ -1697,7 +1697,7 @@
 							"parameters": {
 								"first-value": "Noeud.idx",
 								"comparison": 1,
-								"second-value": "currIdx"
+								"second-value": "G_CurrentNodeIdx"
 							}
 						},
 						{
@@ -1986,7 +1986,7 @@
 							"parameters": {
 								"first-value": "Noeud.idx",
 								"comparison": 1,
-								"second-value": "currIdx"
+								"second-value": "G_CurrentNodeIdx"
 							}
 						},
 						{
@@ -2762,27 +2762,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 422288464688846
-				}
-			],
-			"actions": [
-				{
-					"id": "set-text",
-					"objectClass": "dbg",
-					"sid": 802437110329232,
-					"parameters": {
-						"text": "\"links=\" & mapLinks.AsJSON & newline & \"state=\" & mapState.AsJSON"
-					}
-				}
-			],
-			"sid": 858947755785181
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "on-item-get",
 					"objectClass": "LocalStorage",
 					"sid": 452110749357108,
@@ -2971,6 +2950,27 @@
 					]
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 906299474738213
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "dbg",
+					"sid": 534897764192125,
+					"parameters": {
+						"text": "\"curr=\" & G_CurrentNodeIdx & \"\\nlinks=\" & mapLinks.AsJSON & \"\\nstate=\" & mapState.AsJSON"
+					}
+				}
+			],
+			"sid": 358410817466973
 		}
 	],
 	"sid": 582260158408257
