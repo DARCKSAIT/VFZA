@@ -12,6 +12,36 @@
 			"sid": 693706515559671
 		},
 		{
+			"eventType": "variable",
+			"name": "CombatIndex",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 264043566488034
+		},
+		{
+			"eventType": "variable",
+			"name": "EnemyTier",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 325764718264257
+		},
+		{
+			"eventType": "variable",
+			"name": "EnemyCountMax",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 126600692378471
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -997,6 +1027,94 @@
 					]
 				}
 			]
+		},
+		{
+			"functionName": "InitCombat",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 260311678424369,
+					"parameters": {
+						"variable": "EnemyTier",
+						"value": "clamp(1 + floor(CombatIndex / 2), 1, 5)"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 106978625794562,
+					"parameters": {
+						"variable": "EnemyCountMax",
+						"value": "clamp(1 + floor(CombatIndex / 3), 1, 3)"
+					}
+				}
+			],
+			"sid": 375636141177459,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for",
+							"objectClass": "System",
+							"sid": 462497014762978,
+							"parameters": {
+								"name": "\"i\"",
+								"start-index": "0",
+								"end-index": "EnemyCountMax - 1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "SpawnEnemy",
+							"sid": 350379056942290,
+							"parameters": [
+								"0",
+								"0"
+							]
+						}
+					],
+					"sid": 935737134466603
+				}
+			]
+		},
+		{
+			"functionName": "SpawnEnemy",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "pTier",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 101828376281598
+				},
+				{
+					"name": "pIndex",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 467413819784675
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 506867677654619
 		}
 	],
 	"sid": 698969459265366
