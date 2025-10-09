@@ -156,19 +156,17 @@
 					"parameters": {
 						"text": "\"Vie : \" & health_player"
 					}
-				},
-				{
-					"id": "set-size",
-					"objectClass": "mapLinks",
-					"sid": 497313121463220,
-					"parameters": {
-						"width": "0",
-						"height": "2",
-						"depth": "1"
-					}
 				}
 			],
-			"sid": 953169705872691
+			"sid": 953169705872691,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [],
+					"sid": 920272471420828
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -2064,6 +2062,75 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-item-get",
+					"objectClass": "LocalStorage",
+					"sid": 748903935496298,
+					"parameters": {
+						"key": "\"\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 502448865714126,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 284826439098452,
+							"parameters": {
+								"first-value": "LocalStorage.Key",
+								"comparison": 0,
+								"second-value": "\"mapState\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "load",
+							"objectClass": "mapState",
+							"sid": 268163839858199,
+							"parameters": {
+								"json": "LocalStorage.ItemValue"
+							}
+						}
+					],
+					"sid": 856640199118426
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 909127340031449,
+							"parameters": {
+								"first-value": "LocalStorage.Key",
+								"comparison": 0,
+								"second-value": "\"mapLinks\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "load",
+							"objectClass": "mapLinks",
+							"sid": 889332720148633,
+							"parameters": {
+								"json": "LocalStorage.ItemValue"
+							}
+						}
+					],
+					"sid": 988983004794538
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-item-missing",
 					"objectClass": "LocalStorage",
 					"sid": 637870273231815,
@@ -2349,75 +2416,6 @@
 							"sid": 594999885498403
 						}
 					]
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-item-get",
-					"objectClass": "LocalStorage",
-					"sid": 498101978413543,
-					"parameters": {
-						"key": "\"\""
-					}
-				}
-			],
-			"actions": [],
-			"sid": 431541421096135,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 944262508006715,
-							"parameters": {
-								"first-value": "LocalStorage.Key",
-								"comparison": 0,
-								"second-value": "\"mapState\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "load",
-							"objectClass": "mapState",
-							"sid": 342546028184109,
-							"parameters": {
-								"json": "LocalStorage.ItemValue"
-							}
-						}
-					],
-					"sid": 455532558529417
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 997274916176977,
-							"parameters": {
-								"first-value": "LocalStorage.Key",
-								"comparison": 0,
-								"second-value": "\"mapLinks\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "load",
-							"objectClass": "mapLinks",
-							"sid": 269107759660147,
-							"parameters": {
-								"json": "LocalStorage.ItemValue"
-							}
-						}
-					],
-					"sid": 436164294595359
 				}
 			]
 		},
