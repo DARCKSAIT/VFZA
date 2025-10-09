@@ -665,11 +665,11 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 222065367320782,
+							"sid": 511723282659413,
 							"parameters": {
-								"first-value": "mapLinks.At(loopindex(\"e\"), 1)",
+								"first-value": "mapState.At( mapLinks.At(loopindex(\"e\"), 0) )",
 								"comparison": 0,
-								"second-value": "Noeud.idx"
+								"second-value": "2"
 							}
 						},
 						{
@@ -685,63 +685,6 @@
 					],
 					"actions": [],
 					"sid": 321505396456893
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "for",
-							"objectClass": "System",
-							"sid": 439118028955385,
-							"parameters": {
-								"name": "\"f\"",
-								"start-index": "0",
-								"end-index": "mapLinks.Width - 1"
-							}
-						},
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 979316064474275,
-							"parameters": {
-								"first-value": "mapLinks.At(loopindex(\"f\"), 0)",
-								"comparison": 0,
-								"second-value": "mapLinks.At(loopindex(\"e\"), 0)"
-							}
-						},
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 585728448142751,
-							"parameters": {
-								"first-value": "mapLinks.At(loopindex(\"f\"), 1)",
-								"comparison": 1,
-								"second-value": "Noeud.idx"
-							}
-						},
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 329056661144110,
-							"parameters": {
-								"first-value": "mapState.At( mapLinks.At(loopindex(\"f\"), 1) )",
-								"comparison": 0,
-								"second-value": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-at-x",
-							"objectClass": "mapState",
-							"sid": 830275711728332,
-							"parameters": {
-								"x": "mapLinks.At(loopindex(\"f\"), 1)",
-								"value": "3"
-							}
-						}
-					],
-					"sid": 606579988156593
 				},
 				{
 					"eventType": "block",
@@ -794,11 +737,43 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "repeat",
+							"id": "for",
 							"objectClass": "System",
-							"sid": 501139432553131,
+							"sid": 524640967230640,
 							"parameters": {
-								"count": "1"
+								"name": "\"f\"",
+								"start-index": "0",
+								"end-index": "mapLinks.Width - 1"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 323044374457132,
+							"parameters": {
+								"first-value": "mapLinks.At(loopindex(\"f\"), 0)",
+								"comparison": 0,
+								"second-value": "mapLinks.At(loopindex(\"e\"), 0)"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 278784362798945,
+							"parameters": {
+								"first-value": "mapLinks.At(loopindex(\"f\"), 1)",
+								"comparison": 1,
+								"second-value": "Noeud.idx"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 668014182680337,
+							"parameters": {
+								"first-value": "mapState.At( mapLinks.At(loopindex(\"f\"), 1) )",
+								"comparison": 0,
+								"second-value": "1"
 							}
 						}
 					],
@@ -806,56 +781,54 @@
 						{
 							"id": "set-at-x",
 							"objectClass": "mapState",
-							"sid": 262937346746949,
+							"sid": 629366558595295,
 							"parameters": {
-								"x": "Noeud.idx",
-								"value": "2"
+								"x": "mapLinks.At(loopindex(\"f\"), 1)",
+								"value": "3"
 							}
 						}
 					],
-					"sid": 316953935561564,
-					"children": [
+					"sid": 839724070178699
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
 						{
-							"eventType": "block",
-							"conditions": [],
-							"actions": [
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 462298802393811,
-									"parameters": {
-										"variable": "lastNodeIdx",
-										"value": "Noeud.idx"
-									}
-								}
-							],
-							"sid": 173050049688512
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 962925497033566,
+							"parameters": {
+								"variable": "lastNodeIdx",
+								"value": "Noeud.idx"
+							}
+						}
+					],
+					"sid": 664489643340919
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 614327225944038,
+							"parameters": {
+								"key": "\"mapState\"",
+								"value": "mapState.AsJSON"
+							}
 						},
 						{
-							"eventType": "block",
-							"conditions": [],
-							"actions": [
-								{
-									"id": "set-item",
-									"objectClass": "LocalStorage",
-									"sid": 179767078311634,
-									"parameters": {
-										"key": "\"mapState\"",
-										"value": "mapState.AsJSON"
-									}
-								},
-								{
-									"id": "go-to-layout",
-									"objectClass": "System",
-									"sid": 539330861437277,
-									"parameters": {
-										"layout": "piége"
-									}
-								}
-							],
-							"sid": 829864284773369
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 862023296790714,
+							"parameters": {
+								"layout": "piége"
+							}
 						}
-					]
+					],
+					"sid": 623965241244049
 				}
 			]
 		},
@@ -910,11 +883,11 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 899604894075181,
+							"sid": 295232466371691,
 							"parameters": {
-								"first-value": "mapLinks.At(loopindex(\"e\"), 1)",
+								"first-value": "mapState.At( mapLinks.At(loopindex(\"e\"), 0) )",
 								"comparison": 0,
-								"second-value": "Noeud.idx"
+								"second-value": "2"
 							}
 						},
 						{
@@ -930,63 +903,6 @@
 					],
 					"actions": [],
 					"sid": 135730983327930
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "for",
-							"objectClass": "System",
-							"sid": 788459127337030,
-							"parameters": {
-								"name": "\"f\"",
-								"start-index": "0",
-								"end-index": "mapLinks.Width - 1"
-							}
-						},
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 235891758698410,
-							"parameters": {
-								"first-value": "mapLinks.At(loopindex(\"f\"), 0)",
-								"comparison": 0,
-								"second-value": "mapLinks.At(loopindex(\"e\"), 0)"
-							}
-						},
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 888852028689504,
-							"parameters": {
-								"first-value": "mapLinks.At(loopindex(\"f\"), 1)",
-								"comparison": 1,
-								"second-value": "Noeud.idx"
-							}
-						},
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 154230700313512,
-							"parameters": {
-								"first-value": "mapState.At( mapLinks.At(loopindex(\"f\"), 1) )",
-								"comparison": 0,
-								"second-value": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-at-x",
-							"objectClass": "mapState",
-							"sid": 364627564873240,
-							"parameters": {
-								"x": "mapLinks.At(loopindex(\"f\"), 1)",
-								"value": "3"
-							}
-						}
-					],
-					"sid": 181708239483788
 				},
 				{
 					"eventType": "block",
@@ -1034,6 +950,63 @@
 						}
 					],
 					"sid": 876850876217793
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for",
+							"objectClass": "System",
+							"sid": 611439615983703,
+							"parameters": {
+								"name": "\"f\"",
+								"start-index": "0",
+								"end-index": "mapLinks.Width - 1"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 422105406148138,
+							"parameters": {
+								"first-value": "mapLinks.At(loopindex(\"f\"), 0)",
+								"comparison": 0,
+								"second-value": "mapLinks.At(loopindex(\"e\"), 0)"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 699585554753518,
+							"parameters": {
+								"first-value": "mapLinks.At(loopindex(\"f\"), 1)",
+								"comparison": 1,
+								"second-value": "Noeud.idx"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 635977466835698,
+							"parameters": {
+								"first-value": "mapState.At( mapLinks.At(loopindex(\"f\"), 1) )",
+								"comparison": 0,
+								"second-value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-at-x",
+							"objectClass": "mapState",
+							"sid": 583589325406788,
+							"parameters": {
+								"x": "mapLinks.At(loopindex(\"f\"), 1)",
+								"value": "3"
+							}
+						}
+					],
+					"sid": 784984317005345
 				},
 				{
 					"eventType": "block",
@@ -1128,11 +1101,11 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 791900353240377,
+							"sid": 928693344051776,
 							"parameters": {
-								"first-value": "mapLinks.At(loopindex(\"e\"), 1)",
+								"first-value": "mapState.At( mapLinks.At(loopindex(\"e\"), 0) )",
 								"comparison": 0,
-								"second-value": "Noeud.idx"
+								"second-value": "2"
 							}
 						},
 						{
@@ -1148,63 +1121,6 @@
 					],
 					"actions": [],
 					"sid": 428156595585805
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "for",
-							"objectClass": "System",
-							"sid": 253562452929437,
-							"parameters": {
-								"name": "\"f\"",
-								"start-index": "0",
-								"end-index": "mapLinks.Width - 1"
-							}
-						},
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 822582503500088,
-							"parameters": {
-								"first-value": "mapLinks.At(loopindex(\"f\"), 0)",
-								"comparison": 0,
-								"second-value": "mapLinks.At(loopindex(\"e\"), 0)"
-							}
-						},
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 905762355300532,
-							"parameters": {
-								"first-value": "mapLinks.At(loopindex(\"f\"), 1)",
-								"comparison": 1,
-								"second-value": "Noeud.idx"
-							}
-						},
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 948308624421784,
-							"parameters": {
-								"first-value": "mapState.At( mapLinks.At(loopindex(\"f\"), 1) )",
-								"comparison": 0,
-								"second-value": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-at-x",
-							"objectClass": "mapState",
-							"sid": 918787729391215,
-							"parameters": {
-								"x": "mapLinks.At(loopindex(\"f\"), 1)",
-								"value": "3"
-							}
-						}
-					],
-					"sid": 321544849192347
 				},
 				{
 					"eventType": "block",
@@ -1252,6 +1168,63 @@
 						}
 					],
 					"sid": 868634385580968
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for",
+							"objectClass": "System",
+							"sid": 677395247615120,
+							"parameters": {
+								"name": "\"f\"",
+								"start-index": "0",
+								"end-index": "mapLinks.Width - 1"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 250692362984896,
+							"parameters": {
+								"first-value": "mapLinks.At(loopindex(\"f\"), 0)",
+								"comparison": 0,
+								"second-value": "mapLinks.At(loopindex(\"e\"), 0)"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 353536396239552,
+							"parameters": {
+								"first-value": "mapLinks.At(loopindex(\"f\"), 1)",
+								"comparison": 1,
+								"second-value": "Noeud.idx"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 542332625295243,
+							"parameters": {
+								"first-value": "mapState.At( mapLinks.At(loopindex(\"f\"), 1) )",
+								"comparison": 0,
+								"second-value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-at-x",
+							"objectClass": "mapState",
+							"sid": 226934889620164,
+							"parameters": {
+								"x": "mapLinks.At(loopindex(\"f\"), 1)",
+								"value": "3"
+							}
+						}
+					],
+					"sid": 397125180890037
 				},
 				{
 					"eventType": "block",
@@ -1346,11 +1319,11 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 818334203330461,
+							"sid": 765570335132296,
 							"parameters": {
-								"first-value": "mapLinks.At(loopindex(\"e\"), 1)",
+								"first-value": "mapState.At( mapLinks.At(loopindex(\"e\"), 0) )",
 								"comparison": 0,
-								"second-value": "Noeud.idx"
+								"second-value": "2"
 							}
 						},
 						{
@@ -1366,63 +1339,6 @@
 					],
 					"actions": [],
 					"sid": 462702142307906
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "for",
-							"objectClass": "System",
-							"sid": 540261255924396,
-							"parameters": {
-								"name": "\"f\"",
-								"start-index": "0",
-								"end-index": "mapLinks.Width - 1"
-							}
-						},
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 661029427496539,
-							"parameters": {
-								"first-value": "mapLinks.At(loopindex(\"f\"), 0)",
-								"comparison": 0,
-								"second-value": "mapLinks.At(loopindex(\"e\"), 0)"
-							}
-						},
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 640518564336756,
-							"parameters": {
-								"first-value": "mapLinks.At(loopindex(\"f\"), 1)",
-								"comparison": 1,
-								"second-value": "Noeud.idx"
-							}
-						},
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 280069624924299,
-							"parameters": {
-								"first-value": "mapState.At( mapLinks.At(loopindex(\"f\"), 1) )",
-								"comparison": 0,
-								"second-value": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-at-x",
-							"objectClass": "mapState",
-							"sid": 950551816754158,
-							"parameters": {
-								"x": "mapLinks.At(loopindex(\"f\"), 1)",
-								"value": "3"
-							}
-						}
-					],
-					"sid": 476823030249479
 				},
 				{
 					"eventType": "block",
@@ -1470,6 +1386,63 @@
 						}
 					],
 					"sid": 699799308511799
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for",
+							"objectClass": "System",
+							"sid": 254986731624319,
+							"parameters": {
+								"name": "\"f\"",
+								"start-index": "0",
+								"end-index": "mapLinks.Width - 1"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 827534295527690,
+							"parameters": {
+								"first-value": "mapLinks.At(loopindex(\"f\"), 0)",
+								"comparison": 0,
+								"second-value": "mapLinks.At(loopindex(\"e\"), 0)"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 288659313425984,
+							"parameters": {
+								"first-value": "mapLinks.At(loopindex(\"f\"), 1)",
+								"comparison": 1,
+								"second-value": "Noeud.idx"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 371972401030418,
+							"parameters": {
+								"first-value": "mapState.At( mapLinks.At(loopindex(\"f\"), 1) )",
+								"comparison": 0,
+								"second-value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-at-x",
+							"objectClass": "mapState",
+							"sid": 499830226412990,
+							"parameters": {
+								"x": "mapLinks.At(loopindex(\"f\"), 1)",
+								"value": "3"
+							}
+						}
+					],
+					"sid": 406570978095865
 				},
 				{
 					"eventType": "block",
@@ -1564,11 +1537,11 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 193451511944436,
+							"sid": 646842116490477,
 							"parameters": {
-								"first-value": "mapLinks.At(loopindex(\"e\"), 1)",
+								"first-value": "mapState.At( mapLinks.At(loopindex(\"e\"), 0) )",
 								"comparison": 0,
-								"second-value": "Noeud.idx"
+								"second-value": "2"
 							}
 						},
 						{
@@ -1584,63 +1557,6 @@
 					],
 					"actions": [],
 					"sid": 817991541063880
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "for",
-							"objectClass": "System",
-							"sid": 339531920716467,
-							"parameters": {
-								"name": "\"f\"",
-								"start-index": "0",
-								"end-index": "mapLinks.Width - 1"
-							}
-						},
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 103280570471692,
-							"parameters": {
-								"first-value": "mapLinks.At(loopindex(\"f\"), 0)",
-								"comparison": 0,
-								"second-value": "mapLinks.At(loopindex(\"e\"), 0)"
-							}
-						},
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 914367285814535,
-							"parameters": {
-								"first-value": "mapLinks.At(loopindex(\"f\"), 1)",
-								"comparison": 1,
-								"second-value": "Noeud.idx"
-							}
-						},
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 919703143604017,
-							"parameters": {
-								"first-value": "mapState.At( mapLinks.At(loopindex(\"f\"), 1) )",
-								"comparison": 0,
-								"second-value": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-at-x",
-							"objectClass": "mapState",
-							"sid": 587222286773200,
-							"parameters": {
-								"x": "mapLinks.At(loopindex(\"f\"), 1)",
-								"value": "3"
-							}
-						}
-					],
-					"sid": 308312077052859
 				},
 				{
 					"eventType": "block",
@@ -1688,6 +1604,63 @@
 						}
 					],
 					"sid": 641642398789287
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for",
+							"objectClass": "System",
+							"sid": 981039743974148,
+							"parameters": {
+								"name": "\"f\"",
+								"start-index": "0",
+								"end-index": "mapLinks.Width - 1"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 632888889883281,
+							"parameters": {
+								"first-value": "mapLinks.At(loopindex(\"f\"), 0)",
+								"comparison": 0,
+								"second-value": "mapLinks.At(loopindex(\"e\"), 0)"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 479312356723105,
+							"parameters": {
+								"first-value": "mapLinks.At(loopindex(\"f\"), 1)",
+								"comparison": 1,
+								"second-value": "Noeud.idx"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 191625333496220,
+							"parameters": {
+								"first-value": "mapState.At( mapLinks.At(loopindex(\"f\"), 1) )",
+								"comparison": 0,
+								"second-value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-at-x",
+							"objectClass": "mapState",
+							"sid": 851753409664051,
+							"parameters": {
+								"x": "mapLinks.At(loopindex(\"f\"), 1)",
+								"value": "3"
+							}
+						}
+					],
+					"sid": 544029077621439
 				},
 				{
 					"eventType": "block",
