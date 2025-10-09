@@ -685,17 +685,7 @@
 							}
 						}
 					],
-					"actions": [
-						{
-							"id": "set-at-x",
-							"objectClass": "mapState",
-							"sid": 134969614609203,
-							"parameters": {
-								"x": "mapLinks.At(loopindex(\"e\"), 1)",
-								"value": "1"
-							}
-						}
-					],
+					"actions": [],
 					"sid": 321505396456893,
 					"children": [
 						{
@@ -927,17 +917,7 @@
 							}
 						}
 					],
-					"actions": [
-						{
-							"id": "set-at-x",
-							"objectClass": "mapState",
-							"sid": 200036918166391,
-							"parameters": {
-								"x": "mapLinks.At(loopindex(\"e\"), 1)",
-								"value": "1"
-							}
-						}
-					],
+					"actions": [],
 					"sid": 135730983327930,
 					"children": [
 						{
