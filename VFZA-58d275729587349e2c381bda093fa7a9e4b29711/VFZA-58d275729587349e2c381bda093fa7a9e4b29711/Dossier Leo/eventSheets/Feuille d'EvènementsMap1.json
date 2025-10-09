@@ -158,7 +158,143 @@
 					}
 				}
 			],
-			"sid": 953169705872691
+			"sid": 953169705872691,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 452967230707414
+						},
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 362579396375418,
+							"parameters": {
+								"object": "Noeud"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 795329603414811,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 758333447519907,
+									"parameters": {
+										"first-value": "mapState.At(Noeud.idx)",
+										"comparison": 0,
+										"second-value": "0"
+									}
+								},
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 613895482692068,
+									"parameters": {
+										"first-value": "mapState.At(Noeud.idx)",
+										"comparison": 0,
+										"second-value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "Noeud",
+									"sid": 319369147665700,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 494441882584426
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 214218616290725,
+									"parameters": {
+										"first-value": "mapState.At(Noeud.idx)",
+										"comparison": 0,
+										"second-value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "Noeud",
+									"sid": 130190688626469,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "Noeud",
+									"sid": 815069686239843,
+									"parameters": {
+										"collisions": "enabled"
+									}
+								}
+							],
+							"sid": 436443616987729
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 553654606913506,
+									"parameters": {
+										"first-value": "mapState.At(Noeud.idx)",
+										"comparison": 0,
+										"second-value": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "Noeud",
+									"sid": 386210837984172,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "Noeud",
+									"sid": 195581977132471,
+									"parameters": {
+										"collisions": "disabled"
+									}
+								},
+								{
+									"id": "set-opacity",
+									"objectClass": "Noeud",
+									"sid": 182681904995774,
+									"parameters": {
+										"opacity": "30"
+									}
+								}
+							],
+							"sid": 940007652549710
+						}
+					]
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -352,140 +488,6 @@
 						}
 					],
 					"sid": 304687591592604
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "for-each",
-					"objectClass": "System",
-					"sid": 784539056585615,
-					"parameters": {
-						"object": "Noeud"
-					}
-				},
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 529887999611774
-				}
-			],
-			"actions": [],
-			"sid": 783292292667766,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 155283470643837,
-							"parameters": {
-								"first-value": "mapState.At(Noeud.idx)",
-								"comparison": 0,
-								"second-value": "0"
-							}
-						},
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 810821984812816,
-							"parameters": {
-								"first-value": "mapState.At(Noeud.idx)",
-								"comparison": 0,
-								"second-value": "2"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "Noeud",
-							"sid": 340946294022630,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						}
-					],
-					"sid": 481443032976243
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 994316625612680,
-							"parameters": {
-								"first-value": "mapState.At(Noeud.idx)",
-								"comparison": 0,
-								"second-value": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "Noeud",
-							"sid": 715208099521034,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-collisions-enabled",
-							"objectClass": "Noeud",
-							"sid": 415165740672920,
-							"parameters": {
-								"collisions": "enabled"
-							}
-						}
-					],
-					"sid": 730881159434825
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 188646807963827,
-							"parameters": {
-								"first-value": "mapState.At(Noeud.idx)",
-								"comparison": 0,
-								"second-value": "3"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "Noeud",
-							"sid": 872156936038706,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-collisions-enabled",
-							"objectClass": "Noeud",
-							"sid": 320671298583499,
-							"parameters": {
-								"collisions": "disabled"
-							}
-						},
-						{
-							"id": "set-opacity",
-							"objectClass": "Noeud",
-							"sid": 650500666193323,
-							"parameters": {
-								"opacity": "30"
-							}
-						}
-					],
-					"sid": 647061634009288
 				}
 			]
 		},
@@ -1605,25 +1607,15 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 601893516506746,
+							"sid": 992044000087093,
 							"parameters": {
-								"first-value": "mapState.At( mapLinks.At(loopindex(\"e\"), 1) )",
+								"first-value": "mapLinks.At(loopindex(\"e\"), 1)",
 								"comparison": 0,
-								"second-value": "2"
+								"second-value": "Noeud.idx"
 							}
 						}
 					],
-					"actions": [
-						{
-							"id": "set-at-x",
-							"objectClass": "mapState",
-							"sid": 742887223524443,
-							"parameters": {
-								"x": "mapLinks.At(loopindex(\"e\"), 1)",
-								"value": "1"
-							}
-						}
-					],
+					"actions": [],
 					"sid": 817991541063880,
 					"children": [
 						{
