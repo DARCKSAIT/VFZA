@@ -107,7 +107,7 @@
 						"typeDeNoeud": 0,
 						"idx": 8,
 						"parentIdx": -1,
-						"siblingIdx": -1,
+						"siblingIdx": 1,
 						"isStart": 1,
 						"lastNodeIdx": -1
 					},
@@ -153,7 +153,7 @@
 						"typeDeNoeud": 0,
 						"idx": 1,
 						"parentIdx": -1,
-						"siblingIdx": -1,
+						"siblingIdx": 8,
 						"isStart": 1,
 						"lastNodeIdx": -1
 					},

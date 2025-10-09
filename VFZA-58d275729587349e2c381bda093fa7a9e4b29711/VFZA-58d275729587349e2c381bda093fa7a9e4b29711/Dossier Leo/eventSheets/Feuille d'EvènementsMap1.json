@@ -1144,13 +1144,11 @@
 					],
 					"actions": [
 						{
-							"id": "set-at-xyz",
+							"id": "set-at-x",
 							"objectClass": "mapState",
-							"sid": 299625940248700,
+							"sid": 145763763177405,
 							"parameters": {
-								"x": "mapState.At(Noeud.idx)",
-								"y": "0",
-								"z": "0",
+								"x": "Noeud.idx",
 								"value": "3"
 							}
 						}
@@ -1442,13 +1440,11 @@
 					],
 					"actions": [
 						{
-							"id": "set-at-xyz",
+							"id": "set-at-x",
 							"objectClass": "mapState",
-							"sid": 975315313452189,
+							"sid": 861591421210437,
 							"parameters": {
-								"x": "mapState.At(Noeud.idx)",
-								"y": "0",
-								"z": "0",
+								"x": "Noeud.idx",
 								"value": "3"
 							}
 						}
@@ -1740,13 +1736,11 @@
 					],
 					"actions": [
 						{
-							"id": "set-at-xyz",
+							"id": "set-at-x",
 							"objectClass": "mapState",
-							"sid": 883492049189538,
+							"sid": 269967924845419,
 							"parameters": {
-								"x": "mapState.At(Noeud.idx)",
-								"y": "0",
-								"z": "0",
+								"x": "Noeud.idx",
 								"value": "3"
 							}
 						}
