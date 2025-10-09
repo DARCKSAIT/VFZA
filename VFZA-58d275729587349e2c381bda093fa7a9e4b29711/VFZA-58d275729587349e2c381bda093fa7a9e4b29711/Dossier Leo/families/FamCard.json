@@ -16,6 +16,7 @@
 	"members": [
 		"CardDef",
 		"CardAtk",
-		"CardFood"
+		"CardFood",
+		"CardDef2"
 	]
 }

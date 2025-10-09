@@ -127,17 +127,33 @@
 					"parameters": {
 						"text": "\"Défausse: \" & tutoperso_Defausse.Width"
 					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "main",
-					"sid": 709216055776184,
-					"parameters": {
-						"text": "tutoperso_Main.At(loopindex(\"i\")) & \", \""
-					}
 				}
 			],
 			"sid": 211457593285388
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 290645903620649,
+					"parameters": {
+						"key": "\"reward_pool\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "load",
+					"objectClass": "reward_pool",
+					"sid": 686358237726836,
+					"parameters": {
+						"json": "LocalStorage.ItemValue"
+					}
+				}
+			],
+			"sid": 189214530118290
 		},
 		{
 			"eventType": "block",
@@ -1014,11 +1030,11 @@
 										{
 											"id": "compare-two-values",
 											"objectClass": "System",
-											"sid": 496715221471979,
+											"sid": 191641478073342,
 											"parameters": {
-												"first-value": "lowercase(left(tutoperso_Main.At(loopindex(\"i\")), 4))",
-												"comparison": 0,
-												"second-value": "\"food\""
+												"first-value": "find( lowercase(\"\" & tutoperso_Main.At(loopindex(\"i\"))), \"food\" )",
+												"comparison": 5,
+												"second-value": "0"
 											}
 										}
 									],
@@ -1026,9 +1042,9 @@
 										{
 											"id": "create-object",
 											"objectClass": "System",
-											"sid": 810937674360682,
+											"sid": 757139836656612,
 											"parameters": {
-												"object-to-create": "CardFood",
+												"object-to-create": "CardDef2",
 												"layer": "\"UI\"",
 												"x": "480 + loopindex(\"i\") * 160",
 												"y": "360",
@@ -1038,8 +1054,8 @@
 										},
 										{
 											"id": "set-instvar-value",
-											"objectClass": "CardFood",
-											"sid": 369879862129000,
+											"objectClass": "CardDef2",
+											"sid": 666000010623247,
 											"parameters": {
 												"instance-variable": "IndexMain",
 												"value": "loopindex(\"i\")"
@@ -1047,16 +1063,24 @@
 										},
 										{
 											"id": "set-visible",
-											"objectClass": "CardFood",
-											"sid": 984271375566394,
+											"objectClass": "CardDef2",
+											"sid": 617349632623011,
 											"parameters": {
 												"visibility": "visible"
 											}
 										},
 										{
 											"id": "move-to-top",
-											"objectClass": "CardFood",
-											"sid": 138464495879692
+											"objectClass": "CardDef2",
+											"sid": 815491622963800
+										},
+										{
+											"id": "set-default-color",
+											"objectClass": "CardDef2",
+											"sid": 307681603383170,
+											"parameters": {
+												"color": "rgbEx(0, 0, 220)"
+											}
 										}
 									],
 									"sid": 713103484480459
@@ -1094,10 +1118,10 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 237235870776497,
+					"sid": 565021762793280,
 					"parameters": {
 						"variable": "RewardID",
-						"value": "Reward_Pool.At(RewardIndex)"
+						"value": "\"\" & Reward_Pool.At(RewardIndex)"
 					}
 				},
 				{
@@ -1126,17 +1150,26 @@
 						"key": "\"deck_tutoperso\"",
 						"value": "tutoperso_Deck.AsJSON"
 					}
-				},
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 149144614099090,
-					"parameters": {
-						"layout": "Map1"
-					}
 				}
 			],
-			"sid": 923576112640224
+			"sid": 923576112640224,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 562345705816368,
+							"parameters": {
+								"layout": "Map1"
+							}
+						}
+					],
+					"sid": 677030084717229
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -1159,6 +1192,27 @@
 				}
 			],
 			"sid": 810560937838598
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 537398988868942
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "main",
+					"sid": 515508438987483,
+					"parameters": {
+						"text": "newline & \"i=\" & loopindex(\"i\") & \" val=\" & (\"\" & tutoperso_Main.At(loopindex(\"i\")))"
+					}
+				}
+			],
+			"sid": 980800711003343
 		}
 	],
 	"sid": 822543069397088

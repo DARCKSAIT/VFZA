@@ -1,0 +1,52 @@
+{
+	"name": "CardDef2",
+	"plugin-id": "Sprite",
+	"sid": 747944282986928,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 201,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8617157,
+						"collisionPoly": {
+							"points": [
+								0.0625,
+								0.0026041666666666665,
+								0.9926470588235294,
+								0.03125,
+								0.9375,
+								0.9947916666666666,
+								0.007352941176470588,
+								0.9635416666666666
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 793327085477536,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -107,7 +107,8 @@
 			"LeoSpawn",
 			"suprimer",
 			"reward_pool",
-			"CardFood"
+			"CardFood",
+			"CardDef2"
 		],
 		"subfolders": []
 	},

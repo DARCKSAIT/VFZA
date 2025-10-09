@@ -78,9 +78,9 @@
 					}
 				},
 				{
-					"id": "get-item",
+					"id": "remove-item",
 					"objectClass": "LocalStorage",
-					"sid": 253847035808316,
+					"sid": 500319375281817,
 					"parameters": {
 						"key": "\"reward_pool\""
 					}
@@ -124,70 +124,70 @@
 				{
 					"id": "push",
 					"objectClass": "reward_pool",
-					"sid": 483402633685025,
+					"sid": 294743315648628,
 					"parameters": {
 						"where": "back",
-						"value": "\"FOOD_A\"",
+						"value": "\"FOOD_01\"",
 						"axis": "x"
 					}
 				},
 				{
 					"id": "push",
 					"objectClass": "reward_pool",
-					"sid": 633596937099795,
+					"sid": 733200061103914,
 					"parameters": {
 						"where": "back",
-						"value": "\"FOOD_B\"",
+						"value": "\"FOOD_02\"",
 						"axis": "x"
 					}
 				},
 				{
 					"id": "push",
 					"objectClass": "reward_pool",
-					"sid": 514326468916074,
+					"sid": 114237728753495,
 					"parameters": {
 						"where": "back",
-						"value": "\"FOOD_C\"",
+						"value": "\"FOOD_03\"",
 						"axis": "x"
 					}
 				},
 				{
 					"id": "push",
 					"objectClass": "reward_pool",
-					"sid": 623611905572477,
+					"sid": 104443775513196,
 					"parameters": {
 						"where": "back",
-						"value": "\"FOOD_D\"",
+						"value": "\"FOOD_04\"",
 						"axis": "x"
 					}
 				},
 				{
 					"id": "push",
 					"objectClass": "reward_pool",
-					"sid": 459109764234939,
+					"sid": 981870214685683,
 					"parameters": {
 						"where": "back",
-						"value": "\"FOOD_E\"",
+						"value": "\"FOOD_05\"",
 						"axis": "x"
 					}
 				},
 				{
 					"id": "push",
 					"objectClass": "reward_pool",
-					"sid": 727991804060389,
+					"sid": 901909789432257,
 					"parameters": {
 						"where": "back",
-						"value": "\"FOOD_F\"",
+						"value": "\"FOOD_06\"",
 						"axis": "x"
 					}
 				},
 				{
 					"id": "push",
 					"objectClass": "reward_pool",
-					"sid": 793426547694967,
+					"sid": 203311513325266,
 					"parameters": {
 						"where": "back",
-						"value": "\"FOOD_J\"",
+						"value": "\"FOOD_07\"",
 						"axis": "x"
 					}
 				}
