@@ -2906,9 +2906,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "dbg",
-					"sid": 534897764192125,
+					"sid": 484643977718838,
 					"parameters": {
-						"text": "\"curr=\" & G_CurrentNodeIdx & \"\\nlinks=\" & mapLinks.AsJSON & \"\\nstate=\" & mapState.AsJSON"
+						"text": "\"cur=\" & G_CurrentNodeIdx & \r\n\" | s1=\" & mapState.At(1) & \r\n\" | s8=\" & mapState.At(8)"
 					}
 				}
 			],
