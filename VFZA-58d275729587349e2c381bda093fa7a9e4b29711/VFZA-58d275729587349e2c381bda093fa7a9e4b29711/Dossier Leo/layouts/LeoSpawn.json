@@ -5,51 +5,7 @@
 			"name": "Calque 0",
 			"overriden": 0,
 			"subLayers": [],
-			"instances": [
-				{
-					"type": "Ennemi",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 56,
-					"sid": 712397243189775,
-					"tags": "",
-					"instanceVariables": {
-						"Tier": 0,
-						"MaxHP": 0,
-						"Hp": 0,
-						"Atk": 0,
-						"PosIndex": 0
-					},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 712397243189775,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 1580,
-						"y": 622,
-						"width": 394,
-						"height": 577,
-						"originX": 0.4907504340306,
-						"originY": 0.4840944361081412,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				}
-			],
+			"instances": [],
 			"sid": 470393542683008,
 			"effectTypes": [],
 			"isInitiallyVisible": true,

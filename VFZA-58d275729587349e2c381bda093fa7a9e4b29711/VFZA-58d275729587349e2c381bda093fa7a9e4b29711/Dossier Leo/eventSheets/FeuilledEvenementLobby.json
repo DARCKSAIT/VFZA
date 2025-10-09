@@ -45,6 +45,35 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 154138299379328
+				}
+			],
+			"actions": [
+				{
+					"id": "remove-item",
+					"objectClass": "LocalStorage",
+					"sid": 891621765888121,
+					"parameters": {
+						"key": "\"mapState\""
+					}
+				},
+				{
+					"id": "remove-item",
+					"objectClass": "LocalStorage",
+					"sid": 682796993771144,
+					"parameters": {
+						"key": "\"mapLinks\""
+					}
+				}
+			],
+			"sid": 940885582859560
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-object-clicked",
 					"objectClass": "Souris",
 					"sid": 420547272002848,
@@ -211,38 +240,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "repeat",
-					"objectClass": "System",
-					"sid": 688574680612501,
-					"parameters": {
-						"count": "1"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "remove-item",
-					"objectClass": "LocalStorage",
-					"sid": 196511542034230,
-					"parameters": {
-						"key": "\"mapLinks\""
-					}
-				},
-				{
-					"id": "remove-item",
-					"objectClass": "LocalStorage",
-					"sid": 636688966227298,
-					"parameters": {
-						"key": "\"mapState\""
-					}
-				}
-			],
-			"sid": 188053009675806
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "on-clicked",
 					"objectClass": "LeoSpawn",
 					"sid": 870655464083219
@@ -259,6 +256,18 @@
 				}
 			],
 			"sid": 325742266871013
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "suprimer",
+					"sid": 413091440567458
+				}
+			],
+			"actions": [],
+			"sid": 450587314442590
 		}
 	],
 	"sid": 167074243774044
