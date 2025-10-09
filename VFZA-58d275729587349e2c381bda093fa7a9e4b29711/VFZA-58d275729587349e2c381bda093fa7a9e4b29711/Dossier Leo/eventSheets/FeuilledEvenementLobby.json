@@ -50,7 +50,24 @@
 					"sid": 154138299379328
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "remove-item",
+					"objectClass": "LocalStorage",
+					"sid": 891621765888121,
+					"parameters": {
+						"key": "\"mapState\""
+					}
+				},
+				{
+					"id": "remove-item",
+					"objectClass": "LocalStorage",
+					"sid": 682796993771144,
+					"parameters": {
+						"key": "\"mapLinks\""
+					}
+				}
+			],
 			"sid": 940885582859560
 		},
 		{
@@ -249,24 +266,7 @@
 					"sid": 413091440567458
 				}
 			],
-			"actions": [
-				{
-					"id": "remove-item",
-					"objectClass": "LocalStorage",
-					"sid": 978016749108526,
-					"parameters": {
-						"key": "\"mapLinks\""
-					}
-				},
-				{
-					"id": "remove-item",
-					"objectClass": "LocalStorage",
-					"sid": 340619978994219,
-					"parameters": {
-						"key": "\"mapState\""
-					}
-				}
-			],
+			"actions": [],
 			"sid": 450587314442590
 		}
 	],
