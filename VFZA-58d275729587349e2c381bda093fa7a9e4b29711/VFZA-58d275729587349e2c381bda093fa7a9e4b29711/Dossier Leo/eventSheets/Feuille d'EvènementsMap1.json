@@ -667,9 +667,9 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 511723282659413,
+							"sid": 966693707522514,
 							"parameters": {
-								"first-value": "mapState.At( mapLinks.At(loopindex(\"e\"), 0) )",
+								"first-value": "mapLinks.At(loopindex(\"e\"), 0)",
 								"comparison": 0,
 								"second-value": "2"
 							}
@@ -899,9 +899,9 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 295232466371691,
+							"sid": 344227897200422,
 							"parameters": {
-								"first-value": "mapState.At( mapLinks.At(loopindex(\"e\"), 0) )",
+								"first-value": "mapLinks.At(loopindex(\"e\"), 0)",
 								"comparison": 0,
 								"second-value": "2"
 							}
@@ -1131,9 +1131,9 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 928693344051776,
+							"sid": 763546296223741,
 							"parameters": {
-								"first-value": "mapState.At( mapLinks.At(loopindex(\"e\"), 0) )",
+								"first-value": "mapLinks.At(loopindex(\"e\"), 0)",
 								"comparison": 0,
 								"second-value": "2"
 							}
@@ -1363,9 +1363,9 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 765570335132296,
+							"sid": 893907615568332,
 							"parameters": {
-								"first-value": "mapState.At( mapLinks.At(loopindex(\"e\"), 0) )",
+								"first-value": "mapLinks.At(loopindex(\"e\"), 0)",
 								"comparison": 0,
 								"second-value": "2"
 							}
@@ -1605,9 +1605,9 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 646842116490477,
+							"sid": 928345675637679,
 							"parameters": {
-								"first-value": "mapState.At( mapLinks.At(loopindex(\"e\"), 0) )",
+								"first-value": "mapLinks.At(loopindex(\"e\"), 0)",
 								"comparison": 0,
 								"second-value": "2"
 							}
