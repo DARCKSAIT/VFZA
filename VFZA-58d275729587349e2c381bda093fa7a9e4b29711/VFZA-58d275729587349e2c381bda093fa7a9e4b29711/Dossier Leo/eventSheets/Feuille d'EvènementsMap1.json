@@ -1363,9 +1363,9 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 893907615568332,
+							"sid": 533032526039100,
 							"parameters": {
-								"first-value": "mapLinks.At(loopindex(\"e\"), 0)",
+								"first-value": "mapState.At( mapLinks.At(loopindex(\"e\"), 0) )",
 								"comparison": 0,
 								"second-value": "2"
 							}
@@ -1373,25 +1373,15 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 981628721102366,
+							"sid": 707899747837691,
 							"parameters": {
-								"first-value": "mapState.At( mapLinks.At(loopindex(\"e\"), 1) )",
+								"first-value": "mapLinks.At(loopindex(\"e\"), 1)",
 								"comparison": 0,
-								"second-value": "2"
+								"second-value": "Noeud.idx"
 							}
 						}
 					],
-					"actions": [
-						{
-							"id": "set-at-x",
-							"objectClass": "mapState",
-							"sid": 386479557479521,
-							"parameters": {
-								"x": "mapLinks.At(loopindex(\"e\"), 1)",
-								"value": "1"
-							}
-						}
-					],
+					"actions": [],
 					"sid": 462702142307906,
 					"children": [
 						{
