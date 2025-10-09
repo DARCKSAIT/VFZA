@@ -677,11 +677,11 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 376595856420727,
+							"sid": 888618230080277,
 							"parameters": {
 								"first-value": "mapState.At( mapLinks.At(loopindex(\"e\"), 1) )",
 								"comparison": 0,
-								"second-value": "2"
+								"second-value": "Noeud.idx"
 							}
 						}
 					],
@@ -919,11 +919,11 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 825021741661920,
+							"sid": 703529956794069,
 							"parameters": {
 								"first-value": "mapState.At( mapLinks.At(loopindex(\"e\"), 1) )",
 								"comparison": 0,
-								"second-value": "2"
+								"second-value": "Noeud.idx"
 							}
 						}
 					],
