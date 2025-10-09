@@ -104,7 +104,8 @@
 			"defausse",
 			"mapState",
 			"mapLinks",
-			"LeoSpawn"
+			"LeoSpawn",
+			"suprimer"
 		],
 		"subfolders": []
 	},
