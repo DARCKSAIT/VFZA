@@ -409,7 +409,7 @@
 			"instanceVariables": {}
 		},
 		{
-			"type": "reward_pool",
+			"type": "reward_poolfarm1",
 			"properties": {
 				"width": 10,
 				"height": 1,

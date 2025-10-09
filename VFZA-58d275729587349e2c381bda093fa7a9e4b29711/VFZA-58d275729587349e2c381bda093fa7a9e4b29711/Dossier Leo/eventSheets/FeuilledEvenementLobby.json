@@ -94,9 +94,9 @@
 				{
 					"id": "on-item-missing",
 					"objectClass": "LocalStorage",
-					"sid": 144784056401685,
+					"sid": 179743222878969,
 					"parameters": {
-						"key": "\"\""
+						"key": "\"reward_pool\""
 					}
 				},
 				{
@@ -113,7 +113,7 @@
 			"actions": [
 				{
 					"id": "set-size",
-					"objectClass": "reward_pool",
+					"objectClass": "reward_poolfarm1",
 					"sid": 568777851926706,
 					"parameters": {
 						"width": "0",
@@ -123,7 +123,7 @@
 				},
 				{
 					"id": "push",
-					"objectClass": "reward_pool",
+					"objectClass": "reward_poolfarm1",
 					"sid": 294743315648628,
 					"parameters": {
 						"where": "back",
@@ -133,7 +133,7 @@
 				},
 				{
 					"id": "push",
-					"objectClass": "reward_pool",
+					"objectClass": "reward_poolfarm1",
 					"sid": 733200061103914,
 					"parameters": {
 						"where": "back",
@@ -143,7 +143,7 @@
 				},
 				{
 					"id": "push",
-					"objectClass": "reward_pool",
+					"objectClass": "reward_poolfarm1",
 					"sid": 114237728753495,
 					"parameters": {
 						"where": "back",
@@ -153,7 +153,7 @@
 				},
 				{
 					"id": "push",
-					"objectClass": "reward_pool",
+					"objectClass": "reward_poolfarm1",
 					"sid": 104443775513196,
 					"parameters": {
 						"where": "back",
@@ -163,7 +163,7 @@
 				},
 				{
 					"id": "push",
-					"objectClass": "reward_pool",
+					"objectClass": "reward_poolfarm1",
 					"sid": 981870214685683,
 					"parameters": {
 						"where": "back",
@@ -173,7 +173,7 @@
 				},
 				{
 					"id": "push",
-					"objectClass": "reward_pool",
+					"objectClass": "reward_poolfarm1",
 					"sid": 901909789432257,
 					"parameters": {
 						"where": "back",
@@ -183,7 +183,7 @@
 				},
 				{
 					"id": "push",
-					"objectClass": "reward_pool",
+					"objectClass": "reward_poolfarm1",
 					"sid": 203311513325266,
 					"parameters": {
 						"where": "back",
@@ -201,10 +201,10 @@
 						{
 							"id": "set-item",
 							"objectClass": "LocalStorage",
-							"sid": 668692581971244,
+							"sid": 890083216149088,
 							"parameters": {
 								"key": "\"reward_pool\"",
-								"value": "reward_Pool.AsJSON"
+								"value": "reward_poolfarm1.AsJSON"
 							}
 						}
 					],
@@ -398,40 +398,6 @@
 				}
 			],
 			"sid": 325742266871013
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-item-get",
-					"objectClass": "LocalStorage",
-					"sid": 975353733988047,
-					"parameters": {
-						"key": "\"\""
-					}
-				},
-				{
-					"id": "compare-two-values",
-					"objectClass": "System",
-					"sid": 659360978867403,
-					"parameters": {
-						"first-value": "LocalStorage.Key",
-						"comparison": 0,
-						"second-value": "\"reward_pool\""
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "load",
-					"objectClass": "reward_pool",
-					"sid": 680601661581747,
-					"parameters": {
-						"json": "LocalStorage.ItemValue"
-					}
-				}
-			],
-			"sid": 673285756358562
 		}
 	],
 	"sid": 167074243774044

@@ -146,7 +146,7 @@
 			"actions": [
 				{
 					"id": "load",
-					"objectClass": "reward_pool",
+					"objectClass": "reward_poolfarm1",
 					"sid": 686358237726836,
 					"parameters": {
 						"json": "LocalStorage.ItemValue"
@@ -673,10 +673,10 @@
 										{
 											"id": "push",
 											"objectClass": "tutoperso_Main",
-											"sid": 292656798792872,
+											"sid": 720741820906944,
 											"parameters": {
 												"where": "back",
-												"value": "tutoperso_Deck.At(tutoperso_Deck.Width - 1)",
+												"value": "\"\" & tutoperso_Deck.At(tutoperso_Deck.Width - 1)",
 												"axis": "x"
 											}
 										},
@@ -727,10 +727,10 @@
 														{
 															"id": "push",
 															"objectClass": "tutoperso_Deck",
-															"sid": 352035250036232,
+															"sid": 437043481492317,
 															"parameters": {
 																"where": "back",
-																"value": "tutoperso_Defausse.At( loopindex(\"i\") )",
+																"value": "\"\" & tutoperso_Defausse.At( loopindex(\"i\") )",
 																"axis": "x"
 															}
 														}
@@ -1030,11 +1030,11 @@
 										{
 											"id": "compare-two-values",
 											"objectClass": "System",
-											"sid": 191641478073342,
+											"sid": 422342662436370,
 											"parameters": {
-												"first-value": "find( lowercase(\"\" & tutoperso_Main.At(loopindex(\"i\"))), \"food\" )",
-												"comparison": 5,
-												"second-value": "0"
+												"first-value": "tokenat( \"\" & tutoperso_Main.At(loopindex(\"i\")), 0, \"_\" )",
+												"comparison": 0,
+												"second-value": "\"food\""
 											}
 										}
 									],
@@ -1084,6 +1084,67 @@
 										}
 									],
 									"sid": 713103484480459
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 537113604022957,
+											"parameters": {
+												"first-value": "tokenat( \"\" & tutoperso_Main.At(loopindex(\"i\")), 0, \"_\" )",
+												"comparison": 0,
+												"second-value": "\"FOOD\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 233076342887948,
+											"parameters": {
+												"object-to-create": "CardDef2",
+												"layer": "\"UI\"",
+												"x": "480 + loopindex(\"i\") * 160",
+												"y": "360",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "CardDef2",
+											"sid": 328642442849833,
+											"parameters": {
+												"instance-variable": "IndexMain",
+												"value": "loopindex(\"i\")"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "CardDef2",
+											"sid": 554621402008715,
+											"parameters": {
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "move-to-top",
+											"objectClass": "CardDef2",
+											"sid": 113392634771764
+										},
+										{
+											"id": "set-default-color",
+											"objectClass": "CardDef2",
+											"sid": 701376712417852,
+											"parameters": {
+												"color": "rgbEx(0, 0, 220)"
+											}
+										}
+									],
+									"sid": 329198593372451
 								}
 							]
 						}
@@ -1112,43 +1173,16 @@
 					"sid": 607464720552346,
 					"parameters": {
 						"variable": "RewardIndex",
-						"value": "floor(random(Reward_Pool.Width))"
+						"value": "floor(random(reward_poolfarm1.Width))"
 					}
 				},
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 565021762793280,
+					"sid": 857053867547967,
 					"parameters": {
 						"variable": "RewardID",
-						"value": "\"\" & Reward_Pool.At(RewardIndex)"
-					}
-				},
-				{
-					"id": "push",
-					"objectClass": "tutoperso_Deck",
-					"sid": 309724902450846,
-					"parameters": {
-						"where": "back",
-						"value": "RewardID",
-						"axis": "x"
-					}
-				},
-				{
-					"id": "shuffle",
-					"objectClass": "tutoperso_Deck",
-					"sid": 129906979279195,
-					"parameters": {
-						"axis": "x"
-					}
-				},
-				{
-					"id": "set-item",
-					"objectClass": "LocalStorage",
-					"sid": 384461556399529,
-					"parameters": {
-						"key": "\"deck_tutoperso\"",
-						"value": "tutoperso_Deck.AsJSON"
+						"value": "\"\" & reward_poolfarm1.At(RewardIndex)"
 					}
 				}
 			],
@@ -1159,15 +1193,58 @@
 					"conditions": [],
 					"actions": [
 						{
+							"id": "push",
+							"objectClass": "tutoperso_Deck",
+							"sid": 925606532287925,
+							"parameters": {
+								"where": "back",
+								"value": "RewardID",
+								"axis": "x"
+							}
+						},
+						{
+							"id": "shuffle",
+							"objectClass": "tutoperso_Deck",
+							"sid": 967363641407253,
+							"parameters": {
+								"axis": "x"
+							}
+						}
+					],
+					"sid": 389870758868245,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-item",
+									"objectClass": "LocalStorage",
+									"sid": 871445351114862,
+									"parameters": {
+										"key": "\"deck_tutoperso\"",
+										"value": "tutoperso_Deck.AsJSON"
+									}
+								}
+							],
+							"sid": 788296009614748
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
 							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 562345705816368,
+							"sid": 471718252049846,
 							"parameters": {
 								"layout": "Map1"
 							}
 						}
 					],
-					"sid": 677030084717229
+					"sid": 875598487158776
 				}
 			]
 		},
@@ -1184,7 +1261,7 @@
 				{
 					"id": "add-to-eventvar",
 					"objectClass": "System",
-					"sid": 289205627652942,
+					"sid": 685846168536606,
 					"parameters": {
 						"variable": "CombatWon",
 						"value": "1"
