@@ -53,6 +53,13 @@
 			"desc": "",
 			"show": true,
 			"sid": 422100264493287
+		},
+		{
+			"name": "lastNodeIdx",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 828414142161976
 		}
 	],
 	"behaviorTypes": [],

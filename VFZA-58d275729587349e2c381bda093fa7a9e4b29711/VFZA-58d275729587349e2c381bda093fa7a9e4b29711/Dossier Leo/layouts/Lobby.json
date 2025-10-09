@@ -356,6 +356,18 @@
 			"sid": 741147498319643,
 			"tags": "",
 			"instanceVariables": {}
+		},
+		{
+			"type": "mapLinks",
+			"properties": {
+				"width": 10,
+				"height": 1,
+				"depth": 1
+			},
+			"uid": 54,
+			"sid": 501834500271252,
+			"tags": "",
+			"instanceVariables": {}
 		}
 	],
 	"effectTypes": [],

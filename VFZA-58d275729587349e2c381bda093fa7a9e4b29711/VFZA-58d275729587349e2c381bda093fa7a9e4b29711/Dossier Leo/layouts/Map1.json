@@ -60,9 +60,10 @@
 						"row": 0,
 						"typeDeNoeud": 0,
 						"idx": 9,
-						"parentIdx": 0,
-						"siblingIdx": 0,
-						"isStart": 0
+						"parentIdx": -1,
+						"siblingIdx": -1,
+						"isStart": 0,
+						"lastNodeIdx": -1
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -105,9 +106,10 @@
 						"row": 0,
 						"typeDeNoeud": 0,
 						"idx": 8,
-						"parentIdx": 0,
-						"siblingIdx": 0,
-						"isStart": 1
+						"parentIdx": -1,
+						"siblingIdx": -1,
+						"isStart": 1,
+						"lastNodeIdx": -1
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -150,9 +152,10 @@
 						"row": 0,
 						"typeDeNoeud": 0,
 						"idx": 1,
-						"parentIdx": 0,
-						"siblingIdx": 0,
-						"isStart": 1
+						"parentIdx": -1,
+						"siblingIdx": -1,
+						"isStart": 1,
+						"lastNodeIdx": -1
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -195,9 +198,10 @@
 						"row": 0,
 						"typeDeNoeud": 0,
 						"idx": 2,
-						"parentIdx": 0,
-						"siblingIdx": 0,
-						"isStart": 0
+						"parentIdx": -1,
+						"siblingIdx": -1,
+						"isStart": 0,
+						"lastNodeIdx": -1
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -240,9 +244,10 @@
 						"row": 0,
 						"typeDeNoeud": 0,
 						"idx": 0,
-						"parentIdx": 0,
-						"siblingIdx": 0,
-						"isStart": 0
+						"parentIdx": -1,
+						"siblingIdx": -1,
+						"isStart": 0,
+						"lastNodeIdx": -1
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -285,9 +290,10 @@
 						"row": 0,
 						"typeDeNoeud": 0,
 						"idx": 7,
-						"parentIdx": 0,
-						"siblingIdx": 0,
-						"isStart": 0
+						"parentIdx": -1,
+						"siblingIdx": -1,
+						"isStart": 0,
+						"lastNodeIdx": -1
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -330,9 +336,10 @@
 						"row": 0,
 						"typeDeNoeud": 0,
 						"idx": 5,
-						"parentIdx": 0,
-						"siblingIdx": 0,
-						"isStart": 0
+						"parentIdx": -1,
+						"siblingIdx": -1,
+						"isStart": 0,
+						"lastNodeIdx": -1
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -375,9 +382,10 @@
 						"row": 0,
 						"typeDeNoeud": 0,
 						"idx": 3,
-						"parentIdx": 0,
-						"siblingIdx": 0,
-						"isStart": 0
+						"parentIdx": -1,
+						"siblingIdx": -1,
+						"isStart": 0,
+						"lastNodeIdx": -1
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -420,9 +428,10 @@
 						"row": 0,
 						"typeDeNoeud": 0,
 						"idx": 6,
-						"parentIdx": 0,
-						"siblingIdx": 0,
-						"isStart": 0
+						"parentIdx": -1,
+						"siblingIdx": -1,
+						"isStart": 0,
+						"lastNodeIdx": -1
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -465,9 +474,10 @@
 						"row": 0,
 						"typeDeNoeud": 0,
 						"idx": 10,
-						"parentIdx": 0,
-						"siblingIdx": 0,
-						"isStart": 0
+						"parentIdx": -1,
+						"siblingIdx": -1,
+						"isStart": 0,
+						"lastNodeIdx": -1
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -510,9 +520,10 @@
 						"row": 0,
 						"typeDeNoeud": 0,
 						"idx": 4,
-						"parentIdx": 0,
-						"siblingIdx": 0,
-						"isStart": 0
+						"parentIdx": -1,
+						"siblingIdx": -1,
+						"isStart": 0,
+						"lastNodeIdx": -1
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -638,9 +649,10 @@
 						"row": 0,
 						"typeDeNoeud": 0,
 						"idx": 11,
-						"parentIdx": 0,
-						"siblingIdx": 0,
-						"isStart": 0
+						"parentIdx": -1,
+						"siblingIdx": -1,
+						"isStart": 0,
+						"lastNodeIdx": -1
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -664,6 +676,59 @@
 						],
 						"angle": 0,
 						"zElevation": 0
+					}
+				},
+				{
+					"type": "dbg",
+					"properties": {
+						"text": "",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 49.50000000000003,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 53,
+					"sid": 134959376315237,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 134959376315237,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 83,
+						"y": 866,
+						"width": 1536,
+						"height": 189,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 5
 					}
 				}
 			],
