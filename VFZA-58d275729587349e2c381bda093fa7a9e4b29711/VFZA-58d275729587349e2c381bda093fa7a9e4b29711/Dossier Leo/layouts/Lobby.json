@@ -407,6 +407,18 @@
 			"sid": 501834500271252,
 			"tags": "",
 			"instanceVariables": {}
+		},
+		{
+			"type": "reward_pool",
+			"properties": {
+				"width": 10,
+				"height": 1,
+				"depth": 1
+			},
+			"uid": 56,
+			"sid": 814546472827114,
+			"tags": "",
+			"instanceVariables": {}
 		}
 	],
 	"effectTypes": [],

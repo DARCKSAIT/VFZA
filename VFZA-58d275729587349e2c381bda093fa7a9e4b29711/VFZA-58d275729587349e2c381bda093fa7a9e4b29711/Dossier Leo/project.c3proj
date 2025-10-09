@@ -105,7 +105,9 @@
 			"mapState",
 			"mapLinks",
 			"LeoSpawn",
-			"suprimer"
+			"suprimer",
+			"reward_pool",
+			"CardFood"
 		],
 		"subfolders": []
 	},

@@ -12,6 +12,26 @@
 			"sid": 575781053920814
 		},
 		{
+			"eventType": "variable",
+			"name": "RewardIndex",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 137940473363142
+		},
+		{
+			"eventType": "variable",
+			"name": "RewardID",
+			"type": "string",
+			"initialValue": "\"\"",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 867019552005355
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -46,6 +66,14 @@
 					}
 				},
 				{
+					"id": "get-item",
+					"objectClass": "LocalStorage",
+					"sid": 557873503553137,
+					"parameters": {
+						"key": "\"reward_pool\""
+					}
+				},
+				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
 					"sid": 914051909246332,
@@ -53,30 +81,18 @@
 						"variable": "LoadReady",
 						"value": "0"
 					}
-				}
-			],
-			"sid": 693465103466017
-		},
-		{
-			"eventType": "block",
-			"conditions": [
+				},
 				{
-					"id": "on-clicked",
-					"objectClass": "btnback",
-					"sid": 843270636737336
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
+					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 666824590798120,
+					"sid": 295760423356546,
 					"parameters": {
-						"layout": "Map1"
+						"variable": "CombatWon",
+						"value": "0"
 					}
 				}
 			],
-			"sid": 323437945796043
+			"sid": 693465103466017
 		},
 		{
 			"eventType": "block",
@@ -115,9 +131,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "main",
-					"sid": 991268286815822,
+					"sid": 709216055776184,
 					"parameters": {
-						"text": "\"Main: \" & tutoperso_Main.Width"
+						"text": "tutoperso_Main.At(loopindex(\"i\")) & \", \""
 					}
 				}
 			],
@@ -945,7 +961,7 @@
 										{
 											"id": "compare-two-values",
 											"objectClass": "System",
-											"sid": 656162690753256,
+											"sid": 915655995395736,
 											"parameters": {
 												"first-value": "lowercase(left(str(tutoperso_Main.At(loopindex(\"i\"))), 3))\r\n",
 												"comparison": 0,
@@ -957,7 +973,7 @@
 										{
 											"id": "create-object",
 											"objectClass": "System",
-											"sid": 825941401189271,
+											"sid": 561189237214761,
 											"parameters": {
 												"object-to-create": "CardAtk",
 												"layer": "\"UI\"",
@@ -970,7 +986,7 @@
 										{
 											"id": "set-instvar-value",
 											"objectClass": "CardAtk",
-											"sid": 828778896257854,
+											"sid": 323840285146601,
 											"parameters": {
 												"instance-variable": "IndexMain",
 												"value": "loopindex(\"i\")"
@@ -979,7 +995,7 @@
 										{
 											"id": "set-visible",
 											"objectClass": "CardAtk",
-											"sid": 949735714759563,
+											"sid": 826777647137672,
 											"parameters": {
 												"visibility": "visible"
 											}
@@ -987,16 +1003,162 @@
 										{
 											"id": "move-to-top",
 											"objectClass": "CardAtk",
-											"sid": 120541120651222
+											"sid": 179645040220829
 										}
 									],
-									"sid": 474508805562228
+									"sid": 413904425507165
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 496715221471979,
+											"parameters": {
+												"first-value": "lowercase(left(tutoperso_Main.At(loopindex(\"i\")), 4))",
+												"comparison": 0,
+												"second-value": "\"food\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 810937674360682,
+											"parameters": {
+												"object-to-create": "CardFood",
+												"layer": "\"UI\"",
+												"x": "480 + loopindex(\"i\") * 160",
+												"y": "360",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "CardFood",
+											"sid": 369879862129000,
+											"parameters": {
+												"instance-variable": "IndexMain",
+												"value": "loopindex(\"i\")"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "CardFood",
+											"sid": 984271375566394,
+											"parameters": {
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "move-to-top",
+											"objectClass": "CardFood",
+											"sid": 138464495879692
+										}
+									],
+									"sid": 713103484480459
 								}
 							]
 						}
 					]
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 278795055972250,
+					"parameters": {
+						"variable": "CombatWon",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 607464720552346,
+					"parameters": {
+						"variable": "RewardIndex",
+						"value": "floor(random(Reward_Pool.Width))"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 237235870776497,
+					"parameters": {
+						"variable": "RewardID",
+						"value": "Reward_Pool.At(RewardIndex)"
+					}
+				},
+				{
+					"id": "push",
+					"objectClass": "tutoperso_Deck",
+					"sid": 309724902450846,
+					"parameters": {
+						"where": "back",
+						"value": "RewardID",
+						"axis": "x"
+					}
+				},
+				{
+					"id": "shuffle",
+					"objectClass": "tutoperso_Deck",
+					"sid": 129906979279195,
+					"parameters": {
+						"axis": "x"
+					}
+				},
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 384461556399529,
+					"parameters": {
+						"key": "\"deck_tutoperso\"",
+						"value": "tutoperso_Deck.AsJSON"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 149144614099090,
+					"parameters": {
+						"layout": "Map1"
+					}
+				}
+			],
+			"sid": 923576112640224
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "btnback",
+					"sid": 151631359881840
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 289205627652942,
+					"parameters": {
+						"variable": "CombatWon",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 810560937838598
 		}
 	],
 	"sid": 822543069397088

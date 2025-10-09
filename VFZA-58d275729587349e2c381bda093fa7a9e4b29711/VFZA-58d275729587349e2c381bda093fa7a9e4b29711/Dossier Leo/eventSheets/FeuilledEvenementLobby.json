@@ -42,6 +42,16 @@
 			"sid": 244814961622291
 		},
 		{
+			"eventType": "variable",
+			"name": "CombatWon",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 639713199702708
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -66,9 +76,141 @@
 					"parameters": {
 						"key": "\"mapLinks\""
 					}
+				},
+				{
+					"id": "get-item",
+					"objectClass": "LocalStorage",
+					"sid": 253847035808316,
+					"parameters": {
+						"key": "\"reward_pool\""
+					}
 				}
 			],
 			"sid": 940885582859560
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-missing",
+					"objectClass": "LocalStorage",
+					"sid": 144784056401685,
+					"parameters": {
+						"key": "\"\""
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 799161876800685,
+					"parameters": {
+						"first-value": "LocalStorage.Key",
+						"comparison": 0,
+						"second-value": "\"reward_pool\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "reward_pool",
+					"sid": 568777851926706,
+					"parameters": {
+						"width": "0",
+						"height": "1",
+						"depth": "1"
+					}
+				},
+				{
+					"id": "push",
+					"objectClass": "reward_pool",
+					"sid": 483402633685025,
+					"parameters": {
+						"where": "back",
+						"value": "\"FOOD_A\"",
+						"axis": "x"
+					}
+				},
+				{
+					"id": "push",
+					"objectClass": "reward_pool",
+					"sid": 633596937099795,
+					"parameters": {
+						"where": "back",
+						"value": "\"FOOD_B\"",
+						"axis": "x"
+					}
+				},
+				{
+					"id": "push",
+					"objectClass": "reward_pool",
+					"sid": 514326468916074,
+					"parameters": {
+						"where": "back",
+						"value": "\"FOOD_C\"",
+						"axis": "x"
+					}
+				},
+				{
+					"id": "push",
+					"objectClass": "reward_pool",
+					"sid": 623611905572477,
+					"parameters": {
+						"where": "back",
+						"value": "\"FOOD_D\"",
+						"axis": "x"
+					}
+				},
+				{
+					"id": "push",
+					"objectClass": "reward_pool",
+					"sid": 459109764234939,
+					"parameters": {
+						"where": "back",
+						"value": "\"FOOD_E\"",
+						"axis": "x"
+					}
+				},
+				{
+					"id": "push",
+					"objectClass": "reward_pool",
+					"sid": 727991804060389,
+					"parameters": {
+						"where": "back",
+						"value": "\"FOOD_F\"",
+						"axis": "x"
+					}
+				},
+				{
+					"id": "push",
+					"objectClass": "reward_pool",
+					"sid": 793426547694967,
+					"parameters": {
+						"where": "back",
+						"value": "\"FOOD_J\"",
+						"axis": "x"
+					}
+				}
+			],
+			"sid": 141800258325620,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 668692581971244,
+							"parameters": {
+								"key": "\"reward_pool\"",
+								"value": "reward_Pool.AsJSON"
+							}
+						}
+					],
+					"sid": 462372243897554
+				}
+			]
 		},
 		{
 			"eventType": "block",
@@ -261,13 +403,35 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-clicked",
-					"objectClass": "suprimer",
-					"sid": 413091440567458
+					"id": "on-item-get",
+					"objectClass": "LocalStorage",
+					"sid": 975353733988047,
+					"parameters": {
+						"key": "\"\""
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 659360978867403,
+					"parameters": {
+						"first-value": "LocalStorage.Key",
+						"comparison": 0,
+						"second-value": "\"reward_pool\""
+					}
 				}
 			],
-			"actions": [],
-			"sid": 450587314442590
+			"actions": [
+				{
+					"id": "load",
+					"objectClass": "reward_pool",
+					"sid": 680601661581747,
+					"parameters": {
+						"json": "LocalStorage.ItemValue"
+					}
+				}
+			],
+			"sid": 673285756358562
 		}
 	],
 	"sid": 167074243774044
