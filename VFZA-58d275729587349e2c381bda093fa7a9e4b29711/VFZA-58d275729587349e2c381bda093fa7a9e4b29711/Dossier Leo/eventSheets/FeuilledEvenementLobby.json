@@ -238,6 +238,27 @@
 				}
 			],
 			"sid": 188053009675806
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "LeoSpawn",
+					"sid": 870655464083219
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 670718018707386,
+					"parameters": {
+						"layout": "LeoSpawn"
+					}
+				}
+			],
+			"sid": 325742266871013
 		}
 	],
 	"sid": 167074243774044

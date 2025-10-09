@@ -1,0 +1,9 @@
+{
+	"name": "LeoSpawn",
+	"plugin-id": "Button",
+	"sid": 741580265374297,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": []
+}

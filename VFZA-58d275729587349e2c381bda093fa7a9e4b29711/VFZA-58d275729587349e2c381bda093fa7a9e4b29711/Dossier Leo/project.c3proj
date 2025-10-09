@@ -103,7 +103,8 @@
 			"deck",
 			"defausse",
 			"mapState",
-			"mapLinks"
+			"mapLinks",
+			"LeoSpawn"
 		],
 		"subfolders": []
 	},
@@ -125,7 +126,8 @@
 			"typesDeNoeud1",
 			"Combat_base",
 			"typesDeNoeud3",
-			"heal"
+			"heal",
+			"LeoSpawn"
 		],
 		"subfolders": []
 	},
@@ -138,7 +140,8 @@
 			"typesDeNoeud1",
 			"typesDeNoeud2_combat",
 			"typesDeNoeud3",
-			"typesDeNoeud4_heal"
+			"typesDeNoeud4_heal",
+			"Léo Spawn"
 		],
 		"subfolders": []
 	},

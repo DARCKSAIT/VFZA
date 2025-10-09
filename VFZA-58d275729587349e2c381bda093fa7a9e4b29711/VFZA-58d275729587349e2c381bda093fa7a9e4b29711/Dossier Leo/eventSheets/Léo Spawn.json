@@ -1,0 +1,1003 @@
+{
+	"name": "Léo Spawn",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "LoadReady2",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 693706515559671
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 816377141129713
+				}
+			],
+			"actions": [
+				{
+					"id": "get-item",
+					"objectClass": "LocalStorage",
+					"sid": 983606511291782,
+					"parameters": {
+						"key": "\"deck_tutoperso\""
+					}
+				},
+				{
+					"id": "get-item",
+					"objectClass": "LocalStorage",
+					"sid": 554971147615281,
+					"parameters": {
+						"key": "\"main_tutoperso\""
+					}
+				},
+				{
+					"id": "get-item",
+					"objectClass": "LocalStorage",
+					"sid": 403842750423866,
+					"parameters": {
+						"key": "\"def_tutoperso\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 569626477306739,
+					"parameters": {
+						"variable": "LoadReady",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 866535695735247
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "btnback",
+					"sid": 693445611968211
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 677669402493910,
+					"parameters": {
+						"layout": "Map1"
+					}
+				}
+			],
+			"sid": 364803666787670
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 308091713762432
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Info_health_player",
+					"sid": 760801079046618,
+					"parameters": {
+						"text": "\"Vie : \" & health_player"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "deck",
+					"sid": 403818235544693,
+					"parameters": {
+						"text": "\"Deck: \" & tutoperso_Deck.Width"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "defausse",
+					"sid": 857928846528531,
+					"parameters": {
+						"text": "\"Défausse: \" & tutoperso_Defausse.Width"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "main",
+					"sid": 300228833290471,
+					"parameters": {
+						"text": "\"Main: \" & tutoperso_Main.Width"
+					}
+				}
+			],
+			"sid": 591397275685076
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 153750815767790,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-get",
+							"objectClass": "LocalStorage",
+							"sid": 711143033194947,
+							"parameters": {
+								"key": "\"\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 151808048012570,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 151391095502784,
+									"parameters": {
+										"first-value": "LocalStorage.Key",
+										"comparison": 0,
+										"second-value": "\"deck_tutoperso\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "load",
+									"objectClass": "tutoperso_Deck",
+									"sid": 775907811048076,
+									"parameters": {
+										"json": "LocalStorage.ItemValue"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 223550332303374,
+									"parameters": {
+										"variable": "LoadReady",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 190523191705868
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 957868526316631,
+									"parameters": {
+										"first-value": "LocalStorage.Key",
+										"comparison": 0,
+										"second-value": "\"main_tutoperso\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "load",
+									"objectClass": "tutoperso_Main",
+									"sid": 684678535431925,
+									"parameters": {
+										"json": "LocalStorage.ItemValue"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 563258258770942,
+									"parameters": {
+										"variable": "LoadReady",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 290889420320682
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 932127062264404,
+									"parameters": {
+										"first-value": "LocalStorage.Key",
+										"comparison": 0,
+										"second-value": "\"def_tutoperso\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "load",
+									"objectClass": "tutoperso_Defausse",
+									"sid": 682471100393780,
+									"parameters": {
+										"json": "LocalStorage.ItemValue"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 737568308852316,
+									"parameters": {
+										"variable": "LoadReady",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 837848536294805
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 725152454919382,
+							"parameters": {
+								"first-value": "LoadReady",
+								"comparison": 0,
+								"second-value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 153975973137355,
+							"parameters": {
+								"variable": "LoadReady",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 134277092791460,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "while",
+									"objectClass": "System",
+									"sid": 974612866559939
+								},
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 334218950662238,
+									"parameters": {
+										"first-value": "tutoperso_Main.Width",
+										"comparison": 2,
+										"second-value": "5"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 714830460087714,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 744260910545615,
+											"parameters": {
+												"first-value": "tutoperso_Deck.Width",
+												"comparison": 0,
+												"second-value": "0"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 764481849622254,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 134289434300133,
+													"parameters": {
+														"first-value": "tutoperso_Deck.Width",
+														"comparison": 4,
+														"second-value": "0"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "push",
+													"objectClass": "tutoperso_Main",
+													"sid": 184179729557811,
+													"parameters": {
+														"where": "back",
+														"value": "tutoperso_Deck.At( tutoperso_Deck.Width - 1 )",
+														"axis": "x"
+													}
+												},
+												{
+													"id": "delete",
+													"objectClass": "tutoperso_Deck",
+													"sid": 888254100777652,
+													"parameters": {
+														"index": "tutoperso_Deck.Width - 1",
+														"axis": "x"
+													}
+												}
+											],
+											"sid": 816413320386649
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 740196053167240,
+													"parameters": {
+														"first-value": "tutoperso_Defausse.Width",
+														"comparison": 4,
+														"second-value": "0"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "push",
+													"objectClass": "tutoperso_Deck",
+													"sid": 839818412798201,
+													"parameters": {
+														"where": "back",
+														"value": "tutoperso_Defausse.At( tutoperso_Defausse.Width - 1 )",
+														"axis": "x"
+													}
+												},
+												{
+													"id": "delete",
+													"objectClass": "tutoperso_Defausse",
+													"sid": 242349442978153,
+													"parameters": {
+														"index": "tutoperso_Defausse.Width - 1",
+														"axis": "x"
+													}
+												}
+											],
+											"sid": 360273459560690
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 624952620847370,
+													"parameters": {
+														"first-value": "tutoperso_Defausse.Width",
+														"comparison": 0,
+														"second-value": "0"
+													}
+												},
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 452465311414726,
+													"parameters": {
+														"first-value": "tutoperso_Deck.Width",
+														"comparison": 0,
+														"second-value": "0"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "stop-loop",
+													"objectClass": "System",
+													"sid": 378464248196853
+												}
+											],
+											"sid": 698596676334761
+										}
+									]
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-size",
+									"objectClass": "tutoperso_Defausse",
+									"sid": 551342357862773,
+									"parameters": {
+										"width": "0",
+										"height": "1",
+										"depth": "1"
+									}
+								},
+								{
+									"id": "shuffle",
+									"objectClass": "tutoperso_Deck",
+									"sid": 314920061956579,
+									"parameters": {
+										"axis": "x"
+									}
+								}
+							],
+							"sid": 246315416675143
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"callFunction": "RefreshMain",
+									"sid": 285379566563431
+								}
+							],
+							"sid": 280246493273464
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 604848358179257,
+							"parameters": {
+								"first-value": "LoadReady",
+								"comparison": 0,
+								"second-value": "3"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 911349954472024,
+							"parameters": {
+								"first-value": "tutoperso_Main.Width",
+								"comparison": 5,
+								"second-value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 749474220200897,
+							"parameters": {
+								"key": "\"deck_tutoperso\"",
+								"value": "tutoperso_Deck.AsJSON"
+							}
+						},
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 295821441049519,
+							"parameters": {
+								"key": "\"main_tutoperso\"",
+								"value": "tutoperso_Main.AsJSON"
+							}
+						},
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 731426070550338,
+							"parameters": {
+								"key": "\"def_tutoperso\"",
+								"value": "tutoperso_Defausse.AsJSON"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 830632195270650,
+							"parameters": {
+								"variable": "LoadReady",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 317597612257783
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Souris",
+							"sid": 379579285818453,
+							"parameters": {
+								"mouse-button": "right",
+								"click-type": "clicked",
+								"object-clicked": "FamCard"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "push",
+							"objectClass": "tutoperso_Defausse",
+							"sid": 587286506751959,
+							"parameters": {
+								"where": "back",
+								"value": "tutoperso_Main.At(FamCard.IndexMain)",
+								"axis": "x"
+							}
+						},
+						{
+							"id": "delete",
+							"objectClass": "tutoperso_Main",
+							"sid": 629689698928554,
+							"parameters": {
+								"index": "FamCard.IndexMain",
+								"axis": "x"
+							}
+						},
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 219974723191256,
+							"parameters": {
+								"key": "\"main_tutoperso\"",
+								"value": "tutoperso_Main.AsJSON"
+							}
+						},
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 492864355960112,
+							"parameters": {
+								"key": "\"def_tutoperso\"",
+								"value": "tutoperso_Defausse.AsJSON"
+							}
+						},
+						{
+							"callFunction": "RefreshMain",
+							"sid": 239318254075822
+						}
+					],
+					"sid": 631465747182734
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-clicked",
+							"objectClass": "Btn_FinTour",
+							"sid": 117398734135360
+						}
+					],
+					"actions": [],
+					"sid": 565320816726316,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "while",
+									"objectClass": "System",
+									"sid": 724931931046420
+								},
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 514248326824846,
+									"parameters": {
+										"first-value": "tutoperso_Main.Width ",
+										"comparison": 2,
+										"second-value": "5"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 134151032260753,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 948574858468550,
+											"parameters": {
+												"first-value": "tutoperso_Deck.Width",
+												"comparison": 4,
+												"second-value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "push",
+											"objectClass": "tutoperso_Main",
+											"sid": 319623797289016,
+											"parameters": {
+												"where": "back",
+												"value": "tutoperso_Deck.At(tutoperso_Deck.Width - 1)",
+												"axis": "x"
+											}
+										},
+										{
+											"id": "delete",
+											"objectClass": "tutoperso_Deck",
+											"sid": 762959315307958,
+											"parameters": {
+												"index": "tutoperso_Deck.Width - 1",
+												"axis": "x"
+											}
+										}
+									],
+									"sid": 150431013890256,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 881546026702071,
+													"parameters": {
+														"first-value": "tutoperso_Deck.Width ",
+														"comparison": 0,
+														"second-value": "0"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 980520688775062,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "for",
+															"objectClass": "System",
+															"sid": 129224162057481,
+															"parameters": {
+																"name": "\"i\"",
+																"start-index": "0",
+																"end-index": "tutoperso_Defausse.Width - 1"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "push",
+															"objectClass": "tutoperso_Deck",
+															"sid": 352285759105336,
+															"parameters": {
+																"where": "back",
+																"value": "tutoperso_Defausse.At( loopindex(\"i\") )",
+																"axis": "x"
+															}
+														}
+													],
+													"sid": 188414474545597
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "for",
+															"objectClass": "System",
+															"sid": 212030787972206,
+															"parameters": {
+																"name": "\"i\"",
+																"start-index": "0",
+																"end-index": "tutoperso_Defausse.Width - 1"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "delete",
+															"objectClass": "tutoperso_Defausse",
+															"sid": 433002920873977,
+															"parameters": {
+																"index": "tutoperso_Defausse.Width - 1",
+																"axis": "x"
+															}
+														}
+													],
+													"sid": 706742304713015
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 623142929569945,
+															"parameters": {
+																"first-value": "tutoperso_Deck.Width",
+																"comparison": 0,
+																"second-value": "0"
+															}
+														},
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 602575925445983,
+															"parameters": {
+																"first-value": "tutoperso_Defausse.Width ",
+																"comparison": 0,
+																"second-value": "0"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "stop-loop",
+															"objectClass": "System",
+															"sid": 919646784395944
+														}
+													],
+													"sid": 966056740589397
+												},
+												{
+													"eventType": "block",
+													"conditions": [],
+													"actions": [
+														{
+															"id": "set-size",
+															"objectClass": "tutoperso_Defausse",
+															"sid": 391221340082114,
+															"parameters": {
+																"width": "0",
+																"height": "1",
+																"depth": "1"
+															}
+														}
+													],
+													"sid": 553053567437300
+												}
+											]
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "set-item",
+											"objectClass": "LocalStorage",
+											"sid": 170888572345766,
+											"parameters": {
+												"key": "\"deck_tutoperso\"",
+												"value": "tutoperso_Deck.AsJSON"
+											}
+										},
+										{
+											"id": "set-item",
+											"objectClass": "LocalStorage",
+											"sid": 453845001807970,
+											"parameters": {
+												"key": "\"main_tutoperso\"",
+												"value": "tutoperso_Main.AsJSON"
+											}
+										},
+										{
+											"id": "set-item",
+											"objectClass": "LocalStorage",
+											"sid": 908957522007717,
+											"parameters": {
+												"key": "\"def_tutoperso\"",
+												"value": "tutoperso_Defausse.AsJSON"
+											}
+										}
+									],
+									"sid": 177704023709512
+								},
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"callFunction": "RefreshMain",
+											"sid": 119083390197952
+										}
+									],
+									"sid": 795420603456317
+								}
+							]
+						}
+					]
+				},
+				{
+					"functionName": "RefreshMain2",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "FamCard",
+							"sid": 658059468671868
+						}
+					],
+					"sid": 789391723491571,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "dbg",
+									"sid": 382582845974406,
+									"parameters": {
+										"text": "\"Refresh OK\""
+									}
+								}
+							],
+							"sid": 732144307040309
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for",
+									"objectClass": "System",
+									"sid": 432976993264939,
+									"parameters": {
+										"name": "\"i\"",
+										"start-index": "0",
+										"end-index": "tutoperso_Main.Width - 1"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 497933827583326,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 183923579309049,
+											"parameters": {
+												"first-value": "lowercase(left(str(tutoperso_Main.At(loopindex(\"i\"))), 3))\r\n",
+												"comparison": 0,
+												"second-value": "\"def\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 827761138523494,
+											"parameters": {
+												"object-to-create": "CardDef",
+												"layer": "\"UI\"",
+												"x": "480 + loopindex(\"i\") * 160",
+												"y": "360",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "CardDef",
+											"sid": 166154430990828,
+											"parameters": {
+												"instance-variable": "IndexMain",
+												"value": "loopindex(\"i\")"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "CardDef",
+											"sid": 157985800088346,
+											"parameters": {
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "move-to-top",
+											"objectClass": "CardDef",
+											"sid": 132255231028843
+										}
+									],
+									"sid": 754631669492434
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 846617472418457,
+											"parameters": {
+												"first-value": "lowercase(left(str(tutoperso_Main.At(loopindex(\"i\"))), 3))\r\n",
+												"comparison": 0,
+												"second-value": "\"atk\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 747333159665640,
+											"parameters": {
+												"object-to-create": "CardAtk",
+												"layer": "\"UI\"",
+												"x": "480 + loopindex(\"i\") * 160 ",
+												"y": "360",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "CardAtk",
+											"sid": 290199341903903,
+											"parameters": {
+												"instance-variable": "IndexMain",
+												"value": "loopindex(\"i\")"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "CardAtk",
+											"sid": 238213561228316,
+											"parameters": {
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "move-to-top",
+											"objectClass": "CardAtk",
+											"sid": 807465904863061
+										}
+									],
+									"sid": 574821736467938
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"sid": 698969459265366
+}
