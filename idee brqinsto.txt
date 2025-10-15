@@ -1,0 +1,50 @@
+perso: 
+1: groupe de rock (3ou4) membre en fonction du membre devant cela ajoute des effect 
+2: pistolero il attaque a la fin de son tour en fonction de son chargeur et gagne des carte en fonction 
+3: mec de la téléréalité il buff et quand x débuff stake sur ennemie il kill
+4:techo-terroriste il invoque des drone pour attaque et défendre 
+5:defenseur il n'attaque pas mais renvoie les dégâts
+6:soigneur transforme les zombie en humain et 99% de "bon" humain
+7:le père de famille a une carte "enfant "inutile mais dans les situation critique s'en sort quand meme parfois
+8:president aucun bonus mais parle bcp bcp  
+9:K-9 les ennemie devant gagne 1 de saignement chaque tour 
+10:nerd permet d'attaque plus souvent grace a son camouflage deguisement de z 
+
+équipement armure: 
+1- avantage ? désavantage tu est "aveugle" (écran noir en gros) pendant 2 tours
+2: livre de la religion 1 si le personage a une foi 1 il gagne des bonus en fonction de la religion(type orc Warhammer) sinon malus x le nombre de religion 
+3: collier du desire tout les 10 tours séduit un ennemie
+4:diablotin run avec des buff mais aucune recompense ressource a la fin de run 
+5:ange doit se prouver digne via des choix moraux ou autre pour gagner des puissant buff mais recompense normal a la fin de run 
+6:ceinture une fois par combat tu peut utilise une carte avec -1 d'Energie nessecaire que normal 
+7:vieuxcerveau de médecin permet de prendre un peu moins de dégât 
+8:embleme du roi lion n'a pas de Naud piège dans sa run 
+9: sac médical permet de se soigner une fois completement gratuitement 1 fois par run 
+10: cote de mitril permet de resisté une fois au degat mortel et de regen un peu 
+
+
+équipement arme: 
+1: anneau de pouvoir "récupère une carte du pool de l'ennemie cible et l'utilise direct " 1 fois par combat
+2: chaussette de Jules tu peut attaque une ligne plus loins car ton personage glisse
+3:baleyage couteau qui réduit un peu les dégât mais fait une partie des dégât a tous les ennemie 
+4: pierre du savoir permet de choisir et metre dans l'ordre voulu les 3 premiere carte pour pioche pour la run  
+5:lampe torche permet de voir 2 neaud a l'avance
+6:arme pourri quand un enemie a 7% de ces pv le tue 
+7:menottes enleve une carte du pool de l'enemie cible jusqua la fin du combat 
+8: faux de paysan recupere plus de ressource nourriture 
+9: cane a peche pull l'enemie le plus forte ou faible devant 
+10: encyclopedie plus tu combat un type de monstre plus tu lui fait mal
+
+carte:
+1: quand les x derniers action non pas été les meme double les dégât 
+2:une carte "mere" qui est bonne mais qui ajoute un "enfant " inutile 
+3:jette apocalyptique permet de jouer 2 fois de suite mais 1 fois par run mais peut ne pas marche low chance
+4:cigare de fin a une probabilité infime de tomber et = fin de run win
+5: soin qui transforme les z en humain mais grosse chance de "méchant" humain
+6:micmac change toute tes carte pour des carte que tu n'a pas pour 1 tours 
+7: carte cameraman sa fige les ennemie pendant le round 
+8: portail séduit un ennemie a 50% de chance et a mini chance de spawn un demon 
+9:poupe 's'ajoute au pool ennemie mais donne + de recompense 
+10:biere elle augmente les degat pendant 2 tours mais ajoute 10% de chance de miss sur chaque coup 
+
+
