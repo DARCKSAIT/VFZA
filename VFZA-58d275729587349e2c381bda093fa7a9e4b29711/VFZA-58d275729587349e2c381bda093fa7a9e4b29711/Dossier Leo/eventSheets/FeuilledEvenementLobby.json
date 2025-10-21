@@ -64,6 +64,30 @@
 				{
 					"id": "remove-item",
 					"objectClass": "LocalStorage",
+					"sid": 523007263948083,
+					"parameters": {
+						"key": "\"deck_tutoperso\""
+					}
+				},
+				{
+					"id": "remove-item",
+					"objectClass": "LocalStorage",
+					"sid": 386373345797231,
+					"parameters": {
+						"key": "\"def_tutoperso\""
+					}
+				},
+				{
+					"id": "remove-item",
+					"objectClass": "LocalStorage",
+					"sid": 894296374369399,
+					"parameters": {
+						"key": "\"main_tutoperso\""
+					}
+				},
+				{
+					"id": "remove-item",
+					"objectClass": "LocalStorage",
 					"sid": 891621765888121,
 					"parameters": {
 						"key": "\"mapState\""
@@ -83,6 +107,14 @@
 					"sid": 500319375281817,
 					"parameters": {
 						"key": "\"reward_pool\""
+					}
+				},
+				{
+					"id": "reset-eventvar",
+					"objectClass": "System",
+					"sid": 934608317920224,
+					"parameters": {
+						"variable": "SelectedCharacter"
 					}
 				}
 			],

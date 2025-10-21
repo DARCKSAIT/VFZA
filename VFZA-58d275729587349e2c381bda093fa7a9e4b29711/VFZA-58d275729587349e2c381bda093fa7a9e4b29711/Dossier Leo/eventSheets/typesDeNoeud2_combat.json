@@ -1264,9 +1264,14 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "while",
+							"objectClass": "System",
+							"sid": 817155189751255
+						},
+						{
 							"id": "for",
 							"objectClass": "System",
-							"sid": 179641012581198,
+							"sid": 717807677142585,
 							"parameters": {
 								"name": "\"i\"",
 								"start-index": "0",
@@ -1292,6 +1297,15 @@
 							"parameters": {
 								"index": "0",
 								"axis": "x"
+							}
+						},
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 511501633063533,
+							"parameters": {
+								"key": "\"main_tutoperso\"",
+								"value": "tutoperso_Main.AsJSON"
 							}
 						}
 					],
@@ -1329,6 +1343,15 @@
 							"parameters": {
 								"index": "0",
 								"axis": "x"
+							}
+						},
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 334110667086884,
+							"parameters": {
+								"key": "\"def_tutoperso\"",
+								"value": "tutoperso_Defausse.AsJSON"
 							}
 						}
 					],
