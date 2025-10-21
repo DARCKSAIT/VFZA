@@ -3150,6 +3150,54 @@
 					"disabled": true
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "losebtn",
+					"sid": 158103528369381
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 571515585895634,
+					"parameters": {
+						"variable": "lose",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 728861437362082
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 897703240210350,
+					"parameters": {
+						"first-value": "lose",
+						"comparison": 0,
+						"second-value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 100222293639637,
+					"parameters": {
+						"layout": "Lobby"
+					}
+				}
+			],
+			"sid": 411234437698019
 		}
 	],
 	"sid": 582260158408257

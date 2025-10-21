@@ -108,7 +108,8 @@
 			"suprimer",
 			"reward_poolfarm1",
 			"CardFood",
-			"CardDef2"
+			"CardDef2",
+			"losebtn"
 		],
 		"subfolders": []
 	},

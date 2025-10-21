@@ -217,6 +217,14 @@
 					"parameters": {
 						"layout": "Map1"
 					}
+				},
+				{
+					"id": "toggle-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 163726966970349,
+					"parameters": {
+						"variable": "run"
+					}
 				}
 			],
 			"sid": 309041915018870

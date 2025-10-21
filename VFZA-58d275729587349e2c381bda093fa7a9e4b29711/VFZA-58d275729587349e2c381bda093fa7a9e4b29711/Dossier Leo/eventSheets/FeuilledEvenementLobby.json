@@ -52,6 +52,16 @@
 			"sid": 639713199702708
 		},
 		{
+			"eventType": "variable",
+			"name": "run",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 384658985494589
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -61,54 +71,6 @@
 				}
 			],
 			"actions": [
-				{
-					"id": "remove-item",
-					"objectClass": "LocalStorage",
-					"sid": 523007263948083,
-					"parameters": {
-						"key": "\"deck_tutoperso\""
-					}
-				},
-				{
-					"id": "remove-item",
-					"objectClass": "LocalStorage",
-					"sid": 386373345797231,
-					"parameters": {
-						"key": "\"def_tutoperso\""
-					}
-				},
-				{
-					"id": "remove-item",
-					"objectClass": "LocalStorage",
-					"sid": 894296374369399,
-					"parameters": {
-						"key": "\"main_tutoperso\""
-					}
-				},
-				{
-					"id": "remove-item",
-					"objectClass": "LocalStorage",
-					"sid": 891621765888121,
-					"parameters": {
-						"key": "\"mapState\""
-					}
-				},
-				{
-					"id": "remove-item",
-					"objectClass": "LocalStorage",
-					"sid": 682796993771144,
-					"parameters": {
-						"key": "\"mapLinks\""
-					}
-				},
-				{
-					"id": "remove-item",
-					"objectClass": "LocalStorage",
-					"sid": 500319375281817,
-					"parameters": {
-						"key": "\"reward_pool\""
-					}
-				},
 				{
 					"id": "reset-eventvar",
 					"objectClass": "System",
@@ -430,6 +392,97 @@
 				}
 			],
 			"sid": 325742266871013
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 150605477309404,
+					"parameters": {
+						"variable": "run"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 442206384525728,
+					"parameters": {
+						"first-value": "lose",
+						"comparison": 0,
+						"second-value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "remove-item",
+					"objectClass": "LocalStorage",
+					"sid": 696749427664831,
+					"parameters": {
+						"key": "\"deck_tutoperso\""
+					}
+				},
+				{
+					"id": "remove-item",
+					"objectClass": "LocalStorage",
+					"sid": 863423389546894,
+					"parameters": {
+						"key": "\"def_tutoperso\""
+					}
+				},
+				{
+					"id": "remove-item",
+					"objectClass": "LocalStorage",
+					"sid": 548485827285172,
+					"parameters": {
+						"key": "\"main_tutoperso\""
+					}
+				},
+				{
+					"id": "remove-item",
+					"objectClass": "LocalStorage",
+					"sid": 710109920185172,
+					"parameters": {
+						"key": "\"mapState\""
+					}
+				},
+				{
+					"id": "remove-item",
+					"objectClass": "LocalStorage",
+					"sid": 293561516683478,
+					"parameters": {
+						"key": "\"mapLinks\""
+					}
+				},
+				{
+					"id": "remove-item",
+					"objectClass": "LocalStorage",
+					"sid": 111192082288280,
+					"parameters": {
+						"key": "\"reward_pool\""
+					}
+				},
+				{
+					"id": "toggle-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 419472241409585,
+					"parameters": {
+						"variable": "run"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 375183049835542,
+					"parameters": {
+						"variable": "lose",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 587766558583178
 		}
 	],
 	"sid": 167074243774044

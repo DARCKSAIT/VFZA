@@ -32,6 +32,16 @@
 			"sid": 867019552005355
 		},
 		{
+			"eventType": "variable",
+			"name": "lose",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 326067390746598
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -1450,7 +1460,62 @@
 					}
 				}
 			],
-			"sid": 980800711003343
+			"sid": 980800711003343,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 578745026398228,
+							"parameters": {
+								"first-value": "lose",
+								"comparison": 0,
+								"second-value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 283119205017679,
+							"parameters": {
+								"layout": "Lobby"
+							}
+						}
+					],
+					"sid": 707277088328684
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 380130331546496,
+							"parameters": {
+								"first-value": "health_player",
+								"comparison": 0,
+								"second-value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 857047624605240,
+							"parameters": {
+								"variable": "lose",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 994396214583959
+				}
+			]
 		}
 	],
 	"sid": 822543069397088
