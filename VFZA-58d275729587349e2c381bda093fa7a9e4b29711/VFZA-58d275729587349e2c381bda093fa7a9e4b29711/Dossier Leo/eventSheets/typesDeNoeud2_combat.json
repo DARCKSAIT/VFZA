@@ -1257,18 +1257,118 @@
 					"sid": 151631359881840
 				}
 			],
-			"actions": [
+			"actions": [],
+			"sid": 810560937838598,
+			"children": [
 				{
-					"id": "add-to-eventvar",
-					"objectClass": "System",
-					"sid": 685846168536606,
-					"parameters": {
-						"variable": "CombatWon",
-						"value": "1"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for",
+							"objectClass": "System",
+							"sid": 179641012581198,
+							"parameters": {
+								"name": "\"i\"",
+								"start-index": "0",
+								"end-index": "tutoperso_Main.Width - 1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "push",
+							"objectClass": "tutoperso_Deck",
+							"sid": 812257329060255,
+							"parameters": {
+								"where": "back",
+								"value": "tutoperso_Main.At(loopindex(\"i\"))",
+								"axis": "x"
+							}
+						},
+						{
+							"id": "delete",
+							"objectClass": "tutoperso_Main",
+							"sid": 222379772349389,
+							"parameters": {
+								"index": "0",
+								"axis": "x"
+							}
+						}
+					],
+					"sid": 310375878250946
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for",
+							"objectClass": "System",
+							"sid": 370979607646981,
+							"parameters": {
+								"name": "\"i\"",
+								"start-index": "0",
+								"end-index": "tutoperso_Defausse.Width - 1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "push",
+							"objectClass": "tutoperso_Deck",
+							"sid": 748256812785016,
+							"parameters": {
+								"where": "back",
+								"value": "tutoperso_Defausse.At(loopindex(\"i\"))",
+								"axis": "x"
+							}
+						},
+						{
+							"id": "delete",
+							"objectClass": "tutoperso_Defausse",
+							"sid": 947061723146769,
+							"parameters": {
+								"index": "0",
+								"axis": "x"
+							}
+						}
+					],
+					"sid": 317307849491872
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 861866731456224,
+							"parameters": {
+								"key": "\"deck_tutoperso\"",
+								"value": "tutoperso_Deck.AsJSON"
+							}
+						}
+					],
+					"sid": 850656739677227,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 665021801876602,
+									"parameters": {
+										"variable": "CombatWon",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 318440324210610
+						}
+					]
 				}
-			],
-			"sid": 810560937838598
+			]
 		},
 		{
 			"eventType": "block",
