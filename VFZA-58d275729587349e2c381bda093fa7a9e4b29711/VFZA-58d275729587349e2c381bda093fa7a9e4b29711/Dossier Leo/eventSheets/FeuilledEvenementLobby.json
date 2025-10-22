@@ -43,16 +43,6 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "CombatWon",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 639713199702708
-		},
-		{
-			"eventType": "variable",
 			"name": "run",
 			"type": "boolean",
 			"initialValue": "false",

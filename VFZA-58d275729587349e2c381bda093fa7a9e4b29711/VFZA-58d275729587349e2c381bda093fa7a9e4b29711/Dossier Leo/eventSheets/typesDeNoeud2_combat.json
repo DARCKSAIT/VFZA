@@ -42,6 +42,16 @@
 			"sid": 326067390746598
 		},
 		{
+			"eventType": "variable",
+			"name": "CombatWon",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 519324954293795
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -89,15 +99,6 @@
 					"sid": 914051909246332,
 					"parameters": {
 						"variable": "LoadReady",
-						"value": "0"
-					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 295760423356546,
-					"parameters": {
-						"variable": "CombatWon",
 						"value": "0"
 					}
 				}
@@ -1262,13 +1263,13 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "compare-eventvar",
+					"id": "compare-two-values",
 					"objectClass": "System",
-					"sid": 278795055972250,
+					"sid": 488557613194208,
 					"parameters": {
-						"variable": "CombatWon",
-						"comparison": 0,
-						"value": "1"
+						"first-value": "CombatWon",
+						"comparison": 1,
+						"second-value": "0"
 					}
 				}
 			],
@@ -1425,25 +1426,7 @@
 				}
 			],
 			"actions": [],
-			"sid": 810560937838598,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [],
-					"actions": [
-						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 674296988511797,
-							"parameters": {
-								"variable": "CombatWon",
-								"value": "1"
-							}
-						}
-					],
-					"sid": 374534355816096
-				}
-			]
+			"sid": 810560937838598
 		},
 		{
 			"eventType": "block",
