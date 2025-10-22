@@ -108,43 +108,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 938177042101816
-				}
-			],
-			"actions": [
-				{
-					"id": "set-text",
-					"objectClass": "Info_health_player",
-					"sid": 506454625704837,
-					"parameters": {
-						"text": "\"Vie : \" & health_player"
-					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "deck",
-					"sid": 920497008249584,
-					"parameters": {
-						"text": "\"Deck: \" & tutoperso_Deck.Width"
-					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "defausse",
-					"sid": 484277926536424,
-					"parameters": {
-						"text": "\"Défausse: \" & tutoperso_Defausse.Width"
-					}
-				}
-			],
-			"sid": 211457593285388
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "on-item-exists",
 					"objectClass": "LocalStorage",
 					"sid": 290645903620649,
@@ -1161,6 +1124,144 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 307309156936814,
+					"parameters": {
+						"first-value": "lose",
+						"comparison": 0,
+						"second-value": "1"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 500514359844435,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "repeat",
+							"objectClass": "System",
+							"sid": 111422335263545,
+							"parameters": {
+								"count": "1"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 794588692643926,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "while",
+									"objectClass": "System",
+									"sid": 906934576942516
+								}
+							],
+							"actions": [],
+							"sid": 498454766203354,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 433381113026600,
+											"parameters": {
+												"first-value": "tutoperso_Main.Width ",
+												"comparison": 4,
+												"second-value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "push",
+											"objectClass": "tutoperso_Defausse",
+											"sid": 882041554926347,
+											"parameters": {
+												"where": "back",
+												"value": "tutoperso_Main.At(tutoperso_Main.Width - 1)",
+												"axis": "x"
+											}
+										},
+										{
+											"id": "delete",
+											"objectClass": "tutoperso_Main",
+											"sid": 260035365869878,
+											"parameters": {
+												"index": "tutoperso_Main.Width - 1",
+												"axis": "x"
+											}
+										}
+									],
+									"sid": 938825740093924,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "set-item",
+													"objectClass": "LocalStorage",
+													"sid": 848734213624373,
+													"parameters": {
+														"key": "\"deck_tutoperso\"",
+														"value": "tutoperso_Deck.AsJSON"
+													}
+												},
+												{
+													"id": "set-item",
+													"objectClass": "LocalStorage",
+													"sid": 917403494663345,
+													"parameters": {
+														"key": "\"def_tutoperso\"",
+														"value": "tutoperso_Defausse.AsJSON"
+													}
+												},
+												{
+													"id": "set-item",
+													"objectClass": "LocalStorage",
+													"sid": 678265765945671,
+													"parameters": {
+														"key": "\"main_tutoperso\"",
+														"value": "tutoperso_Main.AsJSON"
+													}
+												}
+											],
+											"sid": 995598192237941
+										},
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "go-to-layout",
+													"objectClass": "System",
+													"sid": 920528200358690,
+													"parameters": {
+														"layout": "Lobby"
+													}
+												}
+											],
+											"sid": 551652449448570
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
 					"sid": 278795055972250,
@@ -1171,240 +1272,142 @@
 					}
 				}
 			],
-			"actions": [
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 607464720552346,
-					"parameters": {
-						"variable": "RewardIndex",
-						"value": "floor(random(reward_poolfarm1.Width))"
-					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 857053867547967,
-					"parameters": {
-						"variable": "RewardID",
-						"value": "\"\" & reward_poolfarm1.At(RewardIndex)"
-					}
-				}
-			],
+			"actions": [],
 			"sid": 923576112640224,
 			"children": [
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "compare-two-values",
+							"id": "repeat",
 							"objectClass": "System",
-							"sid": 417748586764420,
+							"sid": 439741184990099,
 							"parameters": {
-								"first-value": "tutoperso_Main.Width ",
-								"comparison": 4,
-								"second-value": "0"
+								"count": "1"
 							}
 						}
 					],
-					"actions": [],
-					"sid": 755027845205722
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "while",
-							"objectClass": "System",
-							"sid": 306930386815853
-						},
-						{
-							"id": "for",
-							"objectClass": "System",
-							"sid": 372909472628552,
-							"parameters": {
-								"name": "\"i\"",
-								"start-index": "0",
-								"end-index": "tutoperso_Main.Width - 1"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 419250736489127,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-two-values",
-									"objectClass": "System",
-									"sid": 359994178682342,
-									"parameters": {
-										"first-value": "tutoperso_Main.Width ",
-										"comparison": 4,
-										"second-value": "0"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "push",
-									"objectClass": "tutoperso_Deck",
-									"sid": 155804047461919,
-									"parameters": {
-										"where": "back",
-										"value": "tutoperso_Main.At(loopindex(\"i\"))",
-										"axis": "x"
-									}
-								},
-								{
-									"id": "delete",
-									"objectClass": "tutoperso_Main",
-									"sid": 257527758600024,
-									"parameters": {
-										"index": "0",
-										"axis": "x"
-									}
-								},
-								{
-									"id": "set-item",
-									"objectClass": "LocalStorage",
-									"sid": 632756514782098,
-									"parameters": {
-										"key": "\"main_tutoperso\"",
-										"value": "tutoperso_Main.AsJSON"
-									}
-								}
-							],
-							"sid": 872085257826617
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "while",
-							"objectClass": "System",
-							"sid": 796210532412219
-						},
-						{
-							"id": "for",
-							"objectClass": "System",
-							"sid": 763759750969037,
-							"parameters": {
-								"name": "\"i\"",
-								"start-index": "0",
-								"end-index": "tutoperso_Defausse.Width - 1"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 287791854946510,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-two-values",
-									"objectClass": "System",
-									"sid": 657675369916721,
-									"parameters": {
-										"first-value": "tutoperso_Defausse.Width ",
-										"comparison": 4,
-										"second-value": "0"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "push",
-									"objectClass": "tutoperso_Deck",
-									"sid": 746289677513646,
-									"parameters": {
-										"where": "back",
-										"value": "tutoperso_Defausse.At(loopindex(\"i\"))",
-										"axis": "x"
-									}
-								},
-								{
-									"id": "delete",
-									"objectClass": "tutoperso_Defausse",
-									"sid": 171262531299342,
-									"parameters": {
-										"index": "0",
-										"axis": "x"
-									}
-								},
-								{
-									"id": "set-item",
-									"objectClass": "LocalStorage",
-									"sid": 518454712587107,
-									"parameters": {
-										"key": "\"def_tutoperso\"",
-										"value": "tutoperso_Defausse.AsJSON"
-									}
-								}
-							],
-							"sid": 296521150440686
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [],
 					"actions": [
 						{
-							"id": "push",
-							"objectClass": "tutoperso_Deck",
-							"sid": 925606532287925,
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 315470526855853,
 							"parameters": {
-								"where": "back",
-								"value": "RewardID",
-								"axis": "x"
+								"variable": "RewardIndex",
+								"value": "floor(random(reward_poolfarm1.Width))"
 							}
 						},
 						{
-							"id": "shuffle",
-							"objectClass": "tutoperso_Deck",
-							"sid": 967363641407253,
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 407430436449230,
 							"parameters": {
-								"axis": "x"
+								"variable": "RewardID",
+								"value": "\"\" & reward_poolfarm1.At(RewardIndex)"
 							}
 						}
 					],
-					"sid": 389870758868245,
+					"sid": 545199911616141,
 					"children": [
 						{
 							"eventType": "block",
-							"conditions": [],
-							"actions": [
+							"conditions": [
 								{
-									"id": "set-item",
-									"objectClass": "LocalStorage",
-									"sid": 871445351114862,
-									"parameters": {
-										"key": "\"deck_tutoperso\"",
-										"value": "tutoperso_Deck.AsJSON"
-									}
+									"id": "while",
+									"objectClass": "System",
+									"sid": 890758947234847
 								}
 							],
-							"sid": 788296009614748,
+							"actions": [],
+							"sid": 892216048942362,
 							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 163407227995354,
+											"parameters": {
+												"first-value": "tutoperso_Main.Width ",
+												"comparison": 4,
+												"second-value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "push",
+											"objectClass": "tutoperso_Defausse",
+											"sid": 886641847516126,
+											"parameters": {
+												"where": "back",
+												"value": "tutoperso_Main.At(tutoperso_Main.Width - 1)",
+												"axis": "x"
+											}
+										},
+										{
+											"id": "delete",
+											"objectClass": "tutoperso_Main",
+											"sid": 600675676017601,
+											"parameters": {
+												"index": "tutoperso_Main.Width - 1",
+												"axis": "x"
+											}
+										}
+									],
+									"sid": 853946253382990
+								},
 								{
 									"eventType": "block",
 									"conditions": [],
 									"actions": [
 										{
-											"id": "go-to-layout",
-											"objectClass": "System",
-											"sid": 758767091650579,
+											"id": "set-item",
+											"objectClass": "LocalStorage",
+											"sid": 156559355074739,
 											"parameters": {
-												"layout": "Map1"
+												"key": "\"deck_tutoperso\"",
+												"value": "tutoperso_Deck.AsJSON"
+											}
+										},
+										{
+											"id": "set-item",
+											"objectClass": "LocalStorage",
+											"sid": 262770033831976,
+											"parameters": {
+												"key": "\"def_tutoperso\"",
+												"value": "tutoperso_Defausse.AsJSON"
+											}
+										},
+										{
+											"id": "set-item",
+											"objectClass": "LocalStorage",
+											"sid": 282111845909106,
+											"parameters": {
+												"key": "\"main_tutoperso\"",
+												"value": "tutoperso_Main.AsJSON"
 											}
 										}
 									],
-									"sid": 758845348296156
+									"sid": 692127483117339,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "go-to-layout",
+													"objectClass": "System",
+													"sid": 957046697227910,
+													"parameters": {
+														"layout": "Map1"
+													}
+												}
+											],
+											"sid": 556291238536559
+										}
+									]
 								}
 							]
 						}
@@ -1439,22 +1442,6 @@
 						}
 					],
 					"sid": 374534355816096
-				},
-				{
-					"eventType": "block",
-					"conditions": [],
-					"actions": [
-						{
-							"id": "set-item",
-							"objectClass": "LocalStorage",
-							"sid": 861866731456224,
-							"parameters": {
-								"key": "\"deck_tutoperso\"",
-								"value": "tutoperso_Deck.AsJSON"
-							}
-						}
-					],
-					"sid": 850656739677227
 				}
 			]
 		},
@@ -1475,36 +1462,34 @@
 					"parameters": {
 						"text": "newline & \"i=\" & loopindex(\"i\") & \" val=\" & (\"\" & tutoperso_Main.At(loopindex(\"i\")))"
 					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Info_health_player",
+					"sid": 471087597107123,
+					"parameters": {
+						"text": "\"Vie : \" & health_player"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "deck",
+					"sid": 754556815249725,
+					"parameters": {
+						"text": "\"Deck: \" & tutoperso_Deck.Width"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "defausse",
+					"sid": 417963171782760,
+					"parameters": {
+						"text": "\"Défausse: \" & tutoperso_Defausse.Width"
+					}
 				}
 			],
 			"sid": 980800711003343,
 			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 578745026398228,
-							"parameters": {
-								"first-value": "lose",
-								"comparison": 0,
-								"second-value": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 283119205017679,
-							"parameters": {
-								"layout": "Lobby"
-							}
-						}
-					],
-					"sid": 707277088328684
-				},
 				{
 					"eventType": "block",
 					"conditions": [
