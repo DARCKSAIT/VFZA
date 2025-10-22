@@ -1197,6 +1197,23 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 417748586764420,
+							"parameters": {
+								"first-value": "tutoperso_Main.Width ",
+								"comparison": 4,
+								"second-value": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 755027845205722
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "while",
 							"objectClass": "System",
 							"sid": 306930386815853
