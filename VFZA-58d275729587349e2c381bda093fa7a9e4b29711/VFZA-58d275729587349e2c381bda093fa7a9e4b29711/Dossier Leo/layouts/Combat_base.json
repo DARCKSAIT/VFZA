@@ -98,7 +98,7 @@
 						"sid": 109820917479547,
 						"expanded": true
 					},
-					"showing": true,
+					"showing": false,
 					"locked": false,
 					"world": {
 						"x": 958,
@@ -114,7 +114,7 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": -5
+						"zElevation": -15
 					}
 				},
 				{

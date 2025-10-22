@@ -1265,11 +1265,11 @@
 				{
 					"id": "compare-two-values",
 					"objectClass": "System",
-					"sid": 488557613194208,
+					"sid": 682950961370998,
 					"parameters": {
 						"first-value": "CombatWon",
-						"comparison": 1,
-						"second-value": "0"
+						"comparison": 0,
+						"second-value": "1"
 					}
 				}
 			],
@@ -1425,7 +1425,17 @@
 					"sid": 151631359881840
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 478213025216796,
+					"parameters": {
+						"variable": "CombatWon",
+						"value": "1"
+					}
+				}
+			],
 			"sid": 810560937838598
 		},
 		{
